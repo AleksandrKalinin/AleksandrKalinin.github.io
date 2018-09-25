@@ -1,0 +1,227 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.services_container{
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;		
+	}
+
+	.services_item{
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 45%;
+		flex: 0 0 45%;
+	    margin-bottom: 30px;		
+	}
+
+	.team_container{
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;		
+	}	
+
+	.team_item{
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 45%;
+		flex: 0 0 45%;
+	    margin-bottom: 15px;
+	}
+
+	.hire_us{
+		width: 60%;
+	}
+
+	.sb {
+		left: 20%;
+	}
+
+}
+
+@media only screen and (max-width : 768px) {
+
+	.header_content{
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	.hire_us{
+		width: 80%;
+	}
+
+	.sb{
+		left: 10%;
+	}
+
+}
+
+@media only screen and (max-width : 576px) {
+	.clients_image{
+		width: 75px;
+		height: 75px;
+	}
+
+	.hire_us_container form{
+		width: 300px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.services_container{
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;		
+	}
+
+	.services_item{
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 55%;
+		flex: 0 0 55%;
+	    margin-bottom: 30px;		
+	}
+
+	.team_container{
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;		
+	}	
+
+	.team_item{
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 55%;
+		flex: 0 0 55%;
+	    margin-bottom: 15px;
+	}
+
+	.contact_container form textarea{
+		margin-top: 0;
+	}
+
+	.form_inputs{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.form_inputs input{
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	.clients{
+		padding: 45px 0;
+	}
+
+	.form_submit{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.form_icons{
+		margin-top: 40px;
+	}
+
+	.form_submit input{
+		width: 40%;
+	}	
+
+	.section_header h2, .section_header p{
+		width: 100%;
+	}
+
+	.work_item{
+		margin: 10px 0;
+	}
+
+}
+
+@media only screen and (max-width : 400px) {
+	.hire_us{
+		width: 100%;
+	}
+
+	.sb{
+		left: 0;
+	}
+
+	.work_item_image{
+		width: 250px;
+		height: 250px;
+	}
+
+	.work_item_description{
+		width: 250px;
+		height: 250px;		
+	}
+
+	.newsletter_container form{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center; 
+	}
+
+	.newsletter_container form input[type="email"]{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.newsletter_container form input[type="submit"]{
+		width: 150px;
+	}	
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
