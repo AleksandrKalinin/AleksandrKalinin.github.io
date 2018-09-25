@@ -1,0 +1,524 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.clients-item img{
+		width: 85px;
+		height: auto;
+	}
+
+	.team-icons nav ul li{
+		height: 22px;
+		width: 22px;
+	}
+
+	.team-icons nav ul li a{
+		height: 22px;
+		width: 22px;
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width : 1050px) {
+	.portfolio-icon h4{
+		margin: 15px 0 25px 0;
+		font-size: 14px;
+	}
+
+	.portfolio-button a{
+		font-size: 10px;
+		padding: 7px 10px;
+		width: 60%;
+		margin-left: 20%;	
+		height: 30px;	
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+/* menu */
+
+	.menu-container ul li a{
+		font-size: 18px;
+	}
+
+.section-header{
+	margin: 50px 0;
+}
+
+/* header */
+.header-logo img{
+	width: 80%;
+	height: auto;
+}
+
+/* team */
+
+	.team{
+		height: 800px;
+	}
+
+	.team-member{
+		height: 270px;
+	}
+
+	.team-image{
+		width: 60%;
+		
+	}
+
+	.team-description{
+		width: 60%;
+		padding: 10px 0;
+	}
+
+	.team-description p{
+		margin-bottom: 8px;
+	}
+
+	.team-icons nav ul li{
+		height: 20px;
+		width: 20px;
+	}
+
+	.team-icons nav ul li a{
+		height: 20px;
+		width: 20px;
+		font-size: 14px;
+	}
+
+	/* Services */
+	
+	.services{
+		height: 550px;
+	}
+
+	.single-icon .service-icon{
+		font-size: 24px;
+		width: 70px;
+		height: 70px;
+	}
+
+	.service-description{
+		margin-top: 15px;
+	}
+
+	.service-description h5{
+		font-size: 12px;
+	}
+
+	.service-description p{
+		font-size: 10px;
+	}
+	/* testimonials */
+	
+	.testimonials-wrapper p{
+		font-size: 12px;
+	}
+
+/* clients */
+
+	.clients-item img{
+		width: 60px;
+		height: auto;
+	}
+
+/* Pricing */
+	.portfolio-icon h4{
+		margin: 40px 0;
+	}
+
+	.pricing{
+		height: 1400px;
+	}
+	.pricing-item{
+		border: 1px solid rgba(72, 85, 99, 0.3);
+	}
+	.pricing-wrapper{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.pricing-header h2{
+		font-size: 20px;
+	}
+
+	.pricing-header h5{
+		font-size: 14px;
+		text-transform: uppercase;		
+	}
+
+	.pricing-item{
+		margin-bottom: 20px;
+	}
+
+	/* contact */
+	
+	.contact{
+		height: 1000px;
+	}
+
+	/* footer */
+	
+	.footer-icons nav ul li{
+		height: 20px;
+		width: 20px;
+	}
+
+	.footer-icons nav ul li a{
+		height: 20px;
+		width: 20px;
+		font-size: 14px;
+	}
+
+	.copyright-wrapper img{
+		width: 60px;
+		height: auto;
+	}
+
+	.copyright-wrapper span, .footer-icons span{
+		font-size: 10px;
+	}
+
+@media only screen and (max-width : 576px) {
+
+	.podrt_descr{
+		max-width: 400px;
+	}
+
+	.modal-box-content button{
+		left: 360px;
+	}
+
+/* menu */
+
+	.anim, .reverse-anim{
+		width: 33.3%;
+	}
+
+	.menu-container ul li a{
+		font-size: 18px;
+	}
+
+	.section-header h4{
+		font-size: 16px;
+	}
+
+/* header */
+
+	header{
+		height: 600px;
+	}
+
+	.header-logo img, .copyright-wrapper img{
+		width: 50px;
+	}
+
+	.header-title{
+		width: 100%;
+	}
+
+	/* portfolio */
+	
+	.portfolio-icon h4{
+		font-size: 14px;
+		margin: 20px 0;
+	}
+
+	.portfolio-button a{
+		font-size: 10px;
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	/* pricing */
+	
+	/* team */
+	
+	.team-button{
+		margin-top: 10px;
+	}
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.podrt_descr{
+		max-width: 300px;
+	}
+
+	.podrt_descr h3{
+		font-size: 18px;
+		padding-top: 0;
+	}
+
+	.modal-box-content button{
+		left: 260px;
+	}
+
+	/* menu */
+	
+	.anim, .reverse-anim{
+		width: 50%;
+	}
+
+	.menu-container ul li a{
+		font-size: 16px;
+	}
+
+
+	/* services */
+	
+	.services{
+		height: 600px;
+	}
+
+	/* portfolio */
+	
+	.portfolio-icon h4{
+		font-size: 12px;
+	}
+
+	.portfolio-button a{
+		height: 30px;
+		font-size: 10px;
+		padding: 7px 10px;
+	}
+
+	/* testimonials */
+	.testimonials-wrapper{
+		padding: 0 15px;
+	}
+
+	/* team */
+	
+	.team-description h5{
+		font-size: 12px;
+	}
+
+	.team-image, .team-description{
+		width: 80%;
+	}
+
+	/* pricing */
+	
+	.pricing-header{
+		padding: 0;
+	}
+
+	.pricing-header h5{
+		font-size: 12px;
+		
+	}
+
+	.pricing-description{
+		padding: 0 10px;
+	}
+
+	.pricing-description ul{
+		margin: 10px 0;
+	}
+
+	/* contact */
+	
+	
+	form label input, form label textarea {
+		width: 60%;
+	}
+
+	form{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+
+	}
+
+	form label{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	/*footer */
+	
+	.copyright-wrapper span{
+		display: none;
+	}
+
+	.footer-icons span{
+		display: block;
+		width: 100px;
+	}
+	
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+/* menu */
+
+	.anim, .reverse-anim{
+		width: 100%;
+	}
+
+	.menu-container ul li a{
+		font-size: 18px;
+	}
+
+	.section-header h4{
+		font-size: 16px;
+	}
+/* pricing */
+
+	.pricing-description{
+		padding: 0;
+	}
+
+/* team */
+
+	.team-wrapper div{
+		padding: 0;
+	}
+
+	.team-icons nav ul li {
+		width: 30px;
+		height: 30px;
+	}
+
+	.team-icons nav ul li a{
+		font-size: 22px;
+		width: 30px;
+		height: 30px;		
+	}
+	
+
+/* portfolio */
+
+	.portfolio{
+		height: 700px;
+	}
+
+	.portfolio-icon h4{
+		margin: 15px 0;
+	}
+
+	.portfolio-button a{
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	.podrt_descr{
+		max-width: 250px;
+	}
+
+	.podrt_descr h3{
+		font-size: 14px;
+		padding-top: 0;
+	}
+
+	.modal-box-content p{
+		font-size: 12px;
+	}
+
+	.modal-box-content button{
+		left: 210px;
+	}
+
+	.testimonials{
+		height: 600px;
+	}
+
+/* pricing */
+
+	.pricing-item{
+		width: 260px;
+	}
+
+	form{
+		width: 100%;
+	}
+
+	label span{
+		font-size: 11px;
+	}
+
+	label textarea{
+		height: 70px;
+	}
+
+	input[type="submit"]{
+		margin-right: 4%;
+	}
+
+	.footer-icons nav ul span, .copyright-wrapper span{
+		display: none;
+	}
+
+	.copyright-wrapper img{
+		width: 70px;
+	}
+
+	.footer-icons nav ul li, 	.footer-icons nav ul li a{
+		width: 30px;
+		height: 30px;
+		font-size: 24px;
+	}
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
