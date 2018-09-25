@@ -1,0 +1,299 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.team-icon-container ul {
+		width: 100%;
+	}
+
+	.team-icon-container ul li a{
+		width: 35px;
+		height: 35px;
+	}
+
+	.team-icon-container ul li a svg{
+		font-size: 22px;
+	}	
+
+}
+
+@media only screen and (max-width : 768px) {
+
+	.menu nav ul li{
+		font-size: 14px;
+		margin-right: 10px;
+	}
+
+.header-logo img{
+	width: 80%;
+	height: auto;
+}
+
+.services-icon-container{
+	margin-bottom: 20px;
+}
+
+.services-icon-container img{
+	height: 80px;
+	width: auto;
+}
+
+.team-icon-container{
+	margin-bottom: 40px;
+}
+
+.team-icon-container img{
+	width: 100px;
+	height: 100px;
+}
+	
+
+	.team-icon-container ul {
+		width: 80%;
+	}
+
+
+
+.skill-wrapper{
+	margin-bottom: 30px;
+}
+
+.portfolio-item p{
+	font-size: 14px;
+}
+
+.testimonials-wrapper{
+	width: 80%;
+}
+
+.testimonials-wrapper h5{
+	font-size: 16px;
+}
+
+.footer-container ul li {
+	font-size: 13px;
+}
+
+}
+
+@media only screen and (max-width : 576px) {
+	
+	.section-header h2{
+		font-size: 20px;
+	}
+
+	.header-container p{
+		font-size: 22px;
+	}
+	.header-logo img{
+		width: 60%;
+		height: auto;
+	}
+
+	.menu nav ul li{
+		font-size: 13px;
+		margin-right: 0;
+	}
+
+	.team-icon-container ul {
+		width: 60%;
+	}
+
+	.services-icon-container img{
+		height: 70px;
+		width: auto;
+	}
+
+	footer .container, footer .container .row div{
+		padding: 0;
+	}
+
+ 	footer .container .row{
+ 		margin: 0;
+ 	}	
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top-header-wrapper{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		
+	}
+
+	.top-header-wrapper nav ul li{
+		display: block;
+		width: auto;
+	}
+
+	.top-header-wrapper nav ul li a{
+		font-size: 20px;
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	.team-icon-container ul{
+		width: 90%;
+	}
+	.header-logo{
+		width: auto;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	.header-logo img{
+		width: 100%;
+	}
+
+	.header-container{
+		margin-top: 50px;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.header-container p{
+		font-size: 18px;
+	}
+
+	.header-button a, .portfolio-button a, form input[type="submit"]{
+		width: 180px;
+	}
+
+	.section-header{
+		width: auto;
+	}
+
+	.portfolio-menu ul li{
+		font-size: 14px;
+	}
+
+	.testimonials-icon-container .image-wrapper img{
+		width: 70px;
+		height: 70px;
+	}
+
+	.testimonials-wrapper{
+		margin-left: 20px;
+	}
+
+	.testimonials-wrapper p{
+		font-size: 14px;
+	}	
+
+	.input-container{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+	}
+
+	.input-container input{
+		width: 100%;
+	}	
+
+	form input, form textarea{
+		margin-top: 20px;
+	}
+
+	footer{
+		height: auto;
+		padding: 30px 0;
+	}
+
+	.footer-container ul{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.footer-container ul li{
+		font-size: 18px;
+		margin-bottom: 15px;
+	}	
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.portfolio-menu ul li{
+		margin-right: 2px;
+	}
+
+	.portfolio-menu ul li a{
+		padding: 3px 10px;
+		font-size: 13px;
+	}
+
+	.portfolio-item {
+		margin-bottom: 30px;
+	}
+
+	.portfolio-item p{
+		text-align: center;
+	}
+
+	.team-icon-container ul{
+		width: 100%;
+	}
+
+	.team-icon-container ul li a{
+		height: 30px;
+		width: 30px;
+	}
+
+	.team-icon-container ul li a svg{
+		font-size: 17px;
+	}	
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
