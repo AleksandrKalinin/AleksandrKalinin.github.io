@@ -953,8 +953,6 @@ header {
   -webkit-box-shadow: inset 0px 0px 0px 2px #E74C3C;
   -moz-box-shadow: inset 0px 0px 0px 2px #E74C3C;
   box-shadow: inset 0px 0px 0px 2px #E74C3C; }
-  .team-container_item:hover img {
-    border: 1px solid #E74C3C; }
   .team-container_item:hover h6, .team-container_item:hover p {
     color: #E74C3C; }
   .team-container_item:hover ul li a {
