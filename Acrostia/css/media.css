@@ -254,12 +254,11 @@
 		height: 150px;
 	}
 
-
-}
-
 	.about-item_image img{
 		width: 100%;
-	}	
+	}
+
+}
 
 @media only screen and (max-width : 490px) {
 	.about-item_image img{
@@ -341,9 +340,7 @@
 	}
 
 	.services-container_item{
-		-webkit-box-flex: 0;
-    	-ms-flex: 0 0 55%;
-        flex: 0 0 55%;
+		width: 55%;
 	}
 
 	.services-container_item img{
@@ -367,9 +364,7 @@
 
 
 	.pricing-container_item {
-		-webkit-box-flex: 0;
-    	-ms-flex: 0 0 80%;
-        flex: 0 0 80%
+		width: 80%;
 	}
 
 	.contact-container_form_inputs{
@@ -380,9 +375,7 @@
 	}
 
 	.contact-container_form_inputs input{
-		-webkit-box-flex: 0;
-    	-ms-flex: 0 0 100%;
-        flex: 0 0 100%
+		width: 100%;
 		width: auto;
 		margin-bottom: 15px;
 	}
