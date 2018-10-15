@@ -54,9 +54,7 @@
 	}
 
 	.pricing-container_item {
-		-webkit-box-flex: 0;
-		-ms-flex: 0 0 45%;
-		flex: 0 0 45%;
+		width: 45%;
 		margin-bottom: 20px;
 	}
 
@@ -127,11 +125,12 @@
 		width: 280px;
 	}
 
+	.pricing-container{
+		justify-content: center;
+	}
 
 	.pricing-container_item {
-		-webkit-box-flex: 0;
-		-ms-flex: 0 0 45%;
-		flex: 0 0 45%;
+		width: 55%;
 	}
 
 
@@ -232,9 +231,7 @@
 
 
 	.pricing-container_item {
-		-webkit-box-flex: 0;
-		-ms-flex: 0 0 35%;
-		flex: 0 0 35%;
+		width: 400px;
 	}
 
 
@@ -295,9 +292,7 @@
 	}
 
 	.pricing-container_item {
-		-webkit-box-flex: 0;
-		-ms-flex: 0 0 55%;
-		flex: 0 0 55%;
+		width: 80%;
 	}
 
 	.portfolio-container_content{
