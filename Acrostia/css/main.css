@@ -578,7 +578,7 @@ header {
 
 .podrt_descr {
   background-color: #fff;
-  max-width: 500px;
+  max-width: 480px;
   margin: auto; }
   .podrt_descr p,
   .podrt_descr h3 {
@@ -597,15 +597,19 @@ header {
     font-size: 14px; }
   .podrt_descr img {
     width: 100%;
-    height: 330px; }
+    height: auto; }
 
 .modal-box-content {
   padding-bottom: 20px; }
 
+.modal-box-content_image {
+  height: 300px;
+  overflow: hidden; }
+
 .modal-box-content button {
   position: relative;
   top: 0;
-  left: 460px; }
+  left: 440px; }
 
 .pricing {
   position: relative; }

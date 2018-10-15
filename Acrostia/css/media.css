@@ -304,6 +304,11 @@
 		width: 100%;
 	}
 
+	.portfolio-container_content_item_image img{
+		height: calc(100vw - 16.98px);
+		width: calc(100vw - 16.98px);
+	}
+
 	.contact-container_address_wrapper_description{
 		-ms-flex-wrap: nowrap;
 		flex-wrap: nowrap;
