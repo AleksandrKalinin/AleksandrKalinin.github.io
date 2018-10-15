@@ -1,23 +1,35 @@
-section
-	padding: 50px 0
+body
+	font-family: 'Cormorant', serif	
+
+.section-overlay
+	padding: 75px 
 
 .section-header
 	color: #fff
 	text-align: center
-	margin: 50px 0
+	margin-bottom: 50px
 	h1
-		font-size: 46px
+		font-size: 26px
 		text-transform: uppercase
-		font-weight: 400
+		font-weight: 600
 		margin-bottom: 20px
+		letter-spacing: 1px
 	h6
 		text-transform: uppercase
-		font-weight: 400
-		font-size: 20px	
+		font-weight: 500
+		font-size: 15px
+		letter-spacing: 2px	
 
 header
-	background: url(../img/bg_1.jpg)
-	height: 100vh
+	background-color: #222
+	height: 100px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+
+.top
+	height: 550px
 	width: 100%
 	display: -webkit-box
 	display: -ms-flexbox
@@ -28,6 +40,17 @@ header
 	flex-direction: column
 	position: relative
 	padding: 50px 0
+
+.top:before
+	display: block
+	top: 0
+	left: 0
+	content: ''	
+	background-color: #111
+	opacity: 0.7
+	width: 100%
+	position: absolute
+	height: 100%	
 
 .header-description
 	display: -webkit-box
@@ -55,24 +78,35 @@ header
 	-webkit-box-pack: center
 	-ms-flex-pack: center
 	justify-content: center
-	color: #74C7D5
 	width: 80%
-	background-color: #fff
-	opacity: 0.5
 	padding: 0 10px 
 	padding: 50px
 	text-align: center
 	a
-		color: #74C7D5
-		border: 3px solid #74C7D5
-		font-size: 22px
+		color: #FF6347
+		border: 1px solid #FF6347
+		font-size: 13px
 		text-decoration: none
 		text-transform: uppercase
-		font-weight: 500
-		padding: 5px 20px
-		margin-top: 20px	
+		font-weight: 400
+		letter-spacing: 1.5px
+		padding: 9px 17px
+		margin-top: 20px
+		transition: 0.2s ease
+	a:hover
+		background-color: #FF6347
+		color: #fff	
+	p
+		color: #fff
+		letter-spacing: 1px
+		width: 500px
+
 	h3
-		font-size: 26px
+		text-transform: uppercase
+		letter-spacing: 3px
+		font-size: 60px
+		color: #FF6347
+		margin-bottom: 30px			
 
 .top-wrapper
 	display: -webkit-box
@@ -87,38 +121,33 @@ header
 	justify-content: space-between
 
 .menu-wrapper
-	display: -webkit-box
-	display: -ms-flexbox
-	display: flex
-	-webkit-box-orient: vertical
-	-webkit-box-direction: normal
-	-ms-flex-direction: column
-	flex-direction: column
-	-ms-flex-item-align: start
-	align-self: flex-start
 	>div
 		width: 100%
 		
 .head-wrapper
-	margin-top: 150px
+	margin-top: 100px
 	>div
 		width: 100%	
 	
 .top-logo
 	h2
-		font-weight: 700
+		font-weight: 300
 		color: #fff
 		font-size: 38px
+		letter-spacing: 1px
 		font-style: italic
+		margin-bottom: 0
+		font-family: 'Cormorant', serif	 
 
 .top-menu
+	display: flex
+	flex-direction: row
+	align-items: center
 	nav
-		height: 100%
 		ul
 			list-style-type: none
 			margin: 0
 			padding: 0
-			height: 100%
 			display: -webkit-box
 			display: -ms-flexbox
 			display: flex
@@ -131,9 +160,11 @@ header
 			justify-content: center
 			li
 				display: inline-block
-				font-size: 18px
-				height: 100%
+				font-size: 14px
+				font-weight: 300
+				letter-spacing: 1.5px
 				text-transform: uppercase
+				margin: 0 10px
 				a
 					display: -webkit-box
 					display: -ms-flexbox
@@ -147,12 +178,92 @@ header
 					align-items: center
 					color: #fff
 					text-decoration: none
-					padding: 5px 10px
+					padding: 5px 0
 					position: relative
 				a:hover
-					background-color: #74C7D5	
+					color: #FF6347
+					-webkit-box-shadow: 0px 1px 0px 0px #FF6347
+					-moz-box-shadow: 0px 1px 0px 0px #FF6347
+					box-shadow: 0px 1px 0px 0px #FF6347					
+
+.about
+	position: relative
+	.section-header
+		color: #333
+		
+.about:before
+	display: block
+	top: 0
+	left: 0
+	content: ''	
+	background-color: #fff
+	opacity: 0.8
+	width: 100%
+	position: absolute
+	height: 100%		
+
+.about-container
+	display: flex
+	flex-direction: column
+	
+.about-item
+	display: flex
+	flex-direction: row
+	margin: 20px 0
+
+.about-item_image, .about-item_description
+	width: 50%
+	padding: 0 20px	
+
+.about-item_image
+	height: 300px
+	overflow: hidden
+	img
+		width: auto
+		height: auto
+
+.about-item_description
+	h2
+		text-transform: uppercase
+		font-size: 28px
+		letter-spacing: 1px
+	hr
+		color: #FF6347
+		border: 1px solid #FF6347
+		width: 100px
+		margin: 16px 0
+	p
+		margin-top: 40px
+		margin-bottom: 20px
+	a
+		color: #FF6347
+		font-size: 13px
+		text-decoration: none
+		padding: 9px 17px
+		transition: .1s all
+		letter-spacing: 1.5px
+		font-weight: 500
+		text-transform: uppercase
+		border: 1px solid #FF6347
+		border-radius: 1px
+	a:hover
+		background-color: #FF6347
+		color: #fff			
+
+
 .services
-	background-color: #B24A50
+	position: relative	
+
+.services:before
+	display: block
+	top: 0
+	left: 0
+	content: ''	
+	background-color: #FF6347
+	opacity: 0.6
+	width: 100%
+	position: absolute
+	height: 100%
 
 .services-container
 	display: -webkit-box
@@ -168,7 +279,7 @@ header
 	margin-top: 70px
 
 .services-container_item
-	background-color: #C45158
+	background-color: #333333
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
@@ -181,21 +292,36 @@ header
 	align-items: center
 	margin: 0 10px
 	color: #fff
-	width: 25%
+	width: 280px
 	padding: 30px 20px
 	h6
 		text-transform: uppercase
-		margin-top: 20px
-		margin-bottom: 30px
-		font-size: 24px
-		font-weight: 300
+		margin: 20px 0
+		font-size: 17px
+		font-weight: 600
+		letter-spacing: 1.5px
+		color: #FF6347
 	p
 		font-size: 14px
-		font-weight: 600
-		text-align: center	
+		font-weight: 300
+		text-align: center
+		letter-spacing: 1px	
 
 .team
-	background-color: #665464
+	position: relative
+	.section-header
+		color: #333
+
+.team:before
+	display: block
+	top: 0
+	left: 0
+	content: ''	
+	background-color: #fff
+	opacity: 0.8
+	width: 100%
+	position: absolute
+	height: 100%
 
 .team-container
 	display: -webkit-box
@@ -224,49 +350,48 @@ header
 	align-items: center
 	text-align: center	
 	width: 25%
-	background-color: #5D4C5B
+	background-color: #fff
+	border: 1px solid #222
 	opacity: 0.9
 	margin: 0 10px
 	padding: 30px 20px
+	transition: 0.2s ease
+	img
+		width: 160px
+		height: 160px
+		border-radius: 50%
+		margin-bottom: 10px
 	h6
 		text-transform: uppercase
-		font-size: 22px
+		font-size: 16px
 		margin-top: 10px
-		color: #A0849D
+		color: #222
+		font-weight: 700
+		letter-spacing: 2px
 	p
-		font-size: 14px
-		color: #98BD68	 	
+		font-size: 13px
+		color: #FF6347
+		font-weight: 600
+		letter-spacing: 1px	 	
 
 .team-container_item:hover
-	background-color: #544552
+	background-color: #333
 	h6
-		color: #fff
+		color: #FF6347
 	p
-		color: #DF5C64
+		color: #fff
 	.team-container_item_links
 		ul
 			li
 				a
-					background-color: blue
+					background-color: #333
+					color: #FF6347
+					border: 1px solid #FF6347
 		
-.team-container_item:hover 
-	.team-container_item_links 
-		ul 
-			li:nth-child(1) 
-				a
-					background-color: #4F689E
-			li:nth-child(2) 
-				a
-					background-color: #74C7D5
-			li:nth-child(3) 
-				a
-					background-color: #DF5C64
-			li:nth-child(4) 
-				a
-					background-color: #3E61AF															
+											
 			
 .team-container_item_links
-	width: 85%	
+	width: 80%	
 	ul
 		margin: 0
 		padding: 0
@@ -283,6 +408,7 @@ header
 		li
 			display: inline-block
 			a
+				border: 1px solid #222
 				font-size: 19px
 				display: -webkit-box
 				display: -ms-flexbox
@@ -299,12 +425,23 @@ header
 				align-items: center
 				width: 35px
 				height: 35px
-				color: #fff
-				border-radius: 50%
-				background-color: #A0849D	
+				color: #333
+				border-radius: 1px
+				background-color: #fff	
 	
 .portfolio
-	background-color: #83A457
+	position: relative
+	
+.portfolio:before
+	display: block
+	top: 0
+	left: 0
+	content: ''	
+	background-color: #222
+	opacity: 0.8
+	width: 100%
+	position: absolute
+	height: 100%	
 
 .portfolio-container_header
 	display: -webkit-box
@@ -317,13 +454,15 @@ header
 	-webkit-box-pack: justify
 	-ms-flex-pack: justify
 	justify-content: space-between
-	border-top: 1px solid rgba(245,193,73,0.5)
-	border-bottom: 1px solid rgba(245,193,73,0.5)
+	border-top: 1px solid rgba(255,99,71,0.5)
+	border-bottom: 1px solid rgba(255,99,71,0.5)
 	padding: 20px 0
 	h6
-		color: #fff
+		color: #FF6347
 		text-transform: uppercase
 		font-size: 20px
+		margin-bottom: 0
+		letter-spacing: 2px
 	
 .portfolio-container_header_menu
 	nav
@@ -334,21 +473,33 @@ header
 			li
 				display: inline-block
 				margin-right: 15px
+				margin: 0 10px
 				button
 					text-decoration: none
 					color: #fff
-					padding: 4px 10px
+					padding: 3px 0
 					border: none
-					border-radius: 2px
+					border-radius: 1px
 					outline: none
 					cursor: pointer
-					-webkit-transition: .1s all
-					-o-transition: .1s all
-					transition: .1s all
+					-webkit-transition: .2s ease
+					-o-transition: .2s ease
+					transition: .2s ease
 					background: transparent
-					font-weight: 700
+					font-weight: 400
+					text-transform: uppercase
+					font-size: 14px
+					letter-spacing: 2.5px
+				.mixitup-control-active
+					color: #FF6347
+					-webkit-box-shadow: 0px 1px 0px 0px #FF6347
+					-moz-box-shadow: 0px 1px 0px 0px #FF6347
+					box-shadow: 0px 1px 0px 0px #FF6347	
 				button:hover
-					background-color: #F5C149		
+					color: #FF6347
+					-webkit-box-shadow: 0px 1px 0px 0px #FF6347
+					-moz-box-shadow: 0px 1px 0px 0px #FF6347
+					box-shadow: 0px 1px 0px 0px #FF6347				
 
 .portfolio-container_content
 	margin-top: 50px
@@ -362,17 +513,13 @@ header
 	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 	width: 100%
-	-webkit-box-pack: justify
-	-ms-flex-pack: justify
-	justify-content: space-between 
 
 .portfolio-container_content_item
-	width: 22%
-	margin-bottom: 20px
 	-webkit-box-flex: 0
-	-ms-flex: 0 1 22%
-	flex: 0 1 22%
+	-ms-flex: 0 0 25%
+	flex: 0 0 25%
 	position: relative
+	transition: 0.4s ease
 
 .portfolio-container_content_item:before:hover
 	background-color: blue
@@ -380,7 +527,7 @@ header
 .portfolio-container_content_item_image
 	width: 100%
 	overflow: hidden
-	height: 150px
+	height: 200px
 	position: relative
 	display: -webkit-box
 	display: -ms-flexbox
@@ -400,39 +547,49 @@ header
 	transition: .2s all
 	img
 		width: 100%
-		height: 100%
-	img:hover
-		-webkit-filter: brightness(50%)
-		filter: brightness(50%)
+		height: auto
 
 .portfolio-container_content_item_description
-	background-color: #fff
-	padding: 13px 0
-	position: relative
-	text-align: center
-	a
-		color: #fff
-		font-size: 14px
-		text-decoration: none
-		padding: 5px 15px
-		transition: .1s all
-		font-weight: 600
-		text-transform: uppercase
-		background-color: #83A457
-	a:hover
-		color: #fff
-		background-color: #333
-
-.portfolio-container_content_item_description:after
-	content: ''
+	z-index: 999
+	display: none
+	transition: 0.4s ease
 	position: absolute
-	width: 0
-	height: 0
-	top: -20px
-	right: calc(50% - 20px)
-	border-style: solid
-	border-width: 0 20px 20px 20px
-	border-color: transparent transparent #fff transparent
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	padding: 13px 0
+	text-align: center
+	h6
+		text-transform: uppercase
+		letter-spacing: 3px
+		color: #fff
+		font-size: 16px
+		font-weight: 500
+		margin-bottom: 25px
+	a
+		color: #FF6347
+		font-size: 13px
+		text-decoration: none
+		padding: 7px 15px
+		transition: .1s all
+		letter-spacing: 1.5px
+		font-weight: 500
+		text-transform: uppercase
+		background-color: none
+		border: 1px solid #FF6347
+		border-radius: 1px
+	a:hover
+		background-color: #FF6347
+		color: #fff	
+
+.portfolio-container_content_item:hover .portfolio-container_content_item_description
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	background-color: #222
+	opacity: 0.9
 
 .podrt_descr
 	background-color: #fff
@@ -466,8 +623,20 @@ header
 	left: 460px
 
 .pricing
-	background-color: #6B8EDC
-	padding: 50px 0
+	position: relative
+	.section-header
+		color: #333
+		
+.pricing:before
+	display: block
+	top: 0
+	left: 0
+	content: ''	
+	background-color: #FF6347
+	opacity: 0.6
+	width: 100%
+	position: absolute
+	height: 100%		
 
 .pricing-container
 	display: -webkit-box
@@ -494,23 +663,29 @@ header
 	-ms-flex-align: center
 	align-items: center
 	width: 25%
-	background-color: #fff
+	background-color: #333
 	color: #fff
 	opacity: 0.9
 	margin: 0 10px
+	transition: 0.2s ease
 	.pricing-container_item_header
 		padding: 20px 0
 		width: 100%
 		text-align: center
-		background-color: #3E61AF
+		background-color: #fff
+		h1
+			letter-spacing: 2px
+			font-weight: 300
+			color: #FF6347
 	.pricing-container_item_content
 		padding: 25px 20px 
 		text-align: center	
 	h2
 		text-transform: uppercase
 		font-size: 18px
-		color: #3E61AF
-		font-weight: 700
+		color: #fff
+		font-weight: 500
+		letter-spacing: 1px
 		margin-bottom: 0
 		padding: 15px 0
 	h1
@@ -520,27 +695,48 @@ header
 		span
 			font-size: 18px
 			font-weight: 500
-			color: #fff	
+			color: #FF6347
 	p
-		font-size: 18px
-		color: #3E61AF
-		font-weight: 500
-		i
+		font-size: 14px
+		letter-spacing: 1.5px
+		color: #fff
+		font-weight: 400
+		svg
 			font-size: 20px
-			padding-right: 5px
-			
+			margin-right: 8px
+	p:nth-child(4)
+		margin-bottom: 30px
+	
 	a
 		text-decoration: none
-		color: #fff
+		color: #FF6347
 		font-weight: 700
 		text-transform: uppercase
-		background-color: #3E61AF
-		padding: 7px 30px
-		font-size: 16px	
+		letter-spacing: 1.5px
+		background-color: #333
+		border-radius: 1px
+		border: 1px solid #FF6347
+		padding: 9px 17px
+		font-size: 15px	
+		transition: 0.2s ease
+	a:hover
+		background-color: #FF6347
+		color: #fff	
 
 .contact
-	background-color: #75B4AA
-
+	position: relative
+	
+.contact:before
+	display: block
+	top: 0
+	left: 0
+	content: ''	
+	background-color: #fff
+	opacity: 0.8
+	width: 100%
+	position: absolute
+	height: 100%	
+	
 .contact-container
 	display: -webkit-box
 	display: -ms-flexbox
@@ -558,40 +754,41 @@ header
 		font-weight: 400
 
 .contact-container_address, .contact-container_form
-	width: 45%
+	width: 50%
+	padding: 0 15px
 
 .contact-container_address_wrapper_description, .contact-container_address_wrapper_map
 	width: 50%
 	
-.contact-container_address_wrapper
+.contact-container_address
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
-	-webkit-box-orient: horizontal
-	-webkit-box-direction: normal
-	-ms-flex-direction: row
-	flex-direction: row	
-
-.contact-container_address_wrapper_description
-	display: -webkit-box
-	display: -ms-flexbox
-	display: flex
-	-webkit-box-orient: vertical
-	-webkit-box-direction: normal
-	-ms-flex-direction: column
 	flex-direction: column
-	-webkit-box-pack: justify
-	-ms-flex-pack: justify
-	justify-content: space-between
-	height: 220px
-	p
-		margin-bottom: 2px
-		font-size: 14px
-		font-weight: 600
-		span
-			width: 100px
-			display: inline-block
+	color: #333
 
+.contact-container_address_item
+	display: flex
+	flex-direction: column
+	margin-bottom: 25px
+	p
+		font-size: 14px
+		margin-bottom: 0
+		letter-spacing: 1px
+		
+.contact-container_address_icon
+	display: flex
+	flex-direction: row
+	align-items: center
+	margin-bottom: 10px
+	svg
+		font-size: 30px
+		margin-right: 10px
+	h6
+		text-transform: uppercase
+		letter-spacing: 1.5px
+		margin-bottom: 0
+		font-weight: 300	
 
 .contact-container_address_wrapper_map
 	iframe
@@ -600,7 +797,6 @@ header
 
 form
 	.contact-container_form_wrapper
-		height: 220px
 		display: -webkit-box
 		display: -ms-flexbox
 		display: flex
@@ -611,28 +807,20 @@ form
 		-webkit-box-pack: justify
 		-ms-flex-pack: justify
 		justify-content: space-between
-		.contact-container_form_inputs
-			display: -webkit-box
-			display: -ms-flexbox
-			display: flex
-			-webkit-box-orient: horizontal
-			-webkit-box-direction: normal
-			-ms-flex-direction: row
-			flex-direction: row
-			-webkit-box-pack: justify
-			-ms-flex-pack: justify
-			justify-content: space-between
-
+	input[type="submit"]
+		width: auto		
 	input,textarea
 		outline: none
 		padding-left: 10px
-		background-color: #68A097
-		border: none
+		border: 1px solid #333
 		color: #fff
 		border-radius: 2px
+		transition: 0.1s ease
+		font-size: 15px
+		margin-bottom: 12px
 	input:not(.input-submit):focus-within, textarea:focus-within
-		background-color: #fff
-		color: #222
+		border: 1px solid #FF6347
+		color: #333
 	input:not(.input-submit):focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder
 		color: transparent
 	input:not(.input-submit):focus::moz-placeholder, textarea:focus::mox-placeholder
@@ -640,32 +828,40 @@ form
 	input:not(.input-submit):focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder
 		color: transparent							
 	input::placeholder, textarea::placeholder 
-		color: #75B4AA
+		color: #333
 		opacity: 1 
 	input:-ms-input-placeholder, textarea:-ms-input-placeholder 
-		color: #75B4AA
+		color: #333
 	input::-ms-input-placeholder, textarea::-ms-input-placeholder 
-		color: #75B4AA
-	
+		color: #333
 	input
-		width: 48%
-		height: 40px	
+		width: 100%
+		height: 45px	
 	textarea
 		resize: none
 		width: 100%
 		height: 160px
 
 	input[type="submit"]
-		background-color: #DF5C64
-		height: 50px
-		font-size: 22px
+		background-color: #fff
+		border: 1px solid #FF6347
+		color: #FF6347
+		height: 40px
+		font-size: 14px
 		text-transform: uppercase
-		font-weight: 700
+		font-weight: 600
+		letter-spacing: 1px
 		align-self: center
-		margin-top: 15px
 		cursor: pointer
+		width: auto
+		padding: 0 25px
+		transition: 0.2s ease
+	input[type="submit"]:hover
+		background-color: #FF6347
+		color: #fff
+		border: 1px solid #FF6347	
 footer
-	background-color: #68A097
+	background-color: #222
 	height: 100px
 	width: 100%	
 	display: -webkit-box
@@ -690,7 +886,18 @@ footer
 	-webkit-box-align: center
 	-ms-flex-align: center
 	align-items: center
-	
+	justify-content: space-between
+
+.footer-logo
+	h2
+		font-weight: 300
+		color: #fff
+		font-size: 38px
+		letter-spacing: 1px
+		font-style: italic
+		margin-bottom: 0
+		font-family: 'Cormorant', serif	 
+			
 .footer-links
 	display: -webkit-box
 	display: -ms-flexbox
@@ -705,16 +912,16 @@ footer
 	margin: 0
 	padding: 0
 	text-align: center
-	width: 25%
+	width: 250px
 	li
 		display: inline-block
 		a
-			font-size: 27px
-			color: #fff
-			width: 45px
-			height: 45px
-			border-radius: 50%
-			background-color: #75B4AA
+			font-size: 20px
+			color: #222
+			width: 40px
+			height: 40px
+			border-radius: 1px
+			background-color: #fff
 			display: -webkit-box
 			display: -ms-flexbox
 			display: flex
@@ -723,4 +930,8 @@ footer
 			justify-content: center
 			-webkit-box-align: center
 			-ms-flex-align: center
-			align-items: center 		
+			align-items: center
+			transition: 0.2s ease
+		a:hover
+			background-color: #FF6347
+			color: #fff 	 		
