@@ -20,15 +20,23 @@
 	}
 
 	.team-container{
-		flex: 0 0 35%;
+		width: 250px;
 	}
 
 	.portfolio-menu{
 		width: 60%;
 	}
+
+	.blog-item{
+		width: 50%;
+	}
 }
 
 @media only screen and (max-width : 768px) {
+
+	.features-container{
+		flex: 0 0 90%;
+	}
 
 	.blog-wrapper{
 		flex-wrap: wrap;
@@ -68,20 +76,12 @@
 		flex-wrap: wrap;
 	}
 
-	.team-container{
-		flex: 0 0 49%;
-	}
-
 }
 
 @media only screen and (max-width : 576px) {
 
 	.features-wrapper{
 		flex-wrap: wrap;
-	}
-
-	.features-container{
-		flex: 0 0 90%;
 	}
 
 	.portfolio-menu{
@@ -94,7 +94,6 @@
 
 	.contact-wrapper{
 		flex-direction: column;
-		
 	}
 
 	.contact-form , .contact-map{
@@ -110,9 +109,7 @@
 	}
 
 	.team-container{
-		flex: 0 0 55%;
 		margin-bottom: 20px;
-		width: 300px;
 	}	
 
 	.portfolio-menu ul{
@@ -135,9 +132,8 @@
 	}
 
 	.team-container{
-		flex: 0 0 80%;
 		margin-bottom: 20px;
-		width: 300px;
+
 	}
 
 	.features-container{
