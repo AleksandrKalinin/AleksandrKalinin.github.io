@@ -54,6 +54,11 @@
 
 @media only screen and (max-width : 768px) {
 
+	.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+	    -ms-touch-action: auto;
+	        touch-action: auto;
+	}
+
 	.section_header h2{
 		font-size: 22px;
 	}

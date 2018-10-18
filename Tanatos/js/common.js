@@ -35,13 +35,13 @@ $(document).ready(function(){
             }
         }
     });
-
+/*
    if ($(window).width() <= 768) {
     $('.owl-carousel').owlCarousel({
       mouseDrag: false
     });
   }
-
+*/
 
     $(".header_content").animated("fadeIn", "fadeOut");
 
