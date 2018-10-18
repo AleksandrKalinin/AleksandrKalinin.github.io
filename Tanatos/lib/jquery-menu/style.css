@@ -2,33 +2,15 @@ body {
   margin: 0;
 }
 
-/*
-header {
-  width: 100%;
-  background: #c1272d;
-  height: 50px;
-  line-height: 50px;
-  position: fixed;
-}*/
-
 .navHeader {
   width: 100%;
   background: #F7600E;
   height: 50px;
   line-height: 70px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 
 }
@@ -75,7 +57,9 @@ header {
   padding: 5px 0;
   color: #fff;
   text-transform: uppercase;
-  font-size: x-large;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 .menu li:hover {

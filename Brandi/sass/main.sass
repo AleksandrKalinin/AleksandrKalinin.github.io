@@ -12,6 +12,9 @@ header
 .margin
 	margin: 0	
 
+.section-overlay
+	padding: 50px 15px
+
 .header_top_logo
 	text-transform: uppercase
 	margin-left: 15px
@@ -68,9 +71,20 @@ header
 	align-items: center
 	
 .header
-	height: 600px
 	width: 100%
-	background: url(../img/header.jpg)
+	position: relative
+	
+.header:before
+	display: block
+	top: 0
+	left: 0
+	content: ''	
+	background-color: #222
+	opacity: 0.6
+	width: 100%
+	position: absolute
+	height: 100%	
+
 
 .header, .header-wrapper
 	display: -webkit-box
@@ -80,15 +94,13 @@ header
 	-webkit-box-direction: normal
 	-ms-flex-direction: column
 	flex-direction: column
-	-webkit-box-pack: end
-	-ms-flex-pack: end
-	justify-content: flex-end
 	-webkit-box-align: center
 	-ms-flex-align: center
 	align-items: center
 
 .header-wrapper
 	height: 250px
+	margin-top: 100px
 
 .header-icons
 	margin-top: 50px
@@ -101,7 +113,7 @@ header
 	font-size: 20px
 
 .header-icons ul li a svg
-	color: #666
+	color: #fff
 	-webkit-transition: 0.1s
 	-o-transition: 0.1s
 	transition: 0.1s
@@ -127,7 +139,6 @@ header
 section
 	height: auto
 	width: 100%
-	padding: 50px 0
 
 .section-wrapper
 	display: -webkit-box
@@ -140,10 +151,10 @@ section
 	-webkit-box-pack: center
 	-ms-flex-pack: center
 	justify-content: center
+	margin-top: 50px
 
 .section-header
 	text-align: center
-	margin-bottom: 50px
 	width: 800px
 	
 .section-header h3
@@ -301,6 +312,21 @@ section
 .portfolio-description img:hover
 	cursor: pointer
 
+.team
+	position: relative
+
+
+.team:before
+	top: 0
+	left: 0
+	display: block
+	content: ''	
+	background-color: #fff
+	height: 100%
+	opacity: 0.6
+	width: 100%
+	position: absolute
+
 .team-items
 	display: -webkit-box
 	display: -ms-flexbox
@@ -373,7 +399,18 @@ section
 		display: block	
 	
 .facts
-	background: url(../img/facts.jpg)
+	position: relative
+	
+.facts:before
+	top: 0
+	left: 0
+	display: block
+	content: ''	
+	background-color: #222
+	height: 100%
+	opacity: 0.8
+	width: 100%
+	position: absolute
 
 .facts-wrapper
 	display: -webkit-box
@@ -441,10 +478,10 @@ section
 	transition: 0.1s	
 	.blog-image
 		width: 100%
-		height: auto
+		height: calc(100vw / 4 - 4.245px)
 		img
 			width: 100%
-			height: auto
+			height: calc(100vw / 4 - 4.245px)
 	.blog-description
 		position: absolute
 		left: 0
@@ -502,6 +539,20 @@ section
 		-ms-flex-align: center
 		align-items: center
 
+.contact
+	position: relative
+	
+.contact:before	
+	display: block
+	top: 0
+	left: 0
+	content: ''	
+	background-color: #FFf
+	opacity: 0.8
+	width: 100%
+	position: absolute
+	height: 100%
+	
 .contact-wrapper
 	display: -webkit-box
 	display: -ms-flexbox

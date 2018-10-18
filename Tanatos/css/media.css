@@ -27,8 +27,8 @@
 
 	.team_item{
 		-webkit-box-flex: 0;
-		-ms-flex: 0 0 45%;
-		flex: 0 0 45%;
+		-ms-flex: 0 0 35%;
+		flex: 0 0 35%;
 	    margin-bottom: 15px;
 	}
 
@@ -40,9 +40,38 @@
 		left: 20%;
 	}
 
+	.header_buttons{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	.header_buttons a{
+		margin-top: 30px;
+	}
+
 }
 
 @media only screen and (max-width : 768px) {
+
+	.section_header h2{
+		font-size: 22px;
+	}
+
+	.section_header p{
+		font-size: 13px;
+	}
+
+	.clients_wrapper p{
+		font-size: 13px;
+	}
+
+
+	.team_item{
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 45%;
+		flex: 0 0 45%;
+	}
 
 	.header_content{
 		width: 70%;
@@ -57,9 +86,32 @@
 		left: 10%;
 	}
 
+	.services_item h5{
+		margin-bottom: 10px;
+	}
+
 }
 
 @media only screen and (max-width : 576px) {
+
+	.header-content{
+		margin-top: 50px;
+	}
+
+	.header_content h1{
+		font-size: 32px;
+	}
+
+	.header_content p{
+		font-size: 14px;
+	}
+
+	.team_item{
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 51%;
+		flex: 0 0 51%;
+	}
+
 	.clients_image{
 		width: 75px;
 		height: 75px;

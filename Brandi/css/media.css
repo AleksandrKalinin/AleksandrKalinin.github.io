@@ -30,6 +30,10 @@
 	.blog-item{
 		width: 50%;
 	}
+
+	.blog-item .blog-image, .blog-item .blog-image img{
+		height: calc(100vw / 2 - 8.49px);
+	}
 }
 
 @media only screen and (max-width : 768px) {
@@ -122,6 +126,10 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
+	.blog-item .blog-image, .blog-item .blog-image img{
+		height: calc(100vw - 17.98px);
+	}
+
 	.blog-item{
 		flex: 0 0 100%;
 	}
@@ -137,6 +145,14 @@
 	}
 
 	.features-container{
+		flex: 0 0 100%;
+	}
+
+	.blog-item .blog-image{
+		height: calc(100vw - 17.98px);
+	}
+
+	.portfolio-wrapper{
 		flex: 0 0 100%;
 	}
 

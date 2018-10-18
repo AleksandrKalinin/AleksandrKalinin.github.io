@@ -117,6 +117,25 @@
 
 	.team-container_item{
 		padding: 30px 10px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-flex: 0
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		margin-bottom: 0;		    	
+	}
+
+	.team-container_item_description{
+		margin-top: 30px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;		
 	}
 
 	.team-container_item_description ul li a{
@@ -451,6 +470,15 @@
 		flex-wrap: wrap;
 	}
 
+	.services-description{
+		align-items: center;
+		padding: 40px;
+	}
+
+	.services-header span{
+		display: none;
+	}
+
 	.services-description, .services-image{
 		-webkit-box-flex: 0;
     	-ms-flex: 0 0 55%;
@@ -462,24 +490,14 @@
 	}
 
 	.service-icon{
-		position: static;
-		left: auto;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
+			display: none;
 	}
 
 	.service-section{
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
 		justify-content: center;
+	    margin-bottom: 20px;
 	}
 
 	.service-section h6, .service-section p{

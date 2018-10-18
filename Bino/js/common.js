@@ -21,6 +21,18 @@ $(document).ready(function(){
         } /* speed */ );
     });
 
+    $(function() {
+  
+          $("#toggle").click(function() {
+            $(this).toggleClass("on");
+            $("#resize").toggleClass("active");
+          });
+  
+    });
+
+    $(".study-description").animated("fadeInLeft", "fadeOutLeft");
+
+   $(".study-image").animated("fadeInRight", "fadeOutRght");    
 
     $(".section-header").animated("fadeIn", "fadeOut");
 

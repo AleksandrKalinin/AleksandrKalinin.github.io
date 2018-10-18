@@ -13,6 +13,9 @@ body
 .light-header
 	color: #fff
 
+.section-overlay
+	padding: 50px 15px
+
 .section-header
 	text-align: center
 	margin-top: 70px
@@ -66,7 +69,6 @@ body
 	top: 3px
 
 header
-	background: url(../img/header-1.jpg)
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center
@@ -703,7 +705,6 @@ header
 	width: auto
 
 .stats
-	background: url(../img/stats.jpg)
 	background-size: cover
 	padding: 100px 0
 	color: white
@@ -869,9 +870,7 @@ header
 	font-weight: 500
 
 .team
-	background: url(../img/team.jpg)
 	background-size: cover
-	padding: 50px 0
 
 .team-container
 	display: -webkit-box
@@ -884,27 +883,24 @@ header
 	-webkit-box-pack: justify
 	-ms-flex-pack: justify
 	justify-content: space-between
+	flex-wrap: wrap
 
 .team-container_item
-	width: 24%
+	width: 45%
 	background-color: #333
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
-	-webkit-box-orient: vertical
-	-webkit-box-direction: normal
-	-ms-flex-direction: column
-	flex-direction: column
+	flex-direction: row
 	-webkit-box-align: center
 	-ms-flex-align: center
 	align-items: center
-	-webkit-box-flex: 0
-	-ms-flex: 0 0 20%
-	flex: 0 0 20%	
+	justify-content: space-around
 	padding: 30px
 	-webkit-transition: .2s all
 	-o-transition: .2s all
 	transition: .2s all
+	margin-bottom: 20px
 	img
 		width: 140px
 		height: 140px
@@ -912,11 +908,17 @@ header
 		border: 3px solid #333
 
 .team-container_item_description
-	margin-top: 30px
+	width: 160px
 	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: flex-start
 	h6
-		font-size: 20px
+		font-size: 22px
 		text-transform: uppercase
+		letter-spacing: 1px
+	p
+		font-size: 15px	
 	ul
 		margin: 0
 		padding: 0
@@ -929,11 +931,12 @@ header
 		align-items: center
 		-webkit-box-pack: justify
 		-ms-flex-pack: justify
-		justify-content: space-between
+		justify-content: space-around
+		width: 150px
 		li
 			display: inline-block
 			a
-				font-size: 19px
+				font-size: 18px
 				display: -webkit-box
 				display: -ms-flexbox
 				display: flex
@@ -947,10 +950,9 @@ header
 				-webkit-box-align: center
 				-ms-flex-align: center
 				align-items: center
-				width: 35px
-				height: 35px
+				width: 33px
+				height: 33px
 				color: #fff
-				border-radius: 50%
 				background-color: #A0849D	
 
 .team-container_item:hover
@@ -1004,7 +1006,7 @@ header
 	
 .client-item img
 	height: auto
-	width: 150px
+	width: 160px
 
 .blog-container
 	display: -webkit-box
@@ -1214,8 +1216,6 @@ textarea::-webkit-scrollbar-thumb:window-inactive, ::-webkit-scrollbar-thumb:win
 	background: rgba(231,76,60,0.6)
 	
 .promo
-	background: url(../img/promo.jpg)	
-	padding: 100px 0
 	background-size: cover
 	display: -webkit-box
 	display: -ms-flexbox
@@ -1230,6 +1230,9 @@ textarea::-webkit-scrollbar-thumb:window-inactive, ::-webkit-scrollbar-thumb:win
 	-webkit-box-pack: center
 	-ms-flex-pack: center
 	justify-content: center
+
+.promo-overlay
+	padding: 100px 15px
 	
 .promo-description 
 	color: #fff

@@ -2,9 +2,11 @@
 <html>
 <head>
 	<title>Tanatos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<link rel="shortcut icon" href="img/favicon.ico">	
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="lib/animate/animate.min.css">	
+	<link rel="stylesheet" href="lib/animate/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">		
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
 	<link rel="stylesheet" href="lib/magnific-popup/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.carousel.min.css">
@@ -15,7 +17,8 @@
 	<link rel="stylesheet" type="text/css" href="css/media.css">			
 	<script src="lib/jquery/jquery-2.1.3.min.js"></script>
 	<script src="lib/jquery-menu/script.js"></script>		
-	<script src="lib/magnific-popup/jquery.magnific-popup.min.js"></script>	
+	<script src="lib/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="lib/parallax/parallax.min.js"></script>		
 	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>	
 	<script type="text/javascript" src="lib/font-awesome/fontawesome-all.js"></script>
 	<script type="text/javascript" src="lib/waypoints/waypoints.min.js"></script>
@@ -28,92 +31,59 @@
 </head>
 <body>
 	<header>
-					<div class="header_top_menu">
-					  <div class="navHeader">
-						<div class="header_top_logo">
-							<h3>Tanatos</h3>
-						</div>					    	
-					      <img src="img/threelines.png" alt="Hamburger" class="hamburger" />
-					    <div class="menu">
-					      <ul>
-					        <a href="" id="buttonWCU">
-					          <li>Why Choose Us</li>
-					        </a>
-					        <a href="" id="buttonI">
-					          <li>Initiatives</li>
-					        </a>
-					        <a href="" id="buttonBAP">
-					          <li>Become a Partner</li>
-					        </a>
-					        <a href="" id="buttonTB">
-					          <li>The Benefits</li>
-					        </a>
-					        <a href="" id="buttonYNC">
-					          <li>Your New Customers</li>
-					        </a>
-					      </ul>
-					    </div>
-					  </div> 
-					</div>
-
-		<!--
-		<div class="container-fluid menu_container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="header_top_menu">
-					  <div class="navHeader">
-						<div class="header_top_logo">
-							<h3>Tanatos</h3>
-						</div>					    	
-					      <img src="img/threelines.png" alt="Hamburger" class="hamburger" />
-					    <div class="menu">
-					      <ul>
-					        <a href="" id="buttonWCU">
-					          <li>Why Choose Us</li>
-					        </a>
-					        <a href="" id="buttonI">
-					          <li>Initiatives</li>
-					        </a>
-					        <a href="" id="buttonBAP">
-					          <li>Become a Partner</li>
-					        </a>
-					        <a href="" id="buttonTB">
-					          <li>The Benefits</li>
-					        </a>
-					        <a href="" id="buttonYNC">
-					          <li>Your New Customers</li>
-					        </a>
-					        <a href="" id="buttonYFRI">
-					          <li>You'll Fit Righ In</li>
-					        </a>
-					      </ul>
-					    </div>
-					  </div> 
-					</div>					
-				</div>
-			</div>
-		</div>
-	-->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="header_content">
-						<h1>WE Design <span>things</span></h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						</p>
-						<div class="header_buttons">
-							<a href="">Hire us</a>
-							<a href="">Our works</a>
-						</div>
-					</div>
-					<div class="header_arrow">
-						<img src="img/arrow.png" alt="img">
-					</div>
-				</div>
-			</div>
+		<div class="header_top_menu">
+		  <div class="navHeader">
+			<div class="header_top_logo">
+				<h3>Tanatos</h3>
+			</div>					    	
+		      <img src="img/threelines.png" alt="Hamburger" class="hamburger" />
+		    <div class="menu">
+		      <ul>
+		        <a href="" id="buttonWCU">
+		          <li>Why Choose Us</li>
+		        </a>
+		        <a href="" id="buttonI">
+		          <li>Initiatives</li>
+		        </a>
+		        <a href="" id="buttonBAP">
+		          <li>Become a Partner</li>
+		        </a>
+		        <a href="" id="buttonTB">
+		          <li>The Benefits</li>
+		        </a>
+		        <a href="" id="buttonYNC">
+		          <li>Your New Customers</li>
+		        </a>
+		      </ul>
+		    </div>
+		  </div> 
 		</div>
 	</header>
+	<div class="data-parallax" data-parallax="scroll" data-image-src="img/header-bg.jpg">
+		<section class="top">
+			<div class="container section-overlay">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="header_content">
+							<h1>WE Design <span>things</span></h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							</p>
+							<div class="header_buttons">
+								<a href="">Hire us</a>
+								<a href="">Our works</a>
+							</div>
+						</div>
+						<div class="header_arrow">
+							<a href="" id="buttonWorks">
+								<img src="img/arrow.png" alt="img">								
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>		
 	<section class="services" id="destWCU">
 		<div class="container">
 			<div class="row">
@@ -152,20 +122,22 @@
 			</div>
 		</div>
 	</section>
-	<section class="newsletter">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="newsletter_container">
-						<form>
-							<input type="email"  value="" placeholder="Enter your e-mail adress">
-							<input type="submit" value="Subscribe">
-						</form>						
+	<div class="data-parallax" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">	
+		<section class="newsletter">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter_container">
+							<form>
+								<input type="email"  value="" placeholder="Enter your e-mail adress">
+								<input type="submit" value="Subscribe">
+							</form>						
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>	
 	<section class="works" id="destI">
 		<div class="container">
 			<div class="row">
@@ -173,6 +145,7 @@
 					<div class="section_header">
 						<h2>Lorem <span>Ipsum</span></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						<hr>
 					</div>
 					<div class="works_container">
 						<div class="work_item">
@@ -303,46 +276,63 @@
 			</div>
 		</div>
 	</section>
-	<section class="clients" id="destBAP">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="clients_container owl-carousel owl-theme">
-						<div class="item clients_wrapper">
-				    		<div class="clients_image">
-				    			<img src="img/clients/client-1.jpg" alt="alt">					    			
-				    		</div>
-					    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    	consequat. </p>					    		
-				    		<h6>John Smith</h6>
+	<div class="hire_us subscribe-me" >
+		<div class="hire_us_container">
+			<a href="#close" class="sb-close-btn">X</a>
+			<div class="section_header hire_us_header">
+				<h2>Lorem <span>Ipsum</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			</div>	
+			<form>
+				<input type="email" value="" placeholder="Your email">
+				<input type="text"  value="" placeholder="Subject">
+				<textarea placeholder="Your message"></textarea>
+				<input type="submit" value="Hire us">
+			</form>			
+		</div>
+	</div>	
+	<div class="data-parallax" data-parallax="scroll" data-image-src="img/clients-bg.jpg">	
+		<section class="clients" id="destBAP">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="clients_container owl-carousel owl-theme">
+							<div class="item clients_wrapper">
+					    		<div class="clients_image">
+					    			<img src="img/clients/client-1.jpg" alt="alt">					    			
+					    		</div>
+						    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						    	consequat. </p>					    		
+					    		<h6>John Smith</h6>
+							</div>
+							<div class="item clients_wrapper">
+					    		<div class="clients_image">
+					    			<img src="img/clients/client-1.jpg" alt="alt">					    			
+					    		</div>
+						    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						    	consequat.</p>					    		
+					    		<h6>John Smith</h6>
+							</div>
+							<div class="item clients_wrapper">
+					    		<div class="clients_image">
+					    			<img src="img/clients/client-1.jpg" alt="alt">					    			
+					    		</div>
+						    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						    	consequat. </p>					    		
+					    		<h6>John Smith</h6>
+							</div>												
 						</div>
-						<div class="item clients_wrapper">
-				    		<div class="clients_image">
-				    			<img src="img/clients/client-1.jpg" alt="alt">					    			
-				    		</div>
-					    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    	consequat.</p>					    		
-				    		<h6>John Smith</h6>
-						</div>
-						<div class="item clients_wrapper">
-				    		<div class="clients_image">
-				    			<img src="img/clients/client-1.jpg" alt="alt">					    			
-				    		</div>
-					    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    	consequat. </p>					    		
-				    		<h6>John Smith</h6>
-						</div>												
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>	
 	<section class="team" id="destTB">
 		<div class="container">
 			<div class="row">
@@ -350,6 +340,7 @@
 					<div class="section_header">
 						<h2>Lorem <span>Ipsum</span></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						<hr>
 					</div>	
 					<div class="team_container">
 						<div class="team_item">
@@ -422,38 +413,41 @@
 			</div>
 		</div>
 	</section>
-	<section class="contact" id="destYNC">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section_header light_header">
-						<h2>Lorem <span>Ipsum</span></h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-					</div>				
-					<div class="contact_container">
-						<form>
-							<div class="form_inputs">
-								<input type="email" value="" placeholder="Your email">
-								<input type="text"  value="" placeholder="Subject">
-							</div>
-							<textarea placeholder="Your message"></textarea>
-							<div class="form_submit">
-								<input type="submit" value="Hire us">
-								<div class="form_icons">
-									<ul>
-										<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href=""><i class="fab fa-twitter"></i></a></li>
-										<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-										<li><a href=""><i class="fab fa-dribbble"></i></a></li>										
-									</ul>
+	<div class="data-parallax" data-parallax="scroll" data-image-src="img/contact-bg.jpg">	
+		<section class="contact" id="destYNC">
+			<div class="container section-overlay">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section_header light_header">
+							<h2>Lorem <span>Ipsum</span></h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+							<hr>
+						</div>				
+						<div class="contact_container">
+							<form>
+								<div class="form_inputs">
+									<input type="email" value="" placeholder="Your email">
+									<input type="text"  value="" placeholder="Subject">
 								</div>
-							</div>
-						</form>
+								<textarea placeholder="Your message"></textarea>
+								<div class="form_submit">
+									<input type="submit" value="Hire us">
+									<div class="form_icons">
+										<ul>
+											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href=""><i class="fab fa-twitter"></i></a></li>
+											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+											<li><a href=""><i class="fab fa-dribbble"></i></a></li>										
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>	
+		</section>
+	</div>		
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -466,20 +460,5 @@
 			</div>
 		</div>
 	</footer>
-	<div class="hire_us subscribe-me" >
-		<div class="hire_us_container">
-			<a href="#close" class="sb-close-btn">X</a>
-			<div class="section_header hire_us_header">
-				<h2>Lorem <span>Ipsum</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-			</div>	
-			<form>
-				<input type="email" value="" placeholder="Your email">
-				<input type="text"  value="" placeholder="Subject">
-				<textarea placeholder="Your message"></textarea>
-				<input type="submit" value="Hire us">
-			</form>			
-		</div>
-	</div>
 </body>
 </html>

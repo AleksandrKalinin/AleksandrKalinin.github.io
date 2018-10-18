@@ -33,6 +33,13 @@ jQuery(function($) {
     });
   });
 
+ $('#buttonWorks').click(function(e) {
+   e.preventDefault();
+   $('html, body').animate({
+     scrollTop: $('#destI').offset().top
+   }, 500)
+ });
+
  $('#buttonWCU').click(function(e) {
    e.preventDefault();
    $('html, body').animate({

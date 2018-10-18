@@ -91,7 +91,7 @@
 	}
 
 	.section-header h6{
-		font-size: 18px;
+		font-size: 15px;
 		font-weight: 700;
 	}	
 
@@ -269,6 +269,14 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
+.podrt_descr{
+	max-width: 320px;
+}
+
+
+.modal-box-content button{
+	left: 280px;
+}
 	.section-header h1{
 		font-size: 24px;
 		font-weight: 700;
