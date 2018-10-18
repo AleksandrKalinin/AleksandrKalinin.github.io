@@ -201,6 +201,29 @@
 		margin: 10px 0;
 	}
 
+	.hire_us_container{
+		width: 320px;
+		padding: 20px 10px;
+	}
+
+	.podrt_descr{
+		max-width: 350px;
+	}
+
+	.modal-box-content button{
+		left: 310px;
+	}
+
+	.modal-box-content_image{
+		height: 200px;
+		overflow: hidden;
+	} 
+
+	.menu{
+		height: 100vh;
+		
+	}
+
 }
 
 @media only screen and (max-width : 400px) {

@@ -603,13 +603,11 @@ footer {
   align-items: center;
   color: #fff; }
 
-.contact {
-  padding: 75px 0; }
-  .contact textarea, .contact input {
-    padding-left: 15px;
-    outline: none;
-    border: none;
-    border-radius: 5px; }
+.contact textarea, .contact input {
+  padding-left: 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px; }
 
 .contact_container {
   display: -webkit-box;

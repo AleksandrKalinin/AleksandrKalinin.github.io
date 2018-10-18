@@ -15,7 +15,6 @@ body {
 
 }
 
-/* /REMOVE */
 
 .hamburger {
   background: none;
@@ -30,7 +29,6 @@ body {
   font-weight: bold;
   cursor: pointer;
   outline: none;
-  /* z-index: 10000000000000; */
 }
 
 .menu {
