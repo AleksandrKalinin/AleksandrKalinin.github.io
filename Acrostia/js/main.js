@@ -30,7 +30,6 @@ $(document).ready(function(){
         } /* speed */ );
     });   
 
- //   $(".header-title").animated("fadeInUp", "fadeOut");
 
     $(".section-header").animated("fadeIn", "fadeOut");
 

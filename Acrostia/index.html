@@ -8,12 +8,14 @@
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="libs/magnific-popup/magnific-popup.css">		
 	<link rel="stylesheet" type="text/css" href="libs/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" type="text/css" href="libs/owl-carousel/owl.theme.default.min.css">		
+	<link rel="stylesheet" type="text/css" href="libs/owl-carousel/owl.theme.default.min.css">	
+	<link rel="stylesheet" type="text/css" href="libs/jquery-menu/style.css">		
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700&amp;subset=cyrillic" rel="stylesheet">	
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/media.css">	
 	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="libs/jquery-menu/script.js"></script>	
 	<script type="text/javascript" src="libs/parallax/parallax.min.js"></script> 		
 	<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="libs/magnific-popup/jquery.magnific-popup.js"></script>	
@@ -26,9 +28,10 @@
 </head>
 <body>
 	<header id="header">
-		<div class="container menu-wrapper">
-			<div class="row menu-inner-wrapper">
+		<div class="container-fluid no-padding menu-wrapper">
+			<div class="row no-gutters menu-inner-wrapper">
 				<div class="col-md-12 top-wrapper">
+					<!--
 					<div class="top-logo">
 						<h2>Acrostia</h2>
 					</div>
@@ -44,10 +47,39 @@
 							</ul>
 						</nav>
 					</div>
+				-->
+					<div class="navHeader">
+						<div class="top-logo">
+							<h2>Acrostia</h2>
+						</div>					    	
+						<img src="img/threelines.png" alt="Hamburger" class="hamburger" />
+						<div class="top-menu menu">
+							<nav>
+								<ul>
+									<a href="" id="buttonWCU">
+										<li>Why Choose Us</li>
+									</a>
+									<a href="" id="buttonI">
+										<li>Initiatives</li>
+									</a>
+									<a href="" id="buttonBAP">
+										<li>Become a Partner</li>
+									</a>
+									<a href="" id="buttonTB">
+										<li>The Benefits</li>
+									</a>
+									<a href="" id="buttonYNC">
+										<li>Your New Customers</li>
+									</a>
+								</ul>								
+							</nav>
+						</div>
+					</div>				
 				</div>
 			</div>
 		</div>
 	</header>
+
 	<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg_1.jpg">	
 		<section class="top">
 			<div class="container head-wrapper">
@@ -99,9 +131,7 @@
 		</section>
 	</div>
 
-
-
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/team.jpg">	
+	<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-4.jpeg">	
 		<section class="services" id="#services">
 			<div class="container section-overlay">
 				<div class="row no-gutters">
@@ -146,9 +176,7 @@
 		</section>
 	</div>	
 
-
-
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/header.jpg">	
+	<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-5.jpeg">	
 		<section class="team" id="#team">
 			<div class="container section-overlay">
 				<div class="row no-gutters">
@@ -216,7 +244,6 @@
 			</div>
 		</section>
 	</div>
-
 
 	<div class="data-parallax" data-parallax="scroll" data-image-src="img/portfolio.jpg">		
 		<section class="portfolio" id="#portfolio">
@@ -418,8 +445,7 @@
 		</section>
 	</div>
 
-
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/header.jpg">		
+	<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-2.jpeg">		
 		<section class="pricing" id="#pricing">
 			<div class="container section-overlay">
 				<div class="row no-gutters">
@@ -488,8 +514,7 @@
 		</section>
 	</div>
 
-
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/header.jpg">		
+	<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-3.jpeg">		
 		<section class="contact" id="#contact">
 			<div class="container section-overlay">
 				<div class="row no-gutters">
