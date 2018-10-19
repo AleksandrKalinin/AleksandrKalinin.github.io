@@ -2,20 +2,21 @@
 <html>
 <head>
 	<title>Acrostia</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />	
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="libs/animate/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="libs/magnific-popup/magnific-popup.css">		
 	<link rel="stylesheet" type="text/css" href="libs/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="libs/owl-carousel/owl.theme.default.min.css">	
-	<link rel="stylesheet" type="text/css" href="libs/jquery-menu/style.css">		
+	<link type="text/css" rel="stylesheet" href="libs/mmenu/jquery.mmenu.css" />			
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700&amp;subset=cyrillic" rel="stylesheet">	
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">	
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">		
 	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
-	<script src="libs/jquery-menu/script.js"></script>	
+	<script type="text/javascript" src="libs/mmenu/jquery.mmenu.js"></script>	
 	<script type="text/javascript" src="libs/parallax/parallax.min.js"></script> 		
 	<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="libs/magnific-popup/jquery.magnific-popup.js"></script>	
@@ -24,562 +25,588 @@
 	<script type="text/javascript" src="libs/animate/animate-css.js"></script>		
 	<script type="text/javascript" src="libs/owl-carousel/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="libs/mixitup/mixitup.js"></script>		
-	<script type="text/javascript" src="js/main.js"></script>		
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('nav#menu').mmenu();
+		});
+	</script>			
 </head>
 <body>
-	<header id="header">
-		<div class="container-fluid no-padding menu-wrapper">
-			<div class="row no-gutters menu-inner-wrapper">
-				<div class="col-md-12 top-wrapper">
+
+	<div id="page">
+
+		<header id="header">
+			<div class="container-fluid no-padding menu-wrapper">
+				<div class="row no-gutters menu-inner-wrapper">
+					<div class="col-md-12 top-wrapper">
+						<!--
+						<div class="top-logo">
+							<h2>Acrostia</h2>
+						</div>
+						<div class="top-menu">
+							<nav>
+								<ul>
+									<li><a href="#header">Home</a></li>
+									<li><a href="#services">Services</a></li>
+									<li><a href="#team">Team</a></li>
+									<li><a href="#portfolio">Portfolio</a></li>
+									<li><a href="#pricing">Pricing</a></li>
+									<li><a href="#contact">Contact</a></li>					
+								</ul>
+							</nav>
+						</div>
+					-->
 					<!--
-					<div class="top-logo">
-						<h2>Acrostia</h2>
-					</div>
-					<div class="top-menu">
-						<nav>
+						<div class="navHeader">
+							<div class="top-logo">
+								<h2>Acrostia</h2>
+							</div>					    	
+							<img src="img/threelines.png" alt="Hamburger" class="hamburger" />
+							<div class="top-menu menu">
+								<nav>
+									<ul>
+										<a href="" id="buttonWCU">
+											<li>Why Choose Us</li>
+										</a>
+										<a href="" id="buttonI">
+											<li>Initiatives</li>
+										</a>
+										<a href="" id="buttonBAP">
+											<li>Become a Partner</li>
+										</a>
+										<a href="" id="buttonTB">
+											<li>The Benefits</li>
+										</a>
+										<a href="" id="buttonYNC">
+											<li>Your New Customers</li>
+										</a>
+									</ul>								
+								</nav>
+							</div>
+						</div>
+						-->	
+						<div class="header">
+							<a href="#menu"><span></span></a>
+						</div>
+						<nav id="menu">
 							<ul>
 								<li><a href="#header">Home</a></li>
 								<li><a href="#services">Services</a></li>
 								<li><a href="#team">Team</a></li>
 								<li><a href="#portfolio">Portfolio</a></li>
 								<li><a href="#pricing">Pricing</a></li>
-								<li><a href="#contact">Contact</a></li>					
+								<li><a href="#contact">Contact</a></li>
 							</ul>
-						</nav>
-					</div>
-				-->
-					<div class="navHeader">
-						<div class="top-logo">
-							<h2>Acrostia</h2>
-						</div>					    	
-						<img src="img/threelines.png" alt="Hamburger" class="hamburger" />
-						<div class="top-menu menu">
-							<nav>
-								<ul>
-									<a href="" id="buttonWCU">
-										<li>Why Choose Us</li>
-									</a>
-									<a href="" id="buttonI">
-										<li>Initiatives</li>
-									</a>
-									<a href="" id="buttonBAP">
-										<li>Become a Partner</li>
-									</a>
-									<a href="" id="buttonTB">
-										<li>The Benefits</li>
-									</a>
-									<a href="" id="buttonYNC">
-										<li>Your New Customers</li>
-									</a>
-								</ul>								
-							</nav>
-						</div>
-					</div>				
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg_1.jpg">	
-		<section class="top">
-			<div class="container head-wrapper">
-				<div class="row-fluid">
-					<div class="col-md-12">
-						<div class="header-description">
-							<div class="header-description_item">
-								<h3>We are acrostia</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-								<a href="">Know more</a>
-							</div>
-						</div>	
+						</nav>								
 					</div>
 				</div>
 			</div>
-		</section>
-	</div>	
+		</header>
 
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/about.jpg">
-		<section class="about">
-			<div class="container section-overlay">
-				<div class="row no-gutters">
-					<div class="col-md-12">
-						<div class="section-header">
-							<h1>Our serivces</h1>
-							<h6>Lorem ipsum dolor</h6>
-						</div>
-						<div class="about-container">
-							<div class="about-item">
-								<div class="about-item_image">
-									<img src="img/blog-1.jpg">
-								</div>
-								<div class="about-item_description">
-									<h2>What we do</h2>
-									<hr>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg_1.jpg">	
+			<section class="top">
+				<div class="container head-wrapper">
+					<div class="row-fluid">
+						<div class="col-md-12">
+							<div class="header-description">
+								<div class="header-description_item">
+									<h3>We are acrostia</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 									<a href="">Know more</a>
 								</div>
-							</div>
-						</div>					
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-4.jpeg">	
-		<section class="services" id="#services">
-			<div class="container section-overlay">
-				<div class="row no-gutters">
-					<div class="col-md-12">
-						<div class="section-header">
-							<h1>Our serivces</h1>
-							<h6>Lorem ipsum dolor</h6>
-						</div>
-						<div class="services-container">
-							<div class="services-container_item">
-								<img src="img/lightbulb.png" alt="alt">
-								<h6>Researching</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-							</div>
-							<div class="services-container_item">
-								<img src="img/gears.png" alt="alt">
-								<h6>Researching</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. 
-								</p>
-							</div>
-							<div class="services-container_item">
-								<img src="img/design.png" alt="alt">
-								<h6>Researching</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-							</div>
-							<div class="services-container_item">
-								<img src="img/rocket.png" alt="alt">
-								<h6>Researching</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-							</div>																		
+							</div>	
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-	</div>	
+			</section>
+		</div>	
 
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-5.jpeg">	
-		<section class="team" id="#team">
-			<div class="container section-overlay">
-				<div class="row no-gutters">
-					<div class="col-md-12">
-						<div class="section-header">
-							<h1>Our team</h1>
-							<h6>Lorem ipsum dolor</h6>
-						</div>					
-						<div class="team-container">
-							<div class="team-container_item">
-								<img src="img/team-1.jpg" alt="alt">
-								<h6>Kirill Domrachev</h6>
-								<p>Front-end developer</p>
-								<div class="team-container_item_links">
-									<ul>
-										<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href=""><i class="fab fa-twitter"></i></a></li>
-										<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-										<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
-									</ul>								
-								</div>
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/about.jpg">
+			<section class="about">
+				<div class="container section-overlay">
+					<div class="row no-gutters">
+						<div class="col-md-12">
+							<div class="section-header">
+								<h1>Our serivces</h1>
+								<h6>Lorem ipsum dolor</h6>
 							</div>
-							<div class="team-container_item">
-								<img src="img/team-2.jpg" alt="alt">
-								<h6>Kirill Domrachev</h6>
-								<p>Front-end developer</p>
-								<div class="team-container_item_links">
-									<ul>
-										<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href=""><i class="fab fa-twitter"></i></a></li>
-										<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-										<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
-									</ul>								
+							<div class="about-container">
+								<div class="about-item">
+									<div class="about-item_image">
+										<img src="img/blog-1.jpg">
+									</div>
+									<div class="about-item_description">
+										<h2>What we do</h2>
+										<hr>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<a href="">Know more</a>
+									</div>
 								</div>
-							</div>
-							<div class="team-container_item">
-								<img src="img/team-3.jpg" alt="alt">
-								<h6>Kirill Domrachev</h6>
-								<p>Front-end developer</p>
-								<div class="team-container_item_links">
-									<ul>
-										<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href=""><i class="fab fa-twitter"></i></a></li>
-										<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-										<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
-									</ul>								
-								</div>
-							</div>
-							<div class="team-container_item">
-								<img src="img/team-4.jpg" alt="alt">
-								<h6>Kirill Domrachev</h6>
-								<p>Front-end developer</p>
-								<div class="team-container_item_links">
-									<ul>
-										<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href=""><i class="fab fa-twitter"></i></a></li>
-										<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-										<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
-									</ul>
-								</div>
-							</div>																		
+							</div>					
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-	</div>
-
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/portfolio.jpg">		
-		<section class="portfolio" id="#portfolio">
-			<div class="container section-overlay">
-				<div class="row no-gutters">
-					<div class="col-md-12">
-						<div class="section-header">
-							<h1>Our serivces</h1>
-							<h6>Lorem ipsum dolor</h6>
-						</div>
-						<div class="portfolio-container">
-							<div class="portfolio-container_header">
-								<h6>Category</h6>
-								<div class="portfolio-container_header_menu">
-									<nav>
-										<ul>
-											<li><button type="button" data-mixitup-control data-filter="all" >All</button></li>
-											<li><button type="button" data-mixitup-control data-filter=".category-a">Web</button></li>
-											<li><button type="button" data-mixitup-control data-filter=".category-b" >Apps</button></li>
-											<li><button type="button" data-mixitup-control data-filter=".category-c">Icons</button></li>													
-										</ul>
-									</nav>
-								</div>
-							</div>
-							<div class="portfolio-container_content">
-								<div class="portfolio-container_content_item mix category-a">
-									<div class="portfolio-container_content_item_image">
-										<img src="img/portfolio/1.jpg" alt="alt">
-									</div>
-									<div class="portfolio-container_content_item_description">
-										<h6>Work title</h6>
-										<a href="#portfolio-1" class="portfolio-link">Know more</a>
-									</div>
-									<div id="portfolio-1" class="popup-window mfp-hide">
-										<div class="podrt_descr">
-											<div class="modal-box-content">
-												<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-												<div class="modal-box-content_image">
-													<img src="img/portfolio/1.jpg" alt="Alt" />
-												</div>
-												<h3>Заголовок работы</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-											</div>
-										</div>
-									</div>								
-								</div>
-								<div class="portfolio-container_content_item mix category-b">
-									<div class="portfolio-container_content_item_image">
-										<img src="img/portfolio/2.jpg" alt="alt">									
-									</div>
-									<div class="portfolio-container_content_item_description">
-										<h6>Work title</h6>									
-										<a href="#portfolio-2" class="portfolio-link">Know more</a>
-									</div>
-									<div id="portfolio-2" class="popup-window mfp-hide">
-										<div class="podrt_descr">
-											<div class="modal-box-content">
-												<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-												<div class="modal-box-content_image">
-													<img src="img/portfolio/2.jpg" alt="Alt" />
-												</div>									
-												<h3>Заголовок работы</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-											</div>
-										</div>
-									</div>								
-								</div>
-								<div class="portfolio-container_content_item mix category-c">
-									<div class="portfolio-container_content_item_image">
-										<img src="img/portfolio/3.jpg" alt="alt">									
-									</div>
-									<div class="portfolio-container_content_item_description">
-										<h6>Work title</h6>									
-										<a href="#portfolio-3" class="portfolio-link">Know more</a>
-									</div>
-									<div id="portfolio-3" class="popup-window mfp-hide">
-										<div class="podrt_descr">
-											<div class="modal-box-content">
-												<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-												<div class="modal-box-content_image">
-													<img src="img/portfolio/3.jpg" alt="Alt" />
-												</div>										
-												<h3>Заголовок работы</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-											</div>
-										</div>
-									</div>								
-								</div>
-								<div class="portfolio-container_content_item mix category-c">
-									<div class="portfolio-container_content_item_image">
-										<img src="img/portfolio/4.jpg" alt="alt">									
-									</div>
-									<div class="portfolio-container_content_item_description">
-										<h6>Work title</h6>									
-										<a href="#portfolio-4" class="portfolio-link">Know more</a>
-									</div>
-									<div id="portfolio-4" class="popup-window mfp-hide">
-										<div class="podrt_descr">
-											<div class="modal-box-content">
-												<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-												<div class="modal-box-content_image">
-													<img src="img/portfolio/4.jpg" alt="Alt" />
-												</div>										
-												<h3>Заголовок работы</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-											</div>
-										</div>
-									</div>								
-								</div>
-								<div class="portfolio-container_content_item mix category-a">
-									<div class="portfolio-container_content_item_image">
-										<img src="img/portfolio/5.jpg" alt="alt">									
-									</div>
-									<div class="portfolio-container_content_item_description">
-											<h6>Work title</h6>									
-										<a href="#portfolio-5" class="portfolio-link">Know more</a>
-									</div>
-									<div id="portfolio-5" class="popup-window mfp-hide">
-										<div class="podrt_descr">
-											<div class="modal-box-content">
-												<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-												<div class="modal-box-content_image">
-													<img src="img/portfolio/5.jpg" alt="Alt" />
-												</div>										
-												<h3>Заголовок работы</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-											</div>
-										</div>
-									</div>								
-								</div>
-								<div class="portfolio-container_content_item mix category-b">
-									<div class="portfolio-container_content_item_image">
-										<img src="img/portfolio/6.jpg" alt="alt">									
-									</div>
-									<div class="portfolio-container_content_item_description">
-											<h6>Work title</h6>									
-										<a href="#portfolio-6" class="portfolio-link">Know more</a>
-									</div>
-									<div id="portfolio-6" class="popup-window mfp-hide">
-										<div class="podrt_descr">
-											<div class="modal-box-content">
-												<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-												<div class="modal-box-content_image">
-													<img src="img/portfolio/6.jpg" alt="Alt" />
-												</div>										
-												<h3>Заголовок работы</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-											</div>
-										</div>
-									</div>								
-								</div>
-								<div class="portfolio-container_content_item mix category-b">
-									<div class="portfolio-container_content_item_image">
-										<img src="img/portfolio/7.jpg" alt="alt">									
-									</div>
-									<div class="portfolio-container_content_item_description">
-											<h6>Work title</h6>									
-										<a href="#portfolio-7" class="portfolio-link">Know more</a>
-									</div>
-									<div id="portfolio-7" class="popup-window mfp-hide">
-										<div class="podrt_descr">
-											<div class="modal-box-content">
-												<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-												<div class="modal-box-content_image">
-													<img src="img/portfolio/7.jpg" alt="Alt" />
-												</div>										
-												<h3>Заголовок работы</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-											</div>
-										</div>
-									</div>
-
-								</div>
-								<div class="portfolio-container_content_item mix category-a">
-									<div class="portfolio-container_content_item_image">
-										<img src="img/portfolio/8.jpg" alt="alt">						<div class="portfolio-container_content_item_description">
-											<h6>Work title</h6>
-											<a href="#portfolio-8" class="portfolio-link">Know more</a>
-										</div>			
-									</div>
-									<div id="portfolio-8" class="popup-window mfp-hide">
-										<div class="podrt_descr">
-											<div class="modal-box-content">
-												<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-												<div class="modal-box-content_image">
-													<img src="img/portfolio/8.jpg" alt="Alt" />
-												</div>										
-												<h3>Заголовок работы</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-											</div>
-										</div>
-									</div>								
-								</div>																									
-							</div>
-						</div>					
-					</div>
-				</div>
-			</div>		
-		</section>
-	</div>
-
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-2.jpeg">		
-		<section class="pricing" id="#pricing">
-			<div class="container section-overlay">
-				<div class="row no-gutters">
-					<div class="col-md-12">
-						<div class="section-header">
-							<h1>Our Prices</h1>
-							<h6>Lorem ipsum dolor</h6>
-						</div>
-						<div class="pricing-container">
-							<div class="pricing-container_item">
-									<h2>Starter plan</h2>							
-								<div class="pricing-container_item_header">
-									<h1>49$<span>/month</span></h1>								
-								</div>
-								<div class="pricing-container_item_content">
-									<p><i class="far fa-check-circle"></i>Lorem Ipsum</p>
-									<p><i class="far fa-lightbulb"></i>Lorem Ipsum</p>
-									<p><i class="fas fa-briefcase"></i>Lorem Ipsum</p>
-									<p><i class="far fa-handshake"></i>Lorem Ipsum</p>										
-									<a href="">Free trial</a>								
-								</div>
-							</div>
-							<div class="pricing-container_item">
-									<h2>Starter plan</h2>							
-								<div class="pricing-container_item_header">
-									<h1>49$<span>/month</span></h1>								
-								</div>
-								<div class="pricing-container_item_content">
-									<p><i class="far fa-check-circle"></i>Lorem Ipsum</p>
-									<p><i class="far fa-lightbulb"></i>Lorem Ipsum</p>
-									<p><i class="fas fa-briefcase"></i>Lorem Ipsum</p>
-									<p><i class="far fa-handshake"></i>Lorem Ipsum</p>										
-									<a href="">Free trial</a>								
-								</div>
-							</div>
-							<div class="pricing-container_item">
-									<h2>Starter plan</h2>							
-								<div class="pricing-container_item_header">
-									<h1>49$<span>/month</span></h1>								
-								</div>
-								<div class="pricing-container_item_content">
-									<p><i class="far fa-check-circle"></i>Lorem Ipsum</p>
-									<p><i class="far fa-lightbulb"></i>Lorem Ipsum</p>
-									<p><i class="fas fa-briefcase"></i>Lorem Ipsum</p>
-									<p><i class="far fa-handshake"></i>Lorem Ipsum</p>										
-									<a href="">Free trial</a>								
-								</div>
-							</div>
-							<div class="pricing-container_item">
-									<h2>Starter plan</h2>							
-								<div class="pricing-container_item_header">
-									<h1>49$<span>/month</span></h1>								
-								</div>
-								<div class="pricing-container_item_content">
-									<p><i class="far fa-check-circle"></i>Lorem Ipsum</p>
-									<p><i class="far fa-lightbulb"></i>Lorem Ipsum</p>
-									<p><i class="fas fa-briefcase"></i>Lorem Ipsum</p>
-									<p><i class="far fa-handshake"></i>Lorem Ipsum</p>										
-									<a href="">Free trial</a>								
-								</div>
-							</div>																							
-						</div>					
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-3.jpeg">		
-		<section class="contact" id="#contact">
-			<div class="container section-overlay">
-				<div class="row no-gutters">
-					<div class="col-md-12">
-						<div class="section-header">
-							<h1>Our Prices</h1>
-							<h6>Lorem ipsum dolor</h6>
-						</div>
-						<div class="contact-container">
-							<div class="contact-container_address">
-								<div class="contact-container_address_item">
-									<div class="contact-container_address_icon">
-										<img src="img/icons/house.png">
-										<h6>Adress</h6>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur </p>
-								</div>
-								<div class="contact-container_address_item">
-									<div class="contact-container_address_icon">
-										<img src="img/icons/smartphone-6.png">
-										<h6>Phone</h6>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur </p>
-								</div>
-								<div class="contact-container_address_item">
-									<div class="contact-container_address_icon">
-										<img src="img/icons/notebook-3.png" alt="">
-										<h6>Website</h6>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur </p>
-								</div>														
-							</div>							
-							<div class="contact-container_form">
-								<form>
-									<div class="contact-container_form_wrapper">
-										<input type="text" name="" value="" placeholder="Name">
-										<input type="email" name="" value="" placeholder="Email">
-										<textarea placeholder="Your question"></textarea>
-									</div>
-									<input class="input-submit" type="submit" name="" value="submit">
-								</form>							
-							</div>						
-						</div>					
-					</div>
-				</div>
-			</div>		
-		</section>
-	</div>
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 footer-wrapper">
-					<div class="footer-logo">
-						<h2>Acrostia</h2>
-					</div>
-					<ul class="footer-links">
-						<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href=""><i class="fab fa-twitter"></i></a></li>
-						<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a href=""><i class="fab fa-dribbble"></i></a></li>
-					</ul>
-				</div>
-			</div>
+			</section>
 		</div>
-	</footer>
+
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-4.jpeg">	
+			<section class="services" id="#services">
+				<div class="container section-overlay">
+					<div class="row no-gutters">
+						<div class="col-md-12">
+							<div class="section-header">
+								<h1>Our serivces</h1>
+								<h6>Lorem ipsum dolor</h6>
+							</div>
+							<div class="services-container">
+								<div class="services-container_item">
+									<img src="img/lightbulb.png" alt="alt">
+									<h6>Researching</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+								</div>
+								<div class="services-container_item">
+									<img src="img/gears.png" alt="alt">
+									<h6>Researching</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. 
+									</p>
+								</div>
+								<div class="services-container_item">
+									<img src="img/design.png" alt="alt">
+									<h6>Researching</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+								</div>
+								<div class="services-container_item">
+									<img src="img/rocket.png" alt="alt">
+									<h6>Researching</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+								</div>																		
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>	
+
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-5.jpeg">	
+			<section class="team" id="#team">
+				<div class="container section-overlay">
+					<div class="row no-gutters">
+						<div class="col-md-12">
+							<div class="section-header">
+								<h1>Our team</h1>
+								<h6>Lorem ipsum dolor</h6>
+							</div>					
+							<div class="team-container">
+								<div class="team-container_item">
+									<img src="img/team-1.jpg" alt="alt">
+									<h6>Kirill Domrachev</h6>
+									<p>Front-end developer</p>
+									<div class="team-container_item_links">
+										<ul>
+											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href=""><i class="fab fa-twitter"></i></a></li>
+											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+											<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
+										</ul>								
+									</div>
+								</div>
+								<div class="team-container_item">
+									<img src="img/team-2.jpg" alt="alt">
+									<h6>Kirill Domrachev</h6>
+									<p>Front-end developer</p>
+									<div class="team-container_item_links">
+										<ul>
+											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href=""><i class="fab fa-twitter"></i></a></li>
+											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+											<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
+										</ul>								
+									</div>
+								</div>
+								<div class="team-container_item">
+									<img src="img/team-3.jpg" alt="alt">
+									<h6>Kirill Domrachev</h6>
+									<p>Front-end developer</p>
+									<div class="team-container_item_links">
+										<ul>
+											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href=""><i class="fab fa-twitter"></i></a></li>
+											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+											<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
+										</ul>								
+									</div>
+								</div>
+								<div class="team-container_item">
+									<img src="img/team-4.jpg" alt="alt">
+									<h6>Kirill Domrachev</h6>
+									<p>Front-end developer</p>
+									<div class="team-container_item_links">
+										<ul>
+											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href=""><i class="fab fa-twitter"></i></a></li>
+											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+											<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
+										</ul>
+									</div>
+								</div>																		
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/portfolio.jpg">		
+			<section class="portfolio" id="#portfolio">
+				<div class="container section-overlay">
+					<div class="row no-gutters">
+						<div class="col-md-12">
+							<div class="section-header">
+								<h1>Our serivces</h1>
+								<h6>Lorem ipsum dolor</h6>
+							</div>
+							<div class="portfolio-container">
+								<div class="portfolio-container_header">
+									<h6>Category</h6>
+									<div class="portfolio-container_header_menu">
+										<nav>
+											<ul>
+												<li><button type="button" data-mixitup-control data-filter="all" >All</button></li>
+												<li><button type="button" data-mixitup-control data-filter=".category-a">Web</button></li>
+												<li><button type="button" data-mixitup-control data-filter=".category-b" >Apps</button></li>
+												<li><button type="button" data-mixitup-control data-filter=".category-c">Icons</button></li>													
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<div class="portfolio-container_content">
+									<div class="portfolio-container_content_item mix category-a">
+										<div class="portfolio-container_content_item_image">
+											<img src="img/portfolio/1.jpg" alt="alt">
+										</div>
+										<div class="portfolio-container_content_item_description">
+											<h6>Work title</h6>
+											<a href="#portfolio-1" class="portfolio-link">Know more</a>
+										</div>
+										<div id="portfolio-1" class="popup-window mfp-hide">
+											<div class="podrt_descr">
+												<div class="modal-box-content">
+													<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+													<div class="modal-box-content_image">
+														<img src="img/portfolio/1.jpg" alt="Alt" />
+													</div>
+													<h3>Заголовок работы</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+												</div>
+											</div>
+										</div>								
+									</div>
+									<div class="portfolio-container_content_item mix category-b">
+										<div class="portfolio-container_content_item_image">
+											<img src="img/portfolio/2.jpg" alt="alt">									
+										</div>
+										<div class="portfolio-container_content_item_description">
+											<h6>Work title</h6>									
+											<a href="#portfolio-2" class="portfolio-link">Know more</a>
+										</div>
+										<div id="portfolio-2" class="popup-window mfp-hide">
+											<div class="podrt_descr">
+												<div class="modal-box-content">
+													<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+													<div class="modal-box-content_image">
+														<img src="img/portfolio/2.jpg" alt="Alt" />
+													</div>									
+													<h3>Заголовок работы</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+												</div>
+											</div>
+										</div>								
+									</div>
+									<div class="portfolio-container_content_item mix category-c">
+										<div class="portfolio-container_content_item_image">
+											<img src="img/portfolio/3.jpg" alt="alt">									
+										</div>
+										<div class="portfolio-container_content_item_description">
+											<h6>Work title</h6>									
+											<a href="#portfolio-3" class="portfolio-link">Know more</a>
+										</div>
+										<div id="portfolio-3" class="popup-window mfp-hide">
+											<div class="podrt_descr">
+												<div class="modal-box-content">
+													<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+													<div class="modal-box-content_image">
+														<img src="img/portfolio/3.jpg" alt="Alt" />
+													</div>										
+													<h3>Заголовок работы</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+												</div>
+											</div>
+										</div>								
+									</div>
+									<div class="portfolio-container_content_item mix category-c">
+										<div class="portfolio-container_content_item_image">
+											<img src="img/portfolio/4.jpg" alt="alt">									
+										</div>
+										<div class="portfolio-container_content_item_description">
+											<h6>Work title</h6>									
+											<a href="#portfolio-4" class="portfolio-link">Know more</a>
+										</div>
+										<div id="portfolio-4" class="popup-window mfp-hide">
+											<div class="podrt_descr">
+												<div class="modal-box-content">
+													<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+													<div class="modal-box-content_image">
+														<img src="img/portfolio/4.jpg" alt="Alt" />
+													</div>										
+													<h3>Заголовок работы</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+												</div>
+											</div>
+										</div>								
+									</div>
+									<div class="portfolio-container_content_item mix category-a">
+										<div class="portfolio-container_content_item_image">
+											<img src="img/portfolio/5.jpg" alt="alt">									
+										</div>
+										<div class="portfolio-container_content_item_description">
+												<h6>Work title</h6>									
+											<a href="#portfolio-5" class="portfolio-link">Know more</a>
+										</div>
+										<div id="portfolio-5" class="popup-window mfp-hide">
+											<div class="podrt_descr">
+												<div class="modal-box-content">
+													<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+													<div class="modal-box-content_image">
+														<img src="img/portfolio/5.jpg" alt="Alt" />
+													</div>										
+													<h3>Заголовок работы</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+												</div>
+											</div>
+										</div>								
+									</div>
+									<div class="portfolio-container_content_item mix category-b">
+										<div class="portfolio-container_content_item_image">
+											<img src="img/portfolio/6.jpg" alt="alt">									
+										</div>
+										<div class="portfolio-container_content_item_description">
+												<h6>Work title</h6>									
+											<a href="#portfolio-6" class="portfolio-link">Know more</a>
+										</div>
+										<div id="portfolio-6" class="popup-window mfp-hide">
+											<div class="podrt_descr">
+												<div class="modal-box-content">
+													<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+													<div class="modal-box-content_image">
+														<img src="img/portfolio/6.jpg" alt="Alt" />
+													</div>										
+													<h3>Заголовок работы</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+												</div>
+											</div>
+										</div>								
+									</div>
+									<div class="portfolio-container_content_item mix category-b">
+										<div class="portfolio-container_content_item_image">
+											<img src="img/portfolio/7.jpg" alt="alt">									
+										</div>
+										<div class="portfolio-container_content_item_description">
+												<h6>Work title</h6>									
+											<a href="#portfolio-7" class="portfolio-link">Know more</a>
+										</div>
+										<div id="portfolio-7" class="popup-window mfp-hide">
+											<div class="podrt_descr">
+												<div class="modal-box-content">
+													<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+													<div class="modal-box-content_image">
+														<img src="img/portfolio/7.jpg" alt="Alt" />
+													</div>										
+													<h3>Заголовок работы</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="portfolio-container_content_item mix category-a">
+										<div class="portfolio-container_content_item_image">
+											<img src="img/portfolio/8.jpg" alt="alt">						<div class="portfolio-container_content_item_description">
+												<h6>Work title</h6>
+												<a href="#portfolio-8" class="portfolio-link">Know more</a>
+											</div>			
+										</div>
+										<div id="portfolio-8" class="popup-window mfp-hide">
+											<div class="podrt_descr">
+												<div class="modal-box-content">
+													<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+													<div class="modal-box-content_image">
+														<img src="img/portfolio/8.jpg" alt="Alt" />
+													</div>										
+													<h3>Заголовок работы</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+												</div>
+											</div>
+										</div>								
+									</div>																									
+								</div>
+							</div>					
+						</div>
+					</div>
+				</div>		
+			</section>
+		</div>
+
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-2.jpeg">		
+			<section class="pricing" id="#pricing">
+				<div class="container section-overlay">
+					<div class="row no-gutters">
+						<div class="col-md-12">
+							<div class="section-header">
+								<h1>Our Prices</h1>
+								<h6>Lorem ipsum dolor</h6>
+							</div>
+							<div class="pricing-container">
+								<div class="pricing-container_item">
+										<h2>Starter plan</h2>							
+									<div class="pricing-container_item_header">
+										<h1>49$<span>/month</span></h1>								
+									</div>
+									<div class="pricing-container_item_content">
+										<p><i class="far fa-check-circle"></i>Lorem Ipsum</p>
+										<p><i class="far fa-lightbulb"></i>Lorem Ipsum</p>
+										<p><i class="fas fa-briefcase"></i>Lorem Ipsum</p>
+										<p><i class="far fa-handshake"></i>Lorem Ipsum</p>										
+										<a href="">Free trial</a>								
+									</div>
+								</div>
+								<div class="pricing-container_item">
+										<h2>Starter plan</h2>							
+									<div class="pricing-container_item_header">
+										<h1>49$<span>/month</span></h1>								
+									</div>
+									<div class="pricing-container_item_content">
+										<p><i class="far fa-check-circle"></i>Lorem Ipsum</p>
+										<p><i class="far fa-lightbulb"></i>Lorem Ipsum</p>
+										<p><i class="fas fa-briefcase"></i>Lorem Ipsum</p>
+										<p><i class="far fa-handshake"></i>Lorem Ipsum</p>										
+										<a href="">Free trial</a>								
+									</div>
+								</div>
+								<div class="pricing-container_item">
+										<h2>Starter plan</h2>							
+									<div class="pricing-container_item_header">
+										<h1>49$<span>/month</span></h1>								
+									</div>
+									<div class="pricing-container_item_content">
+										<p><i class="far fa-check-circle"></i>Lorem Ipsum</p>
+										<p><i class="far fa-lightbulb"></i>Lorem Ipsum</p>
+										<p><i class="fas fa-briefcase"></i>Lorem Ipsum</p>
+										<p><i class="far fa-handshake"></i>Lorem Ipsum</p>										
+										<a href="">Free trial</a>								
+									</div>
+								</div>
+								<div class="pricing-container_item">
+										<h2>Starter plan</h2>							
+									<div class="pricing-container_item_header">
+										<h1>49$<span>/month</span></h1>								
+									</div>
+									<div class="pricing-container_item_content">
+										<p><i class="far fa-check-circle"></i>Lorem Ipsum</p>
+										<p><i class="far fa-lightbulb"></i>Lorem Ipsum</p>
+										<p><i class="fas fa-briefcase"></i>Lorem Ipsum</p>
+										<p><i class="far fa-handshake"></i>Lorem Ipsum</p>										
+										<a href="">Free trial</a>								
+									</div>
+								</div>																							
+							</div>					
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/bg-3.jpeg">		
+			<section class="contact" id="#contact">
+				<div class="container section-overlay">
+					<div class="row no-gutters">
+						<div class="col-md-12">
+							<div class="section-header">
+								<h1>Our Prices</h1>
+								<h6>Lorem ipsum dolor</h6>
+							</div>
+							<div class="contact-container">
+								<div class="contact-container_address">
+									<div class="contact-container_address_item">
+										<div class="contact-container_address_icon">
+											<img src="img/icons/house.png">
+											<h6>Adress</h6>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur </p>
+									</div>
+									<div class="contact-container_address_item">
+										<div class="contact-container_address_icon">
+											<img src="img/icons/smartphone-6.png">
+											<h6>Phone</h6>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur </p>
+									</div>
+									<div class="contact-container_address_item">
+										<div class="contact-container_address_icon">
+											<img src="img/icons/notebook-3.png" alt="">
+											<h6>Website</h6>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur </p>
+									</div>														
+								</div>							
+								<div class="contact-container_form">
+									<form>
+										<div class="contact-container_form_wrapper">
+											<input type="text" name="" value="" placeholder="Name">
+											<input type="email" name="" value="" placeholder="Email">
+											<textarea placeholder="Your question"></textarea>
+										</div>
+										<input class="input-submit" type="submit" name="" value="submit">
+									</form>							
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>		
+			</section>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 footer-wrapper">
+						<div class="footer-logo">
+							<h2>Acrostia</h2>
+						</div>
+						<ul class="footer-links">
+							<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+							<li><a href=""><i class="fab fa-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
 </body>
 </html>

@@ -31,14 +31,14 @@ $(document).ready(function(){
     });   
 
 
-    $(".section-header").animated("fadeIn", "fadeOut");
+    $(".section-header").animated("fadeIn");
 
-    $(".services-container_item").animated("flipInY", "fadeOut");
+    $(".services-container_item").animated("flipInY");
 
-    $(".team-container_item").animated("fadeIn", "fadeOut");
+    $(".team-container_item").animated("fadeIn");
 
     $(".portfolio-container_content_item").animated("fadeIn");
 
-    $(".pricing-container_item").animated("flipInY", "fadeOut");
+    $(".pricing-container_item").animated("flipInY");
 
 })
