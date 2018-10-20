@@ -12,7 +12,7 @@ body
 	text-align: center
 	margin-bottom: 50px
 	h1
-		font-size: 26px
+		font-size: 28px
 		text-transform: uppercase
 		font-weight: 600
 		margin-bottom: 20px
@@ -28,6 +28,7 @@ header
 	flex-direction: row
 	justify-content: space-between
 	align-items: center
+	background-color: #333
 
 .top
 	height: 550px
@@ -286,7 +287,7 @@ nav
 		text-transform: uppercase
 		margin: 20px 0
 		font-size: 17px
-		font-weight: 600
+		font-weight: 700
 		letter-spacing: 1.5px
 		color: #FF6347
 	p
@@ -338,7 +339,6 @@ nav
 	align-items: center
 	text-align: center	
 	width: 25%
-	background-color: #fff
 	border: 1px solid #222
 	opacity: 0.9
 	margin: 0 10px
@@ -360,7 +360,8 @@ nav
 		font-size: 13px
 		color: #FF6347
 		font-weight: 600
-		letter-spacing: 1px	 	
+		letter-spacing: 1px
+		text-transform: uppercase	 	
 
 .team-container_item:hover
 	background-color: #333
@@ -453,41 +454,42 @@ nav
 		letter-spacing: 2px
 	
 .portfolio-container_header_menu
-	nav
-		ul
-			list-style-type: none
-			margin: 0
-			padding: 0
-			li
-				display: inline-block
-				margin-right: 15px
-				margin: 0 10px
-				button
-					text-decoration: none
-					color: #fff
-					padding: 3px 0
-					border: none
-					border-radius: 1px
-					outline: none
-					cursor: pointer
-					-webkit-transition: .2s ease
-					-o-transition: .2s ease
-					transition: .2s ease
-					background: transparent
-					font-weight: 400
-					text-transform: uppercase
-					font-size: 14px
-					letter-spacing: 2.5px
-				.mixitup-control-active
-					color: #FF6347
-					-webkit-box-shadow: 0px 1px 0px 0px #FF6347
-					-moz-box-shadow: 0px 1px 0px 0px #FF6347
-					box-shadow: 0px 1px 0px 0px #FF6347	
-				button:hover
-					color: #FF6347
-					-webkit-box-shadow: 0px 1px 0px 0px #FF6347
-					-moz-box-shadow: 0px 1px 0px 0px #FF6347
-					box-shadow: 0px 1px 0px 0px #FF6347				
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		display: flex
+		flex-direction: row
+		li
+			display: inline-block
+			margin-right: 15px
+			margin: 0 10px
+			button
+				text-decoration: none
+				color: #fff
+				padding: 3px 0
+				border: none
+				border-radius: 1px
+				outline: none
+				cursor: pointer
+				-webkit-transition: .2s ease
+				-o-transition: .2s ease
+				transition: .2s ease
+				background: transparent
+				font-weight: 400
+				text-transform: uppercase
+				font-size: 14px
+				letter-spacing: 2.5px
+			.mixitup-control-active
+				color: #FF6347
+				-webkit-box-shadow: 0px 1px 0px 0px #FF6347
+				-moz-box-shadow: 0px 1px 0px 0px #FF6347
+				box-shadow: 0px 1px 0px 0px #FF6347	
+			button:hover
+				color: #FF6347
+				-webkit-box-shadow: 0px 1px 0px 0px #FF6347
+				-moz-box-shadow: 0px 1px 0px 0px #FF6347
+				box-shadow: 0px 1px 0px 0px #FF6347				
 
 .portfolio-container_content
 	margin-top: 50px
@@ -615,8 +617,6 @@ nav
 
 .pricing
 	position: relative
-	.section-header
-		color: #333
 		
 .pricing:before
 	display: block

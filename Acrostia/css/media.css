@@ -305,8 +305,9 @@
 	    flex-direction: column;
 	}
 
-	.portfolio-container_content_item{
+	.portfolio-container_content_item, .portfolio-container_content_item_image{
 		width: 100%;
+		height: calc(100vw - 16.98px);
 	}
 
 	.portfolio-container_content_item_image img{

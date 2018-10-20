@@ -33,12 +33,10 @@ $(document).ready(function(){
 
     $(".section-header").animated("fadeIn");
 
-    $(".services-container_item").animated("flipInY");
+    $(".services-container_item").animated("fadeIn");
 
     $(".team-container_item").animated("fadeIn");
 
-    $(".portfolio-container_content_item").animated("fadeIn");
-
-    $(".pricing-container_item").animated("flipInY");
+    $(".pricing-container_item").animated("fadeIn");
 
 })

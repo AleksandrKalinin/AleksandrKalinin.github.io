@@ -52,7 +52,7 @@ nav:not(.mm-menu)
 	padding: 0;
 	position: absolute;
 	top: 15px;
-	left: 15px;
+	right: 15px;
 }
 .header a:before,
 .header a:after
