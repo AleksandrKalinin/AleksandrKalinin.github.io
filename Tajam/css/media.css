@@ -148,6 +148,11 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+	.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+	    -ms-touch-action: auto;
+	        touch-action: auto;
+	}
+
 	.about-container{
 		flex-direction: column;
 	}
@@ -336,6 +341,15 @@
 	.footer-right{
 		display: none;
 	}
+
+	.podrt_descr{
+		max-width: 320px;
+	}
+
+	.modal-box-content button{
+		left: 280px;
+
+}
 }
 
 @media only screen and (max-width : 350px) {
