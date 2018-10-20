@@ -35,13 +35,16 @@ $(document).ready(function(){
             }
         }
     });
-/*
-   if ($(window).width() <= 768) {
-    $('.owl-carousel').owlCarousel({
-      mouseDrag: false
+
+    $("a[href^='#']").click(function(e) {
+        e.preventDefault();
+        
+        var position = $($(this).attr("href")).offset().top;
+
+        $("body, html").animate({
+            scrollTop: position
+        });
     });
-  }
-*/
 
     $(".header_content").animated("fadeIn", "fadeOut");
 

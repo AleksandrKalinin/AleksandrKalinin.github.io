@@ -43,13 +43,21 @@ body {
 .menu_container .row {
   margin: 0; }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px; }
+
 .header_top_logo {
   margin-left: 30px; }
   .header_top_logo h3 {
     font-size: 20px;
+    letter-spacing: 1px;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 0; }
 
 .header_content {

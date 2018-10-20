@@ -6,6 +6,7 @@
 	<link rel="shortcut icon" href="img/favicon.ico">	
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="lib/animate/animate.min.css">
+	<link type="text/css" rel="stylesheet" href="lib/mmenu/jquery.mmenu.css" />		
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">		
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
 	<link rel="stylesheet" href="lib/magnific-popup/magnific-popup.css">
@@ -14,9 +15,10 @@
 	<link rel="stylesheet" type="text/css" href="lib/jquery-menu/style.css">	
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="lib/subscribe/subscribe-better.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">			
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">					
 	<script src="lib/jquery/jquery-2.1.3.min.js"></script>
-	<script src="lib/jquery-menu/script.js"></script>		
+	<script type="text/javascript" src="lib/mmenu/jquery.mmenu.js"></script>		
 	<script src="lib/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="lib/parallax/parallax.min.js"></script>		
 	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>	
@@ -24,453 +26,454 @@
 	<script type="text/javascript" src="lib/waypoints/waypoints.min.js"></script>
 	<script type="text/javascript" src="lib/animate/animate-css.js"></script>
 	<script type="text/javascript" src="lib/scroll2id/PageScroll2id.min.js"></script>
-<!--	<script type="text/javascript" src="lib/mixitup/mixitup.js"></script> -->
 	<script type="text/javascript" src="lib/owl-carousel/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="lib/subscribe/jquery.subscribe-better.js"></script>							
+	<script type="text/javascript" src="lib/subscribe/jquery.subscribe-better.js"></script>			
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('nav#menu').mmenu({
+				onClick: {close : true }
+			});
+		});
+	</script>	
 </head>
 <body>
-	<header>
-		<div class="header_top_menu">
-		  <div class="navHeader">
-			<div class="header_top_logo">
-				<h3>Tanatos</h3>
-			</div>					    	
-		      <img src="img/threelines.png" alt="Hamburger" class="hamburger" />
-		    <div class="menu">
-		      <ul>
-		        <a href="" id="buttonWCU">
-		          <li>Why Choose Us</li>
-		        </a>
-		        <a href="" id="buttonI">
-		          <li>Initiatives</li>
-		        </a>
-		        <a href="" id="buttonBAP">
-		          <li>Become a Partner</li>
-		        </a>
-		        <a href="" id="buttonTB">
-		          <li>The Benefits</li>
-		        </a>
-		        <a href="" id="buttonYNC">
-		          <li>Your New Customers</li>
-		        </a>
-		      </ul>
-		    </div>
-		  </div> 
-		</div>
-	</header>
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/header-bg.jpg">
-		<section class="top">
-			<div class="container section-overlay">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="header_content">
-							<h1>WE Design <span>things</span></h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							</p>
-							<div class="header_buttons">
-								<a href="">Hire us</a>
-								<a href="">Our works</a>
+	<div id="page">
+		<header>
+			<div class="header_top_menu">
+			  <div class="navHeader">
+				<div class="header_top_logo">
+					<h3>Tanatos</h3>
+				</div>
+				<div class="header">
+					<a href="#menu"><span></span></a>
+				</div>
+				<nav id="menu">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">Why choose us</a></li>
+						<li><a href="#works">See our portfolio</a></li>
+						<li><a href="#clients">Our happy clients</a></li>						
+						<li><a href="#team">Our team</a></li>
+						<li><a href="#contact">Contact us</a></li>
+					</ul>
+				</nav>		
+			  </div> 
+			</div>
+		</header>
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/header-bg.jpg">
+			<section class="top" id="home">
+				<div class="container section-overlay">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="header_content">
+								<h1>WE Design <span>things</span></h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								</p>
+								<div class="header_buttons">
+									<a href="">Hire us</a>
+									<a href="">Our works</a>
+								</div>
 							</div>
-						</div>
-						<div class="header_arrow">
-							<a href="" id="buttonWorks">
-								<img src="img/arrow.png" alt="img">								
-							</a>
+							<div class="header_arrow">
+								<a href="" id="buttonWorks">
+									<img src="img/arrow.png" alt="img">								
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-	</div>		
-	<section class="services" id="destWCU">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="services_container">
-						<div class="services_item">
-							<div class="services_item_icon">
-								<img src="img/services/service-1.png" alt="img">								
-							</div>
-							<h5>Lorem Ipsum</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-						</div>
-						<div class="services_item">
-							<div class="services_item_icon">
-								<img src="img/services/service-2.png" alt="img">								
-							</div>
-							<h5>Lorem Ipsum</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-						</div>
-						<div class="services_item">
-							<div class="services_item_icon">
-								<img src="img/services/service-3.png" alt="img">							
-							</div>
-							<h5>Lorem Ipsum</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-						</div>
-						<div class="services_item">
-							<div class="services_item_icon">
-								<img src="img/services/service-4.png" alt="img">								
-							</div>
-							<h5>Lorem Ipsum</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-						</div>																		
-					</div>					
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">	
-		<section class="newsletter">
+			</section>
+		</div>		
+		<section class="services" id="services">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="newsletter_container">
-							<form>
-								<input type="email"  value="" placeholder="Enter your e-mail adress">
-								<input type="submit" value="Subscribe">
-							</form>						
-						</div>
+						<div class="services_container">
+							<div class="services_item">
+								<div class="services_item_icon">
+									<img src="img/services/service-1.png" alt="img">
+								</div>
+								<h5>Lorem Ipsum</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+							</div>
+							<div class="services_item">
+								<div class="services_item_icon">
+									<img src="img/services/service-2.png" alt="img">
+								</div>
+								<h5>Lorem Ipsum</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+							</div>
+							<div class="services_item">
+								<div class="services_item_icon">
+									<img src="img/services/service-3.png" alt="img">
+								</div>
+								<h5>Lorem Ipsum</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+							</div>
+							<div class="services_item">
+								<div class="services_item_icon">
+									<img src="img/services/service-4.png" alt="img">
+								</div>
+								<h5>Lorem Ipsum</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+							</div>																		
+						</div>					
 					</div>
 				</div>
 			</div>
 		</section>
-	</div>	
-	<section class="works" id="destI">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section_header">
-						<h2>Lorem <span>Ipsum</span></h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-						<hr>
-					</div>
-					<div class="works_container">
-						<div class="work_item">
-							<div class="work_item_image">
-								<img src="img/portfolio/portfolio-1.jpg" alt="img">
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">	
+			<section class="newsletter">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="newsletter_container">
+								<form>
+									<input type="email"  value="" placeholder="Enter your e-mail adress">
+									<input type="submit" value="Subscribe">
+								</form>						
 							</div>
-							<div class="work_item_description">
-								<h3>Lorem Ipsum</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-								<a href="#work_1" class="work_item_link">show more</a>						
-							</div>
-							<div id="work_1" class="popup-window mfp-hide">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<div class="modal-box-content_image">
-											<img src="img/portfolio/portfolio-1.jpg" alt="Alt" />
-										</div>
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									</div>
-								</div>
-							</div>							
 						</div>
-						<div class="work_item">
-							<div class="work_item_image">
-								<img src="img/portfolio/portfolio-2.jpg" alt="img">
-							</div>
-							<div class="work_item_description">
-								<h3>Lorem Ipsum</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-								<a href="#work_2" class="work_item_link">show more</a>
-							</div>
-							<div id="work_2" class="popup-window mfp-hide">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<div class="modal-box-content_image">
-											<img src="img/portfolio/portfolio-2.jpg" alt="Alt" />
-										</div>										
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									</div>
-								</div>
-							</div>							
-						</div>
-						<div class="work_item">
-							<div class="work_item_image">
-								<img src="img/portfolio/portfolio-3.jpg" alt="img">
-							</div>
-							<div class="work_item_description">
-								<h3>Lorem Ipsum</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-								<a href="#work_3" class="work_item_link">show more</a>
-							</div>
-							<div id="work_3" class="popup-window mfp-hide">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<div class="modal-box-content_image">
-											<img src="img/portfolio/portfolio-3.jpg" alt="Alt" />
-										</div>										
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									</div>
-								</div>
-							</div>							
-						</div>
-						<div class="work_item">
-							<div class="work_item_image">
-								<img src="img/portfolio/portfolio-4.jpg" alt="img">
-							</div>
-							<div class="work_item_description">
-								<h3>Lorem Ipsum</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-								<a href="#work_4" class="work_item_link">show more</a>
-							</div>
-							<div id="work_4" class="popup-window mfp-hide">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<div class="modal-box-content_image">
-											<img src="img/portfolio/portfolio-4.jpg" alt="Alt" />
-										</div>										
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									</div>
-								</div>
-							</div>							
-						</div>
-						<div class="work_item">
-							<div class="work_item_image">
-								<img src="img/portfolio/portfolio-5.jpg" alt="img">
-							</div>
-							<div class="work_item_description">
-								<h3>Lorem Ipsum</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-								<a href="#work_5" class="work_item_link">show more</a>
-							</div>
-							<div id="work_5" class="popup-window mfp-hide">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<div class="modal-box-content_image">
-											<img src="img/portfolio/portfolio-5.jpg" alt="Alt" />
-										</div>										
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									</div>
-								</div>
-							</div>							
-						</div>
-						<div class="work_item">
-							<div class="work_item_image">
-								<img src="img/portfolio/portfolio-6.jpg" alt="img">
-							</div>
-							<div class="work_item_description">
-								<h3>Lorem Ipsum</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-								<a href="#work_6" class="work_item_link">show more</a>
-							</div>
-							<div id="work_6" class="popup-window mfp-hide">
-								<div class="podrt_descr">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<div class="modal-box-content_image">
-											<img src="img/portfolio/portfolio-6.jpg" alt="Alt" />
-										</div>										
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									</div>
-								</div>
-							</div>							
-						</div>														
-					</div>
-					<div class="works_button">
-						<a href="">show more</a>						
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<div class="hire_us subscribe-me" >
-		<div class="hire_us_container">
-			<a href="#close" class="sb-close-btn">X</a>
-			<div class="section_header hire_us_header">
-				<h2>Lorem <span>Ipsum</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-			</div>	
-			<form>
-				<input type="email" value="" placeholder="Your email">
-				<input type="text"  value="" placeholder="Subject">
-				<textarea placeholder="Your message"></textarea>
-				<input type="submit" value="Hire us">
-			</form>			
-		</div>
-	</div>	
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/clients-bg.jpg">	
-		<section class="clients" id="destBAP">
+			</section>
+		</div>	
+		<section class="works" id="works">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="clients_container owl-carousel owl-theme">
-							<div class="item clients_wrapper">
-					    		<div class="clients_image">
-					    			<img src="img/clients/client-1.jpg" alt="alt">					    			
-					    		</div>
-						    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						    	consequat. </p>					    		
-					    		<h6>John Smith</h6>
-							</div>
-							<div class="item clients_wrapper">
-					    		<div class="clients_image">
-					    			<img src="img/clients/client-1.jpg" alt="alt">					    			
-					    		</div>
-						    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						    	consequat.</p>					    		
-					    		<h6>John Smith</h6>
-							</div>
-							<div class="item clients_wrapper">
-					    		<div class="clients_image">
-					    			<img src="img/clients/client-1.jpg" alt="alt">					    			
-					    		</div>
-						    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						    	consequat. </p>					    		
-					    		<h6>John Smith</h6>
-							</div>												
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>	
-	<section class="team" id="destTB">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section_header">
-						<h2>Lorem <span>Ipsum</span></h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-						<hr>
-					</div>	
-					<div class="team_container">
-						<div class="team_item">
-							<div class="team_item_image">
-								<img src="img/team/team-1.jpg" alt="img">
-							</div>
-							<div class="team_item_description">
-								<h3>John DOe</h3>
-								<div class="team_item_icons">
-									<ul>
-										<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href=""><i class="fab fa-twitter"></i></a></li>
-										<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
-							</div>
-						</div>
-						<div class="team_item">
-							<div class="team_item_image">
-								<img src="img/team/team-2.jpg" alt="img">
-							</div>
-							<div class="team_item_description">
-								<h3>John DOe</h3>
-								<div class="team_item_icons">
-									<ul>
-										<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href=""><i class="fab fa-twitter"></i></a></li>
-										<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-
-									</ul>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-							</div>
-						</div>
-						<div class="team_item">
-							<div class="team_item_image">
-								<img src="img/team/team-3.jpg" alt="img">
-							</div>
-							<div class="team_item_description">
-								<h3>John DOe</h3>
-								<div class="team_item_icons">
-									<ul>
-										<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href=""><i class="fab fa-twitter"></i></a></li>
-										<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
-							</div>
-						</div>
-						<div class="team_item">
-							<div class="team_item_image">
-								<img src="img/team/team-4.jpg" alt="img">
-							</div>
-							<div class="team_item_description">
-								<h3>John DOe</h3>
-								<div class="team_item_icons">
-									<ul>
-										<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href=""><i class="fab fa-twitter"></i></a></li>
-										<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
-							</div>
-						</div>																		
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="data-parallax" data-parallax="scroll" data-image-src="img/contact-bg.jpg">	
-		<section class="contact" id="destYNC">
-			<div class="container section-overlay">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="section_header light_header">
+						<div class="section_header">
 							<h2>Lorem <span>Ipsum</span></h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 							<hr>
-						</div>				
-						<div class="contact_container">
-							<form>
-								<div class="form_inputs">
-									<input type="email" value="" placeholder="Your email">
-									<input type="text"  value="" placeholder="Subject">
+						</div>
+						<div class="works_container">
+							<div class="work_item">
+								<div class="work_item_image">
+									<img src="img/portfolio/portfolio-1.jpg" alt="img">
 								</div>
-								<textarea placeholder="Your message"></textarea>
-								<div class="form_submit">
-									<input type="submit" value="Hire us">
-									<div class="form_icons">
+								<div class="work_item_description">
+									<h3>Lorem Ipsum</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<a href="#work_1" class="work_item_link">show more</a>						
+								</div>
+								<div id="work_1" class="popup-window mfp-hide">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+											<div class="modal-box-content_image">
+												<img src="img/portfolio/portfolio-1.jpg" alt="Alt" />
+											</div>
+											<h3>Заголовок работы</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+										</div>
+									</div>
+								</div>							
+							</div>
+							<div class="work_item">
+								<div class="work_item_image">
+									<img src="img/portfolio/portfolio-2.jpg" alt="img">
+								</div>
+								<div class="work_item_description">
+									<h3>Lorem Ipsum</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<a href="#work_2" class="work_item_link">show more</a>
+								</div>
+								<div id="work_2" class="popup-window mfp-hide">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+											<div class="modal-box-content_image">
+												<img src="img/portfolio/portfolio-2.jpg" alt="Alt" />
+											</div>										
+											<h3>Заголовок работы</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+										</div>
+									</div>
+								</div>							
+							</div>
+							<div class="work_item">
+								<div class="work_item_image">
+									<img src="img/portfolio/portfolio-3.jpg" alt="img">
+								</div>
+								<div class="work_item_description">
+									<h3>Lorem Ipsum</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<a href="#work_3" class="work_item_link">show more</a>
+								</div>
+								<div id="work_3" class="popup-window mfp-hide">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+											<div class="modal-box-content_image">
+												<img src="img/portfolio/portfolio-3.jpg" alt="Alt" />
+											</div>										
+											<h3>Заголовок работы</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+										</div>
+									</div>
+								</div>							
+							</div>
+							<div class="work_item">
+								<div class="work_item_image">
+									<img src="img/portfolio/portfolio-4.jpg" alt="img">
+								</div>
+								<div class="work_item_description">
+									<h3>Lorem Ipsum</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<a href="#work_4" class="work_item_link">show more</a>
+								</div>
+								<div id="work_4" class="popup-window mfp-hide">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+											<div class="modal-box-content_image">
+												<img src="img/portfolio/portfolio-4.jpg" alt="Alt" />
+											</div>										
+											<h3>Заголовок работы</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+										</div>
+									</div>
+								</div>							
+							</div>
+							<div class="work_item">
+								<div class="work_item_image">
+									<img src="img/portfolio/portfolio-5.jpg" alt="img">
+								</div>
+								<div class="work_item_description">
+									<h3>Lorem Ipsum</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<a href="#work_5" class="work_item_link">show more</a>
+								</div>
+								<div id="work_5" class="popup-window mfp-hide">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+											<div class="modal-box-content_image">
+												<img src="img/portfolio/portfolio-5.jpg" alt="Alt" />
+											</div>										
+											<h3>Заголовок работы</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+										</div>
+									</div>
+								</div>							
+							</div>
+							<div class="work_item">
+								<div class="work_item_image">
+									<img src="img/portfolio/portfolio-6.jpg" alt="img">
+								</div>
+								<div class="work_item_description">
+									<h3>Lorem Ipsum</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<a href="#work_6" class="work_item_link">show more</a>
+								</div>
+								<div id="work_6" class="popup-window mfp-hide">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+											<div class="modal-box-content_image">
+												<img src="img/portfolio/portfolio-6.jpg" alt="Alt" />
+											</div>										
+											<h3>Заголовок работы</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+										</div>
+									</div>
+								</div>							
+							</div>														
+						</div>
+						<div class="works_button">
+							<a href="">show more</a>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="hire_us subscribe-me" >
+			<div class="hire_us_container">
+				<a href="#close" class="sb-close-btn">X</a>
+				<div class="section_header hire_us_header">
+					<h2>Lorem <span>Ipsum</span></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				</div>	
+				<form>
+					<input type="email" value="" placeholder="Your email">
+					<input type="text"  value="" placeholder="Subject">
+					<textarea placeholder="Your message"></textarea>
+					<input type="submit" value="Hire us">
+				</form>			
+			</div>
+		</div>	
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/clients-bg.jpg">	
+			<section class="clients" id="clients">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="clients_container owl-carousel owl-theme">
+								<div class="item clients_wrapper">
+						    		<div class="clients_image">
+						    			<img src="img/clients/client-1.jpg" alt="alt">					    			
+						    		</div>
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							    	consequat. </p>					    		
+						    		<h6>John Smith</h6>
+								</div>
+								<div class="item clients_wrapper">
+						    		<div class="clients_image">
+						    			<img src="img/clients/client-1.jpg" alt="alt">					    			
+						    		</div>
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							    	consequat.</p>					    		
+						    		<h6>John Smith</h6>
+								</div>
+								<div class="item clients_wrapper">
+						    		<div class="clients_image">
+						    			<img src="img/clients/client-1.jpg" alt="alt">					    			
+						    		</div>
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							    	consequat. </p>					    		
+						    		<h6>John Smith</h6>
+								</div>												
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>	
+		<section class="team" id="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section_header">
+							<h2>Lorem <span>Ipsum</span></h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+							<hr>
+						</div>	
+						<div class="team_container">
+							<div class="team_item">
+								<div class="team_item_image">
+									<img src="img/team/team-1.jpg" alt="img">
+								</div>
+								<div class="team_item_description">
+									<h3>John DOe</h3>
+									<div class="team_item_icons">
 										<ul>
 											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
 											<li><a href=""><i class="fab fa-twitter"></i></a></li>
 											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href=""><i class="fab fa-dribbble"></i></a></li>										
 										</ul>
 									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
 								</div>
-							</form>
+							</div>
+							<div class="team_item">
+								<div class="team_item_image">
+									<img src="img/team/team-2.jpg" alt="img">
+								</div>
+								<div class="team_item_description">
+									<h3>John DOe</h3>
+									<div class="team_item_icons">
+										<ul>
+											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href=""><i class="fab fa-twitter"></i></a></li>
+											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+
+										</ul>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+								</div>
+							</div>
+							<div class="team_item">
+								<div class="team_item_image">
+									<img src="img/team/team-3.jpg" alt="img">
+								</div>
+								<div class="team_item_description">
+									<h3>John DOe</h3>
+									<div class="team_item_icons">
+										<ul>
+											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href=""><i class="fab fa-twitter"></i></a></li>
+											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+										</ul>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+								</div>
+							</div>
+							<div class="team_item">
+								<div class="team_item_image">
+									<img src="img/team/team-4.jpg" alt="img">
+								</div>
+								<div class="team_item_description">
+									<h3>John DOe</h3>
+									<div class="team_item_icons">
+										<ul>
+											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href=""><i class="fab fa-twitter"></i></a></li>
+											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+										</ul>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+								</div>
+							</div>																		
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-	</div>		
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="footer_container">
-						<h6>2015Copyright</h6>
-						<p>Designed by Blabla</p>
+		<div class="data-parallax" data-parallax="scroll" data-image-src="img/contact-bg.jpg">	
+			<section class="contact" id="contact">
+				<div class="container section-overlay">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="section_header light_header">
+								<h2>Lorem <span>Ipsum</span></h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<hr>
+							</div>				
+							<div class="contact_container">
+								<form>
+									<div class="form_inputs">
+										<input type="email" value="" placeholder="Your email">
+										<input type="text"  value="" placeholder="Subject">
+									</div>
+									<textarea placeholder="Your message"></textarea>
+									<div class="form_submit">
+										<input type="submit" value="Hire us">
+										<div class="form_icons">
+											<ul>
+												<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+												<li><a href=""><i class="fab fa-twitter"></i></a></li>
+												<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+												<li><a href=""><i class="fab fa-dribbble"></i></a></li>										
+											</ul>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="footer_container">
+							<h6>2015Copyright</h6>
+							<p>Designed by Blabla</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>		
+	</div>
 </body>
 </html>
