@@ -73,6 +73,18 @@ header
 	background-size: cover
 	background-position: center
 	height: 750px
+	position: relative
+
+header:before
+	display: block
+	top: 0
+	left: 0
+	content: ''	
+	background-color: #111
+	opacity: 0.8
+	width: 100%
+	position: absolute
+	height: 100%	
 
 .header-container
 	margin-top: 30px
@@ -87,16 +99,28 @@ header
 	-ms-flex-pack: justify
 	justify-content: space-between
 
-.header-menu nav ul
+.header
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: flex-end
+
+.header-logo
+	img
+		width: 100px
+		height: auto
+
+
+nav ul
 	margin: 0
 	padding: 0
 
-.header-menu nav ul li
+nav ul li
 	list-style-type: none
 	display: inline-block
 	margin-left: 20px
 
-.header-menu nav ul li a
+nav ul li a
 	color: #fff
 	text-decoration: none
 	font-weight: 300
@@ -106,11 +130,8 @@ header
 	-o-transition: 0.1s
 	transition: 0.1s
 
-.header-menu nav ul li a:hover
-	color: #E74C3C
-	box-shadow: 0 4px 2px -2px #E74C3C
-	-webkit-box-shadow: 0 4px 2px -2px #E74C3C
-	-moz-box-shadow: 0 4px 2px -2px #E74C3C		
+nav ul li a:hover
+	background-color: #E74C3C	
 
 .header-description
 	color: #fff
@@ -861,12 +882,13 @@ header
 .pricing-button a
 	min-width: 40px
 	background: #999999
+	letter-spacing: 1px
 	height: 40px
 	color: #fff
 	text-transform: uppercase
 	padding: 10px 20px 
 	text-decoration: none
-	font-size: 11px
+	font-size: 12px
 	font-weight: 500
 
 .team
@@ -914,11 +936,20 @@ header
 	flex-direction: column
 	align-items: flex-start
 	h6
-		font-size: 22px
+		font-size: 20px
+		font-weight: 600
 		text-transform: uppercase
 		letter-spacing: 1px
+		margin-bottom: 10px
+	hr
+		width: 60px
+		height: 1px
+		color: #E74C3C
+		background-color: #E74C3C
+		margin: 0 0 20px 0	
 	p
 		font-size: 15px	
+		margin-bottom: 10px
 	ul
 		margin: 0
 		padding: 0
@@ -931,7 +962,7 @@ header
 		align-items: center
 		-webkit-box-pack: justify
 		-ms-flex-pack: justify
-		justify-content: space-around
+		justify-content: space-between
 		width: 150px
 		li
 			display: inline-block
@@ -1068,11 +1099,14 @@ header
 	text-decoration: none
 	font-size: 12px
 	font-style: italic
-	font-weight: 700
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 1px
 
 .blog-post-description a:after
-	font-family: 'Font Awesome 5 Free'
-	content: '>>'
+	padding-left: 3px
+	font-family: FontAwesome
+	content: '\f101'
 	font-weight: 900
 	height: 14px
 	width: auto
@@ -1329,7 +1363,7 @@ footer
 
 .podrt_descr
 	background-color: #202020
-	max-width: 500px
+	max-width: 480px
 	margin: auto
 	z-index: 9999
 	p,
@@ -1360,7 +1394,7 @@ footer
 .modal-box-content button
 	position: relative
 	top: 0
-	left: 460px
+	left: 440px
 
 .podrt_descr .modal-box-content .mfp-close
 	color: #fff

@@ -669,6 +669,12 @@
 		margin-top: 150px;
 
 	}	
+	.podrt_descr{
+		max-width: 320px;
+	}
+
+	.modal-box-content button{
+		left: 280px;
 
 }
 
