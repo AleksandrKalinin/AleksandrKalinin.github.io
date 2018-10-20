@@ -6,7 +6,7 @@ $(document).ready(function(){
 		}
 	});
 
-/*  
+ 
     $("a[href^='#']").click(function(e) {
         e.preventDefault();
         
@@ -16,7 +16,7 @@ $(document).ready(function(){
             scrollTop: position
         } );
     });
-*/
+
     $(".portfolio-link").magnificPopup({
         type:"inline",
         midClick: true

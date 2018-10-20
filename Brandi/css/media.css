@@ -126,6 +126,13 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
+	.podrt_descr{
+		max-width: 320px;
+	}
+
+	.modal-box-content button{
+		left: 280px;
+	}	
 	.blog-item .blog-image, .blog-item .blog-image img{
 		height: calc(100vw - 17.98px);
 	}

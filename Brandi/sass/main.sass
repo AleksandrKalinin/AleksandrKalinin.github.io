@@ -34,18 +34,25 @@ header
 	-ms-flex-pack: justify
 	justify-content: space-between
 
-.header-menu ul,.header-icons ul
+nav ul,.header-icons ul
 	list-style-type: none
 	margin-bottom: 0
 	padding-left: 0
 
-.header-menu ul li
+nav ul li
 	display: inline-block
 	margin-right: 20px	
 
-.header-menu ul li a
-	text-decoration: none
-	color: #fff
+nav
+	ul 
+		li 
+			a
+				text-decoration: none
+				color: #fff
+			a:hover
+				background-color: #09AE8E	
+	
+
 
 .header-logo span
 	margin-left: 15px
@@ -69,12 +76,20 @@ header
 	-webkit-box-align: center
 	-ms-flex-align: center
 	align-items: center
-	
+
 .header
+	height: 100%
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: flex-end
+	padding: 0 30px
+	
+.top
 	width: 100%
 	position: relative
 	
-.header:before
+.top:before
 	display: block
 	top: 0
 	left: 0
@@ -86,7 +101,7 @@ header
 	height: 100%	
 
 
-.header, .header-wrapper
+.top, .header-wrapper
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
@@ -278,7 +293,7 @@ section
 	
 .portfolio-description
 	text-align: center
-	z-index: 9999
+	z-index: 999
 	position: absolute
 	display: none
 	-webkit-box-orient: vertical
@@ -353,7 +368,7 @@ section
 			height: 220px
 			object-fit: cover
 		.team-description
-			z-index: 9999
+			z-index: 999
 			display: none
 			position: absolute
 			padding: 20px
@@ -437,10 +452,12 @@ section
 	color: #fff
 	width: 25%
 	h2
-		font-size: 42px
+		font-size: 34px
+		letter-spacing: 1px
 	p
 		text-transform: uppercase
 		font-size: 14px
+		letter-spacing: 1px
 	img
 		padding: 20px
 		border: 1px solid #fff
@@ -509,7 +526,8 @@ section
 			align-items: center
 			text-align: center
 			h5
-				font-size: 30px
+				font-size: 26px
+				letter-spacing: 1px
 				text-transform: uppercase
 				font-weight: 300
 			p
@@ -520,7 +538,9 @@ section
 			padding: 10px 20px
 			border-radius: 5px
 			text-decoration: none
-			text-transform: uppercase			
+			text-transform: uppercase
+			letter-spacing: 1px
+			font-size: 14px			
 
 .blog-item:hover
 	img
@@ -595,7 +615,8 @@ section
 			cursor: pointer
 			text-transform: uppercase
 			color: #fff
-			font-weight: 700
+			font-weight: 600
+			letter-spacing: 1px
 			margin-bottom: 0
 		input::placeholder, textarea::placeholder 
 			color: #09AE8E
@@ -688,7 +709,7 @@ footer
 			
 .podrt_descr
 	background-color: #fff
-	max-width: 500px
+	max-width: 480px
 	margin: auto
 	z-index: 1000000	
 	p,
@@ -719,6 +740,6 @@ footer
 .modal-box-content button
 	position: relative
 	top: 0
-	left: 460px			 												
+	left: 440px			 												
 
 						
