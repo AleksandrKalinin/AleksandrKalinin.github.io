@@ -300,6 +300,22 @@
 		width: 80%;
 	}
 
+	.portfolio-container_header{
+		border: none;
+	}
+
+	.portfolio-container_header{
+		margin-bottom: 20px;
+	}
+
+	.portfolio-container_header, .portfolio-container_header_menu ul{
+		flex-direction: column;
+		align-items: center;
+	}
+	.portfolio-container_header_menu ul li{
+		margin: 10px;
+	}
+
 	.portfolio-container_content{
 		align-items: center;
 	    flex-direction: column;
@@ -313,6 +329,10 @@
 	.portfolio-container_content_item_image img{
 		height: calc(100vw - 16.98px);
 		width: calc(100vw - 16.98px);
+	}
+
+	.contact-container_address{
+		width: 100%;
 	}
 
 	.contact-container_address_wrapper_description{
