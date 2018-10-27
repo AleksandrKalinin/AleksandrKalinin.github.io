@@ -25,8 +25,6 @@ $(document).ready(function(){
 
     $(".features-container").animated("fadeIn", "fadeOut");
 
-    $(".portfolio-wrapper").animated("fadeIn", "fadeOut");
-
     $(".team-container").animated("fadeIn", "fadeOut");
 
     $(".blog-item").animated("fadeIn", "fadeOut");
