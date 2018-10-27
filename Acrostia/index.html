@@ -24,23 +24,28 @@
 	<script type="text/javascript" src="libs/waypoints/waypoints.min.js"></script>
 	<script type="text/javascript" src="libs/animate/animate-css.js"></script>		
 	<script type="text/javascript" src="libs/owl-carousel/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="libs/mixitup/mixitup.js"></script>		
+	<script type="text/javascript" src="libs/mixitup/mixitup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			$('nav#menu').mmenu();
 		});
-	</script>			
+	</script>
+	
 </head>
 <body>
-
+		<div class="preloader-container">
+			<div id="overlayer"></div>
+			<span class="loader">
+			  <span class="loader-inner"></span>
+			</span>			
+		</div>
 	<div id="page">
-
 		<header id="header">
 			<div class="container  menu-wrapper">
 				<div class="row  menu-inner-wrapper">
 					<div class="col-md-12 top-wrapper">
-						<div class="footer-logo">
+						<div class="header-logo">
 							<h2>Logo</h2>
 						</div>						
 						<div class="header">
@@ -563,6 +568,11 @@
 		</footer>
 		
 	</div>
-
+	<script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").delay(2000).fadeOut("slow");
+  			$("#overlayer").delay(2000).fadeOut("slow");
+		});
+	</script>	
 </body>
 </html>

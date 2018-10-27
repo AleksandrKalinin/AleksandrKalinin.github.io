@@ -29,7 +29,7 @@ nav:not(.mm-menu)
 }
 
 .header{
-	height: 50px;
+	height: 60px;
 	background-color: #333;
 }
 .header.fixed
@@ -51,7 +51,7 @@ nav:not(.mm-menu)
 	height: 20px;
 	padding: 0;
 	position: absolute;
-	top: 15px;
+	top: 20px;
 	right: 15px;
 }
 .header a:before,
@@ -78,7 +78,7 @@ nav:not(.mm-menu)
 		--mm-color-text: #fff;
 	}
 
-	.mm-navbar{
+.mm-panel_has-navbar .mm-navbar{
 		text-transform: uppercase;
 		font-weight: 700;
 		font-size: 22px;
@@ -88,7 +88,14 @@ nav:not(.mm-menu)
 		text-align: center;
 		padding: 0;
 		line-height: 26px;
-		height: 50px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.mm-panels>.mm-panel>.mm-navbar+.mm-listview{
+		margin: 0;
 	}
 
 	#mm-1{

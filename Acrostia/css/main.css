@@ -30,6 +30,16 @@ header {
   align-items: center;
   background-color: #333; }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+  color: #fff; }
+  .header-logo h2 {
+    font-style: Italic;
+    font-size: 38px;
+    font-weight: 300;
+    letter-spacing: 1px; }
+
 .top {
   height: 550px;
   width: 100%;
@@ -169,7 +179,7 @@ nav {
         padding: 5px 0;
         position: relative; }
       nav ul li a:hover {
-        background-color: #FF6347;
+        background-color: #555;
         color: #fff; }
 
 .about {
@@ -244,7 +254,7 @@ nav {
   left: 0;
   content: "";
   background-color: #FF6347;
-  opacity: 0.9;
+  opacity: 0.95;
   width: 100%;
   position: absolute;
   height: 100%; }
@@ -302,7 +312,7 @@ nav {
   left: 0;
   content: "";
   background-color: #fff;
-  opacity: 0.9;
+  opacity: 0.95;
   width: 100%;
   position: absolute;
   height: 100%; }
@@ -335,7 +345,7 @@ nav {
   text-align: center;
   width: 25%;
   border: 1px solid #222;
-  opacity: 0.9;
+  opacity: 0.95;
   margin: 0 10px;
   padding: 30px 20px;
   transition: 0.2s ease; }
@@ -612,7 +622,7 @@ nav {
   left: 0;
   content: "";
   background-color: #FF6347;
-  opacity: 0.9;
+  opacity: 0.95;
   width: 100%;
   position: absolute;
   height: 100%; }
@@ -644,7 +654,7 @@ nav {
   width: 25%;
   background-color: #333;
   color: #fff;
-  opacity: 0.9;
+  opacity: 0.95;
   margin: 0 10px;
   transition: 0.2s ease; }
   .pricing-container_item .pricing-container_item_header {
@@ -713,7 +723,7 @@ nav {
   left: 0;
   content: "";
   background-color: #fff;
-  opacity: 0.9;
+  opacity: 0.95;
   width: 100%;
   position: absolute;
   height: 100%; }
@@ -916,5 +926,54 @@ footer {
     .footer-links li a:hover {
       background-color: #FF6347;
       color: #fff; }
+
+#overlayer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background: #4a4a4a; }
+
+.loader {
+  margin: auto;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  z-index: 3;
+  border: 4px solid #Fff;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  animation: loader 2s infinite ease; }
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in; }
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(180deg); }
+  50% {
+    transform: rotate(180deg); }
+  75% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes loader-inner {
+  0% {
+    height: 0%; }
+  25% {
+    height: 0%; }
+  50% {
+    height: 100%; }
+  75% {
+    height: 100%; }
+  100% {
+    height: 0%; } }
 
 /*# sourceMappingURL=main.css.map */
