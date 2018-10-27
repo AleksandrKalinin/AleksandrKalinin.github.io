@@ -27,15 +27,34 @@
 	<script type="text/javascript" src="lib/animate/animate-css.js"></script>
 	<script type="text/javascript" src="lib/scroll2id/PageScroll2id.min.js"></script>
 	<script type="text/javascript" src="lib/owl-carousel/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="lib/subscribe/jquery.subscribe-better.js"></script>			
+	<script type="text/javascript" src="lib/subscribe/jquery.subscribe-better.js"></script>
+	<script type="text/javascript" src="lib/queryloader/queryloader2.min.js"></script>					
 	<script type="text/javascript" src="js/common.js"></script>
-	<script type="text/javascript">
+<!--	<script type="text/javascript">
 		$(function() {
 			$('nav#menu').mmenu({
 				onClick: {close : true }
 			});
 		});
-	</script>	
+	</script>
+-->
+	<script type="text/javascript">
+		$(function() {
+			$('nav#menu').mmenu();
+		});
+	</script>
+	<script type="text/javascript">
+	    window.addEventListener('DOMContentLoaded', function() {
+	        QueryLoader2(document.querySelector("body"), {
+	            barColor: "#efefef",
+	            backgroundColor: "#111",
+	            percentage: true,
+	            barHeight: 1,
+	            minimumTime: 1000,
+	            fadeOutTime: 1000
+	        });
+	    });
+	</script>		
 </head>
 <body>
 	<div id="page">
