@@ -208,12 +208,12 @@
 		flex: 0 0 100%;
 	}
 
-	.services-item:nth-child(even){
+	.services-item:nth-child(odd){
 		background-color: #30235F;
 		color: #fff;
 	}	
 
-	.services-item:nth-child(odd){
+	.services-item:nth-child(even){
 		background-color: #fff;
 		color: #30235F;
 	}

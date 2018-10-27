@@ -434,55 +434,6 @@ video
 .team-overlay
 	padding: 50px 0		 
 
-.team-container
-	display: -webkit-box
-	display: -ms-flexbox
-	display: flex
-	-webkit-box-orient: horizontal
-	-webkit-box-direction: normal
-	-ms-flex-direction: row
-	flex-direction: row
-	-ms-flex-pack: distribute
-	justify-content: space-around
-	-ms-flex-wrap: wrap
-	flex-wrap: wrap
-
-.team-item
-	width: 210px
-	display: -webkit-box
-	display: -ms-flexbox
-	display: flex
-	-webkit-box-orient: vertical
-	-webkit-box-direction: normal
-	-ms-flex-direction: column
-	flex-direction: column
-	-webkit-box-align: center
-	-ms-flex-align: center
-	align-items: center
-	text-align: center
-	.team-item-image
-		height: 220px
-		overflow: hidden
-		img
-			width: 100%
-			height: auto
-	.team-item-description
-		display: flex
-		flex-direction: column
-		align-items: center
-		padding: 15px 0
-		border-style: solid 
-		border-color: #fff
-		border-width: 0 1px 1px 1px
-		width: 100%		
-		h6,p
-			text-transform: uppercase
-		h6
-			font-weight: 600
-			letter-spacing: 1px		
-		p
-			font-size: 12px	
-
 .team-item-icons
 	width: 170px
 	display: -webkit-box
@@ -550,6 +501,76 @@ video
 		color: #30235F		
 		border: 1px solid #fff
 		
+
+.team-container
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
+	flex-direction: row
+	-ms-flex-pack: distribute
+	justify-content: space-around
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	perspective: 1000px
+	padding: 0 40px
+
+
+.team-element
+	flex-basis: 21%
+	position: relative
+	margin: 20px 1%
+	transform-style: preserve-3d
+	transition-duration: 1s
+
+
+.team-element:hover
+	transform: rotateY(180deg)
+
+
+.team-element:hover .team-description
+	z-index: 1
+
+
+.team-image
+	backface-visibility: hidden
+	height: 220px 
+	overflow: hidden
+
+
+.team-image img
+	display: block
+	max-width: 100%
+
+
+.team-description
+	position: absolute
+	left: 0
+	top: 0
+	background: #222
+	padding: 30px
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	z-index: -1
+	transform: rotateY(180deg)
+	backface-visibility: hidden
+
+
+.team-description p
+	font-size: 20px
+	line-height: 26px
+	margin-bottom: 0
+	text-align: center
+	flex-basis: 100%
+	color: #fff
+
+
 
 .portfolio-container
 	display: -webkit-box
