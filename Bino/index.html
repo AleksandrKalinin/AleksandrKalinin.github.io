@@ -5,7 +5,8 @@
 	<link rel="shortcut icon" href="img/favicon.ico">	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="libs/animate/animate.min.css">	
+	<link rel="stylesheet" href="libs/animate/animate.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/font-awesome.min.css">	
 	<link type="text/css" rel="stylesheet" href="libs/mmenu/jquery.mmenu.css" />	
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -22,13 +23,26 @@
 	<script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="libs/font-awesome/fontawesome-all.js"></script>
-	<script type="text/javascript" src="libs/mixitup/mixitup.js"></script>	
+	<script type="text/javascript" src="libs/mixitup/mixitup.js"></script>
+	<script type="text/javascript" src="libs/queryloader/queryloader2.min.js"></script>	
 	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			$('nav#menu').mmenu();
 		});
-	</script>		
+	</script>
+	<script type="text/javascript">
+	    window.addEventListener('DOMContentLoaded', function() {
+	        QueryLoader2(document.querySelector("body"), {
+	            barColor: "#efefef",
+	            backgroundColor: "#111",
+	            percentage: true,
+	            barHeight: 1,
+	            minimumTime: 1000,
+	            fadeOutTime: 1000
+	        });
+	    });
+	</script>			
 </head>
 <body>
 	<div id="page">
@@ -497,6 +511,48 @@
 							tempor incididunt</p>
 							<span></span>
 						</div>
+						<div class="box-container">
+							<div class="box">
+								<div class="content">
+									<h6>Lorem ipsum</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<a href="">Buy now</a>
+								</div>
+								<div class="details">
+									<div class="image"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+									<h3>Basic plan</h3>
+									<span>19$</span>
+								</div>
+							</div>
+							<div class="box">
+								<div class="content">
+									<h6>Lorem ipsum</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<a href="">Buy now</a>
+								</div>
+								<div class="details">
+									<div class="image"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+									<h3>Advanced plan</h3>
+									<span>45$</span>
+								</div>
+							</div>
+							<div class="box">
+								<div class="content">
+									<h6>Lorem ipsum</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<a href="">Buy now</a>
+								</div>
+								<div class="details">
+									<div class="image"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+									<h3>Business plan</h3>
+									<span>55$</span>
+								</div>
+							</div>																					
+						</div>
+						<!--
 						<div class="pricing-container">
 							<div class="row pricing-outer-wrapper">
 								<div class="col-md-4 pricing-wrapper">
@@ -506,14 +562,13 @@
 										</div>
 										<div class="price">
 											<h5>$65</h5>
-											<p>Lorem ipsum</p>
 										</div>										
 										<div class="pricing-description">
 											<ul>
-												<li>Lorem ipsum dolor sit amet, consectetur</li>
-												<li>Lorem ipsum dolor sit amet, consectetur </li>
-												<li>Lorem ipsum dolor sit amet, consectetur </li>
-												<li>Lorem ipsum dolor sit amet, consectetur</li>
+												<li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet</li>
+												<li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet </li>
+												<li><i class="fa fa-times-circle"></i>Lorem ipsum dolor sit amet</li>
+												<li><i class="fa fa-times-circle"></i>Lorem ipsum dolor sit amet </li>
 											</ul>
 											<div class="pricing-button">
 												<a href="">Choose plan</a>
@@ -524,18 +579,17 @@
 								<div class="col-md-4 pricing-wrapper">
 									<div class="pricing-item">
 										<div class="pricing-header">
-											<h4>Starter</h4>
+											<h4>Advanced</h4>
 										</div>
 										<div class="price">
 											<h5>$65</h5>
-											<p>Lorem ipsum</p>
 										</div>										
 										<div class="pricing-description">
 											<ul>
-												<li>Lorem ipsum dolor sit amet, consectetur</li>
-												<li>Lorem ipsum dolor sit amet, consectetur </li>
-												<li>Lorem ipsum dolor sit amet, consectetur </li>
-												<li>Lorem ipsum dolor sit amet, consectetur</li>
+												<li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet</li>
+												<li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet </li>
+												<li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet</li>
+												<li><i class="fa fa-times-circle"></i>Lorem ipsum dolor sit amet </li>
 											</ul>
 											<div class="pricing-button">
 												<a href="">Choose plan</a>
@@ -546,18 +600,17 @@
 								<div class="col-md-4 pricing-wrapper">
 									<div class="pricing-item">
 										<div class="pricing-header">
-											<h4>Starter</h4>
+											<h4>Business</h4>
 										</div>
 										<div class="price">
 											<h5>$65</h5>
-											<p>Lorem ipsum</p>
 										</div>										
 										<div class="pricing-description">
 											<ul>
-												<li>Lorem ipsum dolor sit amet, consectetur</li>
-												<li>Lorem ipsum dolor sit amet, consectetur </li>
-												<li>Lorem ipsum dolor sit amet, consectetur </li>
-												<li>Lorem ipsum dolor sit amet, consectetur</li>
+												<li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet</li>
+												<li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet </li>
+												<li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet</li>
+												<li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet </li>
 											</ul>
 											<div class="pricing-button">
 												<a href="">Choose plan</a>
@@ -566,7 +619,7 @@
 									</div>
 								</div>
 							</div>
-						</div>					
+						</div>	-->				
 					</div>
 				</div>
 			</div>		
@@ -587,13 +640,34 @@
 									<img src="img/team/team1.jpg">
 									<div class="team-container_item_description">
 										<h6>Lorem Ipsum</h6>
-										<hr>
-										<p>Lorem ipsum dolor sit</p>
+										<h5>Senior web-developer</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+										</p>
 										<ul>
-											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-											<li><a href=""><i class="fab fa-twitter"></i></a></li>
-											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
+											<li>
+												<a href="">
+													<i class="fab fa-facebook-f"></i>
+													<i class="fab fa-facebook-f"></i>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fab fa-twitter"></i>
+													<i class="fab fa-twitter"></i>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fab fa-linkedin-in"></i>
+													<i class="fab fa-linkedin-in"></i>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fab fa-dribbble"></i>
+													<i class="fab fa-dribbble"></i>
+												</a>
+											</li>	
 										</ul>
 									</div>
 								</div>
@@ -601,13 +675,34 @@
 									<img src="img/team/team2.jpg">
 									<div class="team-container_item_description">
 										<h6>Lorem Ipsum</h6>
-										<hr>
-										<p>Lorem ipsum dolor sit</p>
+										<h5>Frontend developer</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+										</p>
 										<ul>
-											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-											<li><a href=""><i class="fab fa-twitter"></i></a></li>
-											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
+											<li>
+												<a href="">
+													<i class="fab fa-facebook-f"></i>
+													<i class="fab fa-facebook-f"></i>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fab fa-twitter"></i>
+													<i class="fab fa-twitter"></i>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fab fa-linkedin-in"></i>
+													<i class="fab fa-linkedin-in"></i>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fab fa-dribbble"></i>
+													<i class="fab fa-dribbble"></i>
+												</a>
+											</li>	
 										</ul>								
 									</div>
 								</div>
@@ -615,30 +710,38 @@
 									<img src="img/team/team3.jpg">
 									<div class="team-container_item_description">
 										<h6>Lorem Ipsum</h6>
-										<hr>
-										<p>Lorem ipsum dolor sit</p>
+										<h5>UX designer</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+										</p>
 										<ul>
-											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-											<li><a href=""><i class="fab fa-twitter"></i></a></li>
-											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
+											<li>
+												<a href="">
+													<i class="fab fa-facebook-f"></i>
+													<i class="fab fa-facebook-f"></i>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fab fa-twitter"></i>
+													<i class="fab fa-twitter"></i>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fab fa-linkedin-in"></i>
+													<i class="fab fa-linkedin-in"></i>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fab fa-dribbble"></i>
+													<i class="fab fa-dribbble"></i>
+												</a>
+											</li>	
 										</ul>								
 									</div>
 								</div>
-								<div class="team-container_item">
-									<img src="img/team/team4.jpg">
-									<div class="team-container_item_description">
-										<h6>Lorem Ipsum</h6>
-										<hr>
-										<p>Lorem ipsum dolor sit</p>
-										<ul>
-											<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-											<li><a href=""><i class="fab fa-twitter"></i></a></li>
-											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href=""><i class="fab fa-dribbble"></i></a></li>	
-										</ul>								
-									</div>
-								</div>																		
+																																	
 							</div>					
 						</div>
 					</div>

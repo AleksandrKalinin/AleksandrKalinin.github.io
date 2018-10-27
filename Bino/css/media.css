@@ -28,6 +28,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.box{
+		margin-bottom: 20px;
+	}
 
 	.header-logo img{
 		width: 120px;
@@ -115,6 +118,10 @@
 		flex: 0 0 45%;		
 	}
 
+	.team-container{
+		justify-content: center;
+	}
+
 	.team-container_item{
 		padding: 30px 10px;
 		-webkit-box-orient: vertical;
@@ -164,6 +171,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+	.box-container{
+		justify-content: center;
+	}
 
 /* Header */
 	.header-logo{
@@ -557,7 +568,7 @@
 		-webkit-box-flex: 0;
     	-ms-flex: 0 0 55%;
         flex: 0 0 55%;
-		width: 250px;
+		width: 300px;
 	}
 /* portfolio */
 	.portfolio-images{
