@@ -79,7 +79,11 @@
 @media only screen and (max-width : 768px) {
 
 	.head-wrapper{
-		margin-top: 50px;
+		margin-top: 0;
+	}
+
+	.header-description_item h3{
+		font-size: 40px;
 	}
 
 	.top-logo h2{
@@ -180,7 +184,8 @@
 	.top-wrapper{
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 0;
+	    height: 60px;
+	    overflow: hidden;
 	}
 
 	.top-logo{
@@ -222,6 +227,7 @@
 
 	.services-container_item{
 		width: 270px;
+		padding: 30px;
 	}
 
 	.portfolio-container_content{
@@ -371,7 +377,7 @@
 	}
 
 	.services-container_item{
-		width: 55%;
+		width: 90%;
 	}
 
 	.services-container_item img{
@@ -389,8 +395,12 @@
 		font-size: 16px;
 	}
 
-	.team-container_item_links{
+	.team-container_item{
 		width: 80%;
+	}
+
+	.team-container_item_links{
+		width: 90%;
 	}
 
 
@@ -414,6 +424,15 @@
 	textarea{
 		margin-top: 15px;
 	}
+
+	.podrt_descr{
+		max-width: 300px;
+	}
+
+
+.modal-box-content button{
+	left: 260px;
+}
 
 
 }
