@@ -337,7 +337,8 @@ nav ul {
     text-transform: uppercase;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 12px;
+    letter-spacing: 1px;
     font-weight: 500; }
   .about-button a:hover {
     background-color: #FF6555;
@@ -663,7 +664,8 @@ nav ul {
     text-transform: uppercase;
     padding: 10px 30px;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 12px;
+    letter-spacing: 1px;
     font-weight: 500; }
   .study-button a:hover {
     background-color: #FF6555;
@@ -891,9 +893,10 @@ nav ul {
   right: 5px;
   bottom: 5px;
   background: #fff;
-  padding: 10px;
+  padding: 20px 10px;
   text-align: center;
-  border-radius: 2px; }
+  border-radius: 2px;
+  color: #222; }
 
 .box .content p {
   font-size: 15px; }
@@ -905,13 +908,16 @@ nav ul {
   text-transform: uppercase;
   padding: 10px 30px;
   text-decoration: none;
-  font-size: 11px;
+  font-size: 12px;
+  letter-spacing: 1px;
   font-weight: 500; }
 .box .content a:hover {
   background-color: #FF6555;
   -webkit-transition: 0.1s;
   -o-transition: 0.1s;
   transition: 0.1s; }
+.box .content h6 {
+  text-transform: uppercase; }
 
 .box .details {
   position: absolute;
@@ -952,11 +958,10 @@ nav ul {
   background-color: #E74C3C;
   color: #fff;
   padding: 5px 30px;
-  font-size: 24px;
+  font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 500;
-  font-style: italic; }
+  font-weight: 600; }
 
 .box:hover .details {
   opacity: 0;
@@ -979,7 +984,7 @@ nav ul {
   flex-wrap: wrap; }
 
 .team-container_item {
-  width: 350px;
+  width: 320px;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1000,7 +1005,8 @@ nav ul {
     border-radius: 50%; }
 
 .team-container_item:hover {
-  box-shadow: 0 0 20px #DBDCE0; }
+  box-shadow: 0 0 20px #DBDCE0;
+  transform: scale(1.1); }
 
 .team-container_item_description {
   margin-top: 20px;
@@ -1267,7 +1273,8 @@ form {
     outline: none;
     border: 1px solid #6A6A6A;
     border-radius: 1px;
-    font-size: 11px;
+    font-size: 12px;
+    letter-spacing: 1px;
     cursor: pointer;
     -ms-flex-item-align: start;
     align-self: flex-start;
@@ -1357,7 +1364,8 @@ textarea::-webkit-scrollbar-thumb:window-inactive, ::-webkit-scrollbar-thumb:win
     text-transform: uppercase;
     padding: 10px 30px;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 12px;
+    letter-spacing: 1px;
     font-weight: 500; }
   .promo-button a:hover {
     background-color: #FF6555;
