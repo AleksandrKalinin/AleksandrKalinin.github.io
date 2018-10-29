@@ -24,14 +24,27 @@ body
 		letter-spacing: 2px	
 
 header
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
 	justify-content: space-between
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
 	background-color: #333
 
 .header-logo
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
 	color: #fff
 	h2
@@ -103,6 +116,8 @@ header
 		letter-spacing: 1.5px
 		padding: 9px 17px
 		margin-top: 20px
+		-webkit-transition: 0.2s ease
+		-o-transition: 0.2s ease
 		transition: 0.2s ease
 	a:hover
 		background-color: #FF6347
@@ -202,11 +217,21 @@ nav
 	height: 100%		
 
 .about-container
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
 	flex-direction: column
 	
 .about-item
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
 	margin: 20px 0
 
@@ -353,6 +378,8 @@ nav
 	opacity: 0.95
 	margin: 0 10px
 	padding: 30px 20px
+	-webkit-transition: 0.2s ease
+	-o-transition: 0.2s ease
 	transition: 0.2s ease
 	img
 		width: 160px
@@ -781,8 +808,15 @@ nav
 		letter-spacing: 1px
 		
 .contact-container_address_icon
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
 	margin-bottom: 10px
 	svg
@@ -822,6 +856,8 @@ form
 		padding-left: 10px
 		border: 1px solid #333
 		color: #fff
+		-webkit-transition: 0.1s ease
+		-o-transition: 0.1s ease
 		transition: 0.1s ease
 		font-size: 15px
 		margin-bottom: 12px
@@ -862,6 +898,8 @@ form
 		cursor: pointer
 		width: auto
 		padding: 9px 17px
+		-webkit-transition: 0.2s ease
+		-o-transition: 0.2s ease
 		transition: 0.2s ease
 	input[type="submit"]:hover
 		background-color: #FF6347
@@ -893,6 +931,8 @@ footer
 	-webkit-box-align: center
 	-ms-flex-align: center
 	align-items: center
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
 	justify-content: space-between
 
 .footer-logo
@@ -960,6 +1000,7 @@ footer
 	border: 4px solid #Fff
 	top: calc(50% - 15px)
 	left: calc(50% - 15px)
+	-webkit-animation: loader 2s infinite ease
 	animation: loader 2s infinite ease
 
 .loader-inner 
@@ -967,23 +1008,34 @@ footer
 	display: inline-block
 	width: 100%
 	background-color: #fff
+	-webkit-animation: loader-inner 2s infinite ease-in
 	animation: loader-inner 2s infinite ease-in
 
 
 @keyframes loader 
 	0% 
+		-webkit-transform: rotate(0deg)
+		-ms-transform: rotate(0deg)
 		transform: rotate(0deg)
 
 	25% 
+		-webkit-transform: rotate(180deg)
+		-ms-transform: rotate(180deg)
 		transform: rotate(180deg)
 
 	50% 
+		-webkit-transform: rotate(180deg)
+		-ms-transform: rotate(180deg)
 		transform: rotate(180deg)
 
 	75% 
+		-webkit-transform: rotate(360deg)
+		-ms-transform: rotate(360deg)
 		transform: rotate(360deg)
 
 	100% 
+		-webkit-transform: rotate(360deg)
+		-ms-transform: rotate(360deg)
 		transform: rotate(360deg)
 
 
