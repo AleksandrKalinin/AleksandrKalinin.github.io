@@ -209,9 +209,16 @@ section
 
 .container-box
 	position: relative
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-ms-flex-pack: distribute
 	justify-content: space-around
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 
 .container-box .box
@@ -221,6 +228,7 @@ section
 	background: #000
 	float: left
 	margin: 15px
+	-webkit-box-sizing: border-box
 	box-sizing: border-box
 	overflow: hidden
 	border-radius: 10px
@@ -232,6 +240,8 @@ section
 	width: 100%
 	height: 100%
 	background: #f00
+	-webkit-transition: .5s
+	-o-transition: .5s
 	transition: .5s
 	z-index: 1
 
@@ -246,8 +256,12 @@ section
 	position: absolute
 	top: 50%
 	left: 50%
+	-webkit-transform: translate(-50%, -50%)
+	-ms-transform: translate(-50%, -50%)
 	transform: translate(-50%, -50%)
 	font-size: 70px
+	-webkit-transition: .5s
+	-o-transition: .5s
 	transition: .5s
 	color: #fff
 
@@ -260,7 +274,10 @@ section
 	height: calc(100% - 100px)
 	text-align: center
 	padding: 10px 20px
+	-webkit-box-sizing: border-box
 	box-sizing: border-box
+	-webkit-transition: .5s
+	-o-transition: .5s
 	transition: .5s
 	opacity: 0
 
@@ -355,6 +372,7 @@ section
 	.portfolio-img
 		height: 100%
 		width: 100%
+		-o-object-fit: cover
 		object-fit: cover
 	
 
@@ -362,6 +380,8 @@ section
 	.portfolio-img
 		opacity: 0.3
 	.portfolio-description
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex	
 	
 .portfolio-description
