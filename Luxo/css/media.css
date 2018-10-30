@@ -1,0 +1,146 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.services-item{
+		width: 290px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+	.intro-content h1{
+		font-size: 30px;
+	}
+	.intro-content p{
+		text
+	}
+
+	.contact-container{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+	.contact-container_address, .contact-container_form{
+		width: 100%;
+	}
+
+	.contact-container_form{
+		margin-bottom: 20px;
+	}
+
+	.offers{
+		padding: 50px 0 20px 0;
+	}
+
+	.offers-wrapper{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.offers-item{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		height: auto;
+		width: 400px;
+		margin-bottom: 30px;
+	}
+
+	.offers-item:nth-child(even){
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+	.offers-description, .offers-image{
+		width: 100%;
+	}
+
+	.offers-image{
+		overflow: hidden;
+		margin-bottom: 5px;
+	}
+
+	.offers-image img{
+		height: auto;
+		width: 100%;
+	}
+
+	.offers-content{
+		width: auto;
+	}
+
+}
+
+@media only screen and (max-width : 576px) {
+	.features-wrapper{
+		flex-wrap: wrap;
+	}
+
+	.features-item{
+		width: 50%;
+		padding: 10px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.offers-item{
+		width: 300px;
+	}
+
+	.features-item{
+		width: 100%;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
