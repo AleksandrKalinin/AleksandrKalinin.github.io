@@ -30,28 +30,28 @@ $(document).ready(function(){
   
     });
 
-    $(".study-description").animated("fadeInLeft", "fadeOutLeft");
+    $(".study-description").animated("fadeInLeft");
 
-   $(".study-image").animated("fadeInRight", "fadeOutRght");    
+   $(".study-image").animated("fadeInRight");    
 
-    $(".section-header").animated("fadeIn", "fadeOut");
+    $(".section-header").animated("fadeIn");
 
-    $(".header-description").animated("fadeIn", "fadeOut");
+    $(".header-description").animated("fadeIn");
 
-    $(".whoweare-container").animated("fadeIn", "fadeOut");
+    $(".whoweare-container").animated("fadeIn");
 
-    $(".portfolio-item").animated("fadeIn", "fadeOut");
+    $(".portfolio-item").animated("fadeIn");
 
-    $(".stats-icon-container").animated("fadeIn", "fadeOut");
+    $(".stats-icon-container").animated("fadeIn");
 
-    $(".pricing-wrapper").animated("fadeIn", "fadeOut");
+    $(".pricing-wrapper").animated("fadeIn");
 
-    $(".team-container_item").animated("fadeIn", "fadeOut");
+    $(".team-container_item").animated("fadeIn");
 
-    $(".client-item").animated("fadeIn", "fadeOut");
+    $(".client-item").animated("fadeIn");
 
-    $(".blog-post").animated("fadeIn", "fadeOut");
+    $(".blog-post").animated("fadeIn");
 
-    $(".contact-container").animated("fadeIn", "fadeOut");    
+    $(".contact-container").animated("fadeIn");    
 
 })	
