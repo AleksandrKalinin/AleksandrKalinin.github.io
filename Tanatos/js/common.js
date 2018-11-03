@@ -6,14 +6,6 @@ $(document).ready(function(){
         midClick: true
     });
 
-    $(".subscribe-me").subscribeBetter({
-      trigger: "atendpage",
-      animation: "fade",
-      delay: 0,
-      showOnce: true,
-      autoClose: false,
-      scrollableModal: false
-    });
 
    $('.owl-carousel').owlCarousel({
         loop:true,
