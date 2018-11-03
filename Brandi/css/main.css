@@ -224,7 +224,7 @@ section {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow: hidden;
-  border-radius: 10px; }
+  border-radius: 5px; }
 
 .container-box .box .icon {
   position: absolute;
@@ -572,10 +572,11 @@ section {
   transition: 0.1s; }
   .blog-item .blog-image {
     width: 100%;
-    height: calc(100vw / 4 - 4.245px); }
+    height: calc(100vw / 4 - 4.245px);
+    overflow: hidden; }
     .blog-item .blog-image img {
-      width: 100%;
-      height: calc(100vw / 4 - 4.245px); }
+      width: auto;
+      height: 100%; }
   .blog-item .blog-description {
     position: absolute;
     left: 0;
