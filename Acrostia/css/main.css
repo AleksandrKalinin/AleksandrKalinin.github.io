@@ -63,7 +63,8 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: relative; }
+  position: relative;
+  background: url(../img/bg/bg_1.jpg); }
 
 .top:before {
   display: block;
@@ -198,7 +199,8 @@ nav {
         color: #fff; }
 
 .about {
-  position: relative; }
+  position: relative;
+  background: url(../img/bg/about.jpg); }
   .about .section-header {
     color: #333; }
 
@@ -271,7 +273,8 @@ nav {
   color: #fff; }
 
 .services {
-  position: relative; }
+  position: relative;
+  background: url(../img/bg/bg-2.jpeg); }
 
 .services:before {
   display: block;
@@ -327,7 +330,8 @@ nav {
     letter-spacing: 1px; }
 
 .team {
-  position: relative; }
+  position: relative;
+  background: url(../img/bg/team.jpg); }
   .team .section-header {
     color: #333; }
 
@@ -337,7 +341,7 @@ nav {
   left: 0;
   content: "";
   background-color: #fff;
-  opacity: 0.95;
+  opacity: 0.9;
   width: 100%;
   position: absolute;
   height: 100%; }
@@ -446,7 +450,8 @@ nav {
         background-color: #fff; }
 
 .portfolio {
-  position: relative; }
+  position: relative;
+  background: url(../img/bg/portfolio.jpg); }
 
 .portfolio:before {
   display: block;
@@ -641,7 +646,8 @@ nav {
   left: 440px; }
 
 .pricing {
-  position: relative; }
+  position: relative;
+  background: url(../img/bg/bg-3.jpeg); }
 
 .pricing:before {
   display: block;
@@ -740,7 +746,8 @@ nav {
     color: #fff; }
 
 .contact {
-  position: relative; }
+  position: relative;
+  background: url(../img/bg/bg-2.jpeg); }
   .contact .section-header {
     color: #222; }
 
