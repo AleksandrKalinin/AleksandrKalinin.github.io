@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 var vid = document.getElementById("bgvid");
-console.log(vid);
 var pauseButton = document.querySelector("#polina button");
 
 if (window.matchMedia('(prefers-reduced-motion)').matches) {

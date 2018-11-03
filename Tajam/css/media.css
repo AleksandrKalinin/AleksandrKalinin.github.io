@@ -54,6 +54,9 @@
 		background-color: #30235F;
 		color: #fff;		
 	}
+	.team-element{
+		flex-basis: 40%;
+	}
 
 }
 
@@ -174,6 +177,10 @@
 		max-width: 230px;
 	}
 
+	.team-element{
+		flex-basis: 50%;
+	}
+
 	.pricing-item{
 		width: 51%;
 		margin: 0 auto;
@@ -232,6 +239,10 @@
 		-webkit-box-flex: 0;
 		-ms-flex: 0 0 100%;
 		flex: 0 0 100%;
+	}
+
+	.team-image{
+		width: 220px;
 	}
 
 	.clients_wrapper{

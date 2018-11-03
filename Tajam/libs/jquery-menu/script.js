@@ -113,6 +113,14 @@ jQuery(function($) {
    closeBurger();
  });
 
+ $('#btnClients').click(function(e) {
+   e.preventDefault();
+   $('html, body').animate({
+     scrollTop: $('#destClients').offset().top
+   }, 300)
+   closeBurger();
+ });
+
  $('#btnContact').click(function(e) {
    e.preventDefault();
    $('html, body').animate({

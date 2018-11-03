@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 #loading {
   position: absolute;
@@ -140,7 +140,8 @@ header {
 
 .top {
   position: relative;
-  padding: 0; }
+  padding: 0;
+  background: url(../img/header/header.jpg); }
 
 .parallax-window {
   min-height: 500px;
@@ -414,7 +415,8 @@ video {
 
 .team {
   padding: 0;
-  position: relative; }
+  position: relative;
+  background: url(../img/team/team.jpeg); }
 
 .team:before {
   display: block;
@@ -530,11 +532,14 @@ video {
 .team-image {
   backface-visibility: hidden;
   height: 220px;
+  width: 100%;
   overflow: hidden; }
 
 .team-image img {
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
 
 .team-description {
   position: absolute;
@@ -642,8 +647,8 @@ video {
     -o-transition: 0.2s ease;
     transition: 0.2s ease; }
     .portfolio-item .portfolio-item-image img {
-      width: 100%;
-      height: auto;
+      width: auto;
+      height: 100%;
       opacity: 1; }
 
 .portfolio-item a .info button {
@@ -758,7 +763,8 @@ video {
 
 .pricing {
   position: relative;
-  padding: 0; }
+  padding: 0;
+  background: url(../img/pricing/pricing.jpeg); }
 
 .pricing:before {
   top: 0;
@@ -919,8 +925,8 @@ video {
     position: relative;
     background-color: #333333; }
     .blog-item .blog-item-image img {
-      width: 100%;
-      height: auto; }
+      width: auto;
+      height: 100%; }
   .blog-item a .info p {
     margin: 0; }
 
@@ -985,7 +991,8 @@ video {
   flex-direction: row;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  background: url(../img/testimonials/testimonials.jpeg); }
 
 .testimonials:before {
   top: 0;
@@ -1108,7 +1115,8 @@ video {
 .contact {
   position: relative;
   color: #fff;
-  padding: 0; }
+  padding: 0;
+  background: url(../img/contact/contact.jpg); }
 
 .contact:before {
   top: 0;
