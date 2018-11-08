@@ -124,6 +124,14 @@
 
 @media only screen and (max-width : 576px) {
 
+	.header-logo{
+		margin: 10px 0;
+	}
+
+	.header-wrapper{
+		padding: 0;
+	}
+
 	.header-menu{
 		height: auto;
 		width: 100%;

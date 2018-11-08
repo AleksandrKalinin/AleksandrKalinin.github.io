@@ -30,6 +30,12 @@
 	<script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
+	<div class="preloader-container">
+		<div id="overlayer"></div>
+		<span class="loader">
+			<span class="loader-inner"></span>
+		</span>			
+	</div>		
 	<a class="gotop" href="" id="btnTop"><i class="fas fa-arrow-up"></i></a>	
 	<header id="destTop">
 		<div class="container">
@@ -278,5 +284,11 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").delay(700).fadeOut("slow");
+  			$("#overlayer").delay(700).fadeOut("slow");
+		});
+	</script>		
 </body>
 </html>
