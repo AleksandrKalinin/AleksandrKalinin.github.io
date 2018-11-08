@@ -16,13 +16,16 @@ $('#lightSlider').lightSlider({
     nextHtml: '',
     slideEndAnimation: true,
     pause: 5000,
-    onSliderLoad: function(el) {
-        el.lightGallery({
-            selector: '#lightSlider .lslide'
-        });
-    }      
+ 
     
-});    
+});
+
+ $('#btnTop').click(function(e) {
+   e.preventDefault();
+   $('html, body').animate({
+     scrollTop: $('#destTop').offset().top
+   }, 300)
+ });   
 
    	
 })
