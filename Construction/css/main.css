@@ -118,7 +118,7 @@ header {
     letter-spacing: 1px;
     margin-bottom: 50px; }
 
-.home-top-button, .home-history-button, .home-news-button, input[type="submit"], .services-button, .news-navigation-button {
+.home-top-button, .home-history-button, .home-news-button, input[type="submit"], .services-button, .news-navigation-button, .submit-button {
   z-index: 999;
   border-radius: 4px;
   padding: 20px 30px;
@@ -133,7 +133,7 @@ header {
   -o-transition: 0.1s ease;
   transition: 0.1s ease; }
 
-.home-top-button:hover, .home-history-button:hover, .home-news-button:hover, input[type="submit"]:hover, .services-button:hover, .news-navigation-button:hover {
+.home-top-button:hover, .home-history-button:hover, .home-news-button:hover, input[type="submit"]:hover, .services-button:hover, .news-navigation-button:hover, .submit-button:hover {
   background-color: #222;
   color: #fff;
   text-decoration: none; }
@@ -586,6 +586,10 @@ footer {
     background-color: #222;
     color: #fff;
     text-decoration: none; }
+  .contact-form form button {
+    border: none;
+    outline: none;
+    cursor: pointer; }
 
 .news {
   padding: 100px 0; }

@@ -81,12 +81,13 @@
 							<h2>Let's get in touch</h2>
 						</div>
 						<form>
-							<input type="text" name="" value="" placeholder="Name">
-							<input type="email" name="" value="" placeholder="E-mail">
-							<input type="text" name="" value="" placeholder="Subject">
-							<textarea placeholder="Message"></textarea>
+							<input type="text" id="name" name="" value="" placeholder="Name">
+							<input type="email" id="email" name="" value="" placeholder="E-mail">
+							<input type="text" id="subject" name="" value="" placeholder="Subject">
+							<textarea id="message" placeholder="Message"></textarea>
 							<div class="contact-form-buttons">
-								<input type="submit" name="" value="Clear">
+								<!--<input type="submit" name="" onclick="clearForm()" value="Clear"> -->
+								<button type="button" class="submit-button" id="clear" >Clear</button>
 								<input type="submit" name="" value="send message">
 							</div>
 						</form>						
@@ -130,6 +131,15 @@
 			</div>
 		</div>
 	</footer>
+<script type="text/javascript">
 
+$("#clear").click(function() {
+    $('#message').val('');
+    $('#email').val('');
+    $('#name').val('');
+    $('#subject').val('');            
+});
+   
+</script>	
 </body>
 </html>

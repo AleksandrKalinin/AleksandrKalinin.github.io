@@ -52,6 +52,6 @@ $(document).ready(function(){
 
     $(".single-portfolio-sidebar").animated("fadeInLeft"); 
 
-    $(".single-portfolio-text").animated("fadeInRight"); 
-   	
+    $(".single-portfolio-text").animated("fadeInRight");
+  	
 })
