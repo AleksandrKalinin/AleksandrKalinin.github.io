@@ -1,0 +1,766 @@
+//home
+body
+	font-family: 'Montserrat', sans-serif
+
+.no-padding
+	padding: 0
+
+.section-header
+	text-align: center
+	padding: 70px 0
+	h2
+		text-transform: uppercase
+		font-weight: 700
+		margin-top: 10px
+		letter-spacing: 0.5px
+	hr
+		background: #F9B707
+		width: 60px
+		height: 2px
+
+.gotop
+	position: fixed
+	width: 50px
+	height: 50px
+	background: #F9B707
+	border: 5px solid #F9B707
+	bottom: 40px
+	right: 50px
+	text-decoration: none
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 50%
+	transition: 0.2s ease
+	z-index: 9999
+	svg
+		font-size: 22px
+		color: #fff
+
+.gotop:hover
+	background: transparent
+	border: 5px solid grey
+	svg
+		color: grey
+
+header
+	background: #444
+	height: 100px
+	display: flex
+	align-items: center
+
+.header-wrapper
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+	
+.header-menu
+	ul
+		margin: 0
+		padding: 0
+		display: flex
+		flex-direction: row
+		list-style-type: none
+		li
+			color: #fff
+			text-transform: uppercase
+			margin: 0 15px
+			a
+				text-decoration: none
+				color: #fff
+				font-weight: 700
+				font-size: 14px
+				letter-spacing: 1px
+			a:hover
+				color: #F9B707
+
+.home-top
+	background: url(../img/top/1.jpeg)
+	height: 100vh
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	
+.home-top:before
+	content: ''
+	position: absolute
+	width: 100%
+	height: 100%
+	background: #444
+	opacity: 0.5
+	
+.home-top-wrapper
+	height: 220px
+		
+.home-top-header
+	text-align: center
+	color: #fff
+	hr
+		color: #F9B707
+		width: 110px
+		height: 2px
+		background: #F9B707
+	h1
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 86px
+		letter-spacing: 2.5px
+	h2
+		font-size: 30px
+		text-transform: uppercase
+		font-weight: 400
+		letter-spacing: 1px
+		margin-bottom: 50px
+		
+.home-top-button, .home-history-button, .home-news-button, input[type="submit"], .services-button, .news-navigation-button
+	z-index: 999
+	border-radius: 4px
+	padding: 20px 30px
+	font-size: 16px
+	text-decoration: none
+	background-color: #F9B707
+	color: #fff
+	text-transform: uppercase
+	letter-spacing: 0.5px
+	font-weight: 400
+	-webkit-transition: 0.1s ease
+	-o-transition: 0.1s ease
+	transition: 0.1s ease
+.home-top-button:hover, .home-history-button:hover, .home-news-button:hover, input[type="submit"]:hover, .services-button:hover, .news-navigation-button:hover
+	background-color: #222
+	color: #fff
+	text-decoration: none
+	
+.home-services
+	padding: 100px 0
+	
+.home-services-wrapper
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-around	
+
+.home-services-item
+	width: 315px
+	color: #444
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-bottom: 30px
+	.home-services-image
+		width: 100px
+		height: 100px
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #F9B707
+		border-radius: 50%
+		margin-bottom: 10px
+		img
+			width: 50px
+			height: auto
+	h2
+		text-transform: uppercase	
+		font-size: 20px
+		height: 70px
+		font-weight: 400
+		letter-spacing: 1.5px
+		line-height: 35px
+	p
+		line-height: 30px
+		font-size: 17px
+		color: grey
+
+.home-services-item:hover
+	.home-services-image
+		background: #111
+		
+.home-history
+	background: #F8FAFB
+	padding: 100px 0
+
+.home-history-description, .home-history-image
+	width: 50%
+	height: 450px
+	padding: 0 15px
+	
+.home-history-wrapper
+	display: flex
+	flex-direction: row
+	h2
+		text-transform: uppercase
+		font-size: 20px
+		font-weight: 300
+		letter-spacing: 1.5px
+		line-height: 40px
+	p
+		line-height: 30px
+		font-size: 17px
+		color: grey
+		margin-bottom: 50px
+
+.home-history-image
+	overflow: hidden
+	img
+		height: 100%
+		width: auto
+
+.home-portfolio-wrapper
+	display: flex
+	flex-wrap: wrap
+	perspective: 1000px	
+
+.home-portfolio-item
+	width: 25%
+	flex-basis: 25%
+	position: relative
+	transform-style: preserve-3d
+	transition-duration: 1s	
+
+.home-portfolio-item:hover
+	transform: rotateY(180deg)
+
+.home-portfolio-item:hover .home-portfolio-title
+	display: none
+	transition: 1s
+	transition-delay: 1s
+
+.home-portfolio-item:before
+	content: ''
+	position: absolute
+	width: 100%
+	height: 100%
+	background: #444
+	opacity: 0.5
+	
+.home-portfolio-image
+	height: 200px
+	overflow: hidden
+	img
+		width: auto
+		height: 100%
+
+.home-portfolio-title
+	position: absolute
+	left: 0
+	top: 0
+	background: transparent
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	text-align: center
+	backface-visibility: hidden		
+	h3
+		font-size: 20px
+		color: #fff
+		letter-spacing: 1.5px
+		text-transform: uppercase
+		font-weight: 400	
+
+.home-portfolio-description
+	position: absolute
+	left: 0
+	top: 0
+	background: transparent
+	width: 100%
+	height: 100%
+	z-index: -1
+	transform: rotateY(180deg)
+	backface-visibility: hidden
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	text-align: center
+	padding: 0 15px
+	p
+		color: #fff
+	h3
+		font-size: 20px
+		color: #fff
+		letter-spacing: 1.5px
+		text-transform: uppercase
+		font-weight: 400
+	a
+		color: #F9B707
+		display: block
+		text-decoration: none
+		font-size: 15px
+		z-index: 1
+		padding-bottom: 1px
+		transition: 0.1s
+		border-bottom: 1px solid #F9B707
+	a:hover
+		color: #fff
+		border-bottom: 1px solid #Fff		
+
+.home-news
+	padding: 100px 0
+		
+.home-news-wrapper
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	
+.home-news-item, .about-news-item
+	width: 330px
+
+.home-news-image, .about-news-image	
+	width: 330px
+	img
+		width: 100%
+		height: auto
+		
+.home-news-description, .about-team-description
+	h3,a
+		letter-spacing: 1px
+		font-size: 19px
+		font-weight: 400
+		margin: 17px 0
+	a
+		text-decoration: none
+		color: #222
+		margin: 17px 0
+		display: block	
+	span
+		color: #F9B707
+		margin-bottom: 17px
+		display: block
+		color: #F9B707
+	p	
+		line-height: 30px
+		font-size: 17px
+		color: grey
+
+.home-news-button-wrapper
+	display: flex
+	flex-direction: row
+	justify-content: center
+	margin-top: 50px
+
+.home-subscription
+	background: #444
+	padding: 50px 0
+
+.home-subscription-wrapper
+	background: #444
+	color: #fff
+	text-align: center
+	height: 250px
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	h3
+		text-transform: uppercase
+		font-weight: 400
+		letter-spacing: 1.5px
+		font-size: 24px
+	p
+		line-height: 30px
+		font-size: 17px
+		color: #fff	
+	form
+		display: flex
+		flex-direction: column
+		align-items: center		
+		input[type="email"]
+			background: #5C5C5C
+			outline: none
+			padding: 15px
+			color: #fff
+			font-size: 17px
+			font-weight: 500
+			border: none
+			border-radius: 2px
+			width: 500px
+			margin-bottom: 30px
+		input[type="submit"]
+			border: none
+			cursor: pointer
+
+footer
+	background: #222
+	height: 80px
+	display: flex
+	align-items: center
+
+.footer-wrapper				
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	color: #fff
+
+.footer-logo
+	p
+		margin-bottom: 0
+
+.footer-links
+	ul
+		margin: 0
+		padding: 0
+		width: 200px
+		display: flex
+		justify-content: space-between
+		a
+			color: #fff
+			font-size: 22px	
+
+
+//about
+.about-team
+	background: #F8FAFB
+	padding: 100px 0
+
+.about-news-wrapper
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+
+.about-services-item
+	width: 50%
+	padding: 0 10px
+	
+.about-team-description
+	text-align: center
+	span
+		margin-bottom: 5px
+	a:hover
+		color: #F9B707	
+
+//services
+.services
+	padding: 100px 0
+
+.services:nth-child(odd)
+	background: #F8FAFB
+
+.services:nth-child(even)
+	.services-wrapper
+		flex-direction: row-reverse
+
+.services-wrapper
+	display: flex
+	flex-direction: row
+
+.services-description, .services-image
+	width: 50%
+	padding: 0 20px
+
+.services-description
+	h1
+		font-size: 22px
+		font-weight: 700
+		letter-spacing: 1.5px
+		margin-bottom: 15px
+	p
+		line-height: 30px
+		font-size: 16px
+		color: grey	
+		margin-bottom: 40px	
+
+	
+.services-image
+	height: 420px
+	overflow: hidden
+	img	
+		height: 100%
+		width: auto	
+		
+//portfolio	
+
+.portfolio
+	padding: 100px 0
+
+.portfolio-wrapper
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+
+.portfolio-item
+	padding: 20px
+	width: 50%
+	margin-bottom: 20px	
+
+.portfolio-image
+	img
+		width: 100%
+		height: auto
+
+.portfolio-description
+	text-align: center
+	h3
+		letter-spacing: 1px
+		font-size: 20px
+		font-weight: 400
+		margin: 25px 0
+	p	
+		line-height: 30px
+		font-size: 17px
+		color: grey
+	a
+		color: #F9B707
+		text-decoration: underline
+		
+//contact
+.contact
+	padding: 100px 0
+
+.contact-wrapper
+	display: flex
+	flex-direction: row
+
+.contact-form, .contact-address
+	width: 50%
+
+.contact-header
+	text-align: center
+	margin-bottom: 50px
+	hr
+		width: 60px
+		height: 2px
+		background: #F9B707
+		margin-bottom: 30px
+	h2
+		letter-spacing: 1.5px
+		text-transform: uppercase
+		font-weight: 700 
+	
+.contact-description
+	color: grey
+	p
+		svg
+			margin-right: 5px
+	ul
+		margin: 0
+		padding: 0
+		width: 180px
+		display: flex
+		justify-content: space-between
+		a
+			color: #F9B707
+			font-size: 19px
+			
+.contact-form
+	form
+		display: flex
+		flex-direction: column
+		input,textarea
+			width: 100%
+			border-radius: 2px
+			outline: none
+			margin-bottom: 15px
+			padding-left: 15px
+			background: #F8FAFB
+			border: none
+		input:selected, textarea:active
+			border: 1px solid #222			 
+		input
+			height: 55px
+		textarea
+			height: 150px
+			padding-top: 10px
+		input[type="submit"]
+			height: auto
+			width: auto
+			z-index: 999
+			border-radius: 4px
+			padding: 20px 30px
+			font-size: 16px
+			text-decoration: none
+			background-color: #F9B707
+			color: #fff
+			text-transform: uppercase
+			letter-spacing: 0.5px
+			font-weight: 400
+			-webkit-transition: 0.1s ease
+			-o-transition: 0.1s ease
+			transition: 0.1s ease
+			cursor: pointer
+			margin-right: 10px
+		input[type="submit"]:hover
+			background-color: #222
+			color: #fff
+			text-decoration: none
+
+//news
+
+.news
+	padding: 100px 0
+
+.news-item
+	margin-bottom: 50px
+	h2
+		letter-spacing: 1.5px
+		text-transform: uppercase
+		font-weight: 700
+		cursor: pointer
+	h2:hover
+		color: #F9B707
+		transition: 0.2s ease
+
+	hr
+		height: 1px
+		background: grey	 
+
+.news-image
+	margin: 30px 0
+	img
+		width: 100%
+		height: auto
+		
+.news-description
+	p
+		margin: 15px 0
+		line-height: 30px
+		font-size: 17px
+		color: grey		
+.news-button
+	margin: 40px 0
+	a	
+		z-index: 999
+		border-radius: 4px
+		padding: 5px 15px
+		font-size: 16px
+		text-decoration: none
+		background-color: #F9B707
+		color: #fff
+		text-transform: uppercase
+		letter-spacing: 0.5px
+		font-weight: 400
+		-webkit-transition: 0.1s ease
+		-o-transition: 0.1s ease
+		transition: 0.1s ease
+	a:hover
+		background-color: #222
+		color: #fff
+		text-decoration: none
+		
+.news-navigation
+	a	
+		padding: 15px 20px
+		
+//single portfolio item
+
+.single-portfolio
+	padding: 100px 0
+
+.single-portfolio-image
+	overflow: hidden
+	width: 100%
+	ul
+		list-style: none outside none
+		padding-left: 0
+		margin-bottom: 0	
+		li
+			display: block
+			float: left
+			margin-right: 6px
+			cursor: pointer
+			img
+				display: block
+				height: auto
+				max-width: 100%			
+
+.single-portfolio-description
+	display: flex
+	flex-direction: row
+	margin-top: 50px
+	
+		
+.single-portfolio-sidebar, .single-portfolio-text
+	width: 50%	
+	
+.single-portfolio-sidebar
+	padding-right: 30px
+	height: 410px
+	overflow: hidden
+	img
+		width: auto
+		height: 100%				
+	
+.single-portfolio-text
+	padding-left: 30px
+	p
+		line-height: 30px
+		font-size: 17px
+		color: grey		
+	h3
+		text-transform: uppercase
+		letter-spacing: 0.5px
+		font-size: 19px
+		line-height: 35px
+	ul
+		padding-left: 20px
+		list-style-type: none
+		li
+			line-height: 30px
+			font-size: 17px
+			color: grey
+			letter-spacing: 0.5px
+		li:before
+			content: '\2022'
+			color: #F9B707
+			font-weight: bold
+			width: 20px
+			height: 20px
+			font-size: 20px
+			display: inline-block							
+
+//news-single
+.news-single
+	padding: 100px 0
+
+.news-single-wrapper
+	margin-bottom: 50px
+	h2
+		letter-spacing: 1.5px
+		text-transform: uppercase
+		font-weight: 700
+		cursor: pointer
+	h2:hover
+		color: #F9B707
+		transition: 0.2s ease
+
+	hr
+		height: 1px
+		background: grey
+		
+//services-item
+.single-services-image
+	height: 400px
+	overflow: hidden
+	img	
+		height: 100%
+		width: auto	
+		
+//team-item
+
+.single-team
+	padding: 100px 0
+
+.single-team-wrapper
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+	p
+		line-height: 30px
+		font-size: 17px
+		color: grey
+		margin: 15px 0		
+	h6
+		color: #F9B707
+		margin: 20px 0 0 0 
+
+.single-team-image
+	width: 100%
+	height: auto
+	img
+		width: 100%
+		height: auto						
