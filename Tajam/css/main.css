@@ -177,6 +177,8 @@ header {
   margin-top: 100px; }
   .top-container .top-container-item {
     margin-bottom: 70px; }
+    .top-container .top-container-item h1 {
+      letter-spacing: 1px; }
     .top-container .top-container-item hr {
       border: 1px solid #fff;
       width: 50px; }
