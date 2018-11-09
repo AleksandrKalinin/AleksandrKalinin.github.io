@@ -27,10 +27,18 @@ body
 	bottom: 40px
 	right: 50px
 	text-decoration: none
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
 	border-radius: 50%
+	-webkit-transition: 0.2s ease
+	-o-transition: 0.2s ease
 	transition: 0.2s ease
 	z-index: 9999
 	svg
@@ -46,20 +54,38 @@ body
 header
 	background: #444
 	height: 100px
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
 
 .header-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
 	justify-content: space-between
 	
 .header-menu
 	ul
 		margin: 0
 		padding: 0
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-orient: horizontal
+		-webkit-box-direction: normal
+		-ms-flex-direction: row
 		flex-direction: row
 		list-style-type: none
 		height: 100px
@@ -67,7 +93,11 @@ header
 			color: #fff
 			text-transform: uppercase
 			a
+				display: -webkit-box
+				display: -ms-flexbox
 				display: flex
+				-webkit-box-align: center
+				-ms-flex-align: center
 				align-items: center		
 				text-decoration: none
 				padding: 0 15px
@@ -84,8 +114,14 @@ header
 	background: url(../img/top/1.jpeg)
 	height: 100vh
 	position: relative
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
 	
 .home-top:before
@@ -142,24 +178,44 @@ header
 	padding: 100px 0
 	
 .home-services-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
+	-ms-flex-pack: distribute
 	justify-content: space-around	
 
 .home-services-item
 	width: 315px
 	color: #444
 	text-align: center
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
 	flex-direction: column
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
 	margin-bottom: 30px
 	.home-services-image
 		width: 100px
 		height: 100px
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
 		justify-content: center
 		background: #F9B707
 		border-radius: 50%
@@ -193,8 +249,13 @@ header
 	padding: 0 15px
 	
 .home-history-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
-	flex-direction: row
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
+	flex-direction: row	
 	h2
 		text-transform: uppercase
 		font-size: 20px
@@ -214,23 +275,36 @@ header
 		width: auto
 
 .home-portfolio-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
+	-webkit-perspective: 1000px
 	perspective: 1000px	
 
 .home-portfolio-item
 	width: 25%
+	-ms-flex-preferred-size: 25%
 	flex-basis: 25%
 	position: relative
+	-webkit-transform-style: preserve-3d
 	transform-style: preserve-3d
-	transition-duration: 1s	
+	-webkit-transition-duration: 1s
+	-o-transition-duration: 1s
+	transition-duration: 1s
 
 .home-portfolio-item:hover
-	transform: rotateY(180deg)
+	-webkit-transform: rotateY(180deg)
+	transform: rotateY(180deg)	
 
 .home-portfolio-item:hover .home-portfolio-title
 	display: none
+	-webkit-transition: 1s
+	-o-transition: 1s
 	transition: 1s
+	-webkit-transition-delay: 1s
+	-o-transition-delay: 1s
 	transition-delay: 1s
 
 .home-portfolio-item:before
@@ -255,12 +329,23 @@ header
 	background: transparent
 	width: 100%
 	height: 100%
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
 	flex-direction: column
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
 	text-align: center
+	-webkit-backface-visibility: hidden
 	backface-visibility: hidden
+	-webkit-transform: translateZ(0.001px)
 	transform: translateZ(0.001px)			
 	h3
 		font-size: 20px
@@ -286,11 +371,22 @@ header
 	width: 100%
 	height: 100%
 	z-index: -1
+	-webkit-transform: rotateY(180deg) translateZ(000.1px)
 	transform: rotateY(180deg) translateZ(000.1px)
+	-webkit-backface-visibility: hidden
 	backface-visibility: hidden
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
 	flex-direction: column
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
 	text-align: center
 	padding: 0 15px
@@ -319,9 +415,16 @@ header
 	padding: 100px 0
 		
 .home-news-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
-	justify-content: space-between
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
+	justify-content: space-between	
 	
 .home-news-item, .about-news-item
 	width: 330px
@@ -354,8 +457,15 @@ header
 		color: grey
 
 .home-news-button-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
 	margin-top: 50px
 
@@ -368,8 +478,14 @@ header
 	color: #fff
 	text-align: center
 	height: 250px
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
 	flex-direction: column
+	-ms-flex-pack: distribute
 	justify-content: space-around
 	h3
 		text-transform: uppercase
@@ -381,9 +497,16 @@ header
 		font-size: 17px
 		color: #fff	
 	form
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-ms-flex-direction: column
 		flex-direction: column
-		align-items: center		
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center	
 		input[type="email"]
 			background: #5C5C5C
 			outline: none
@@ -406,8 +529,15 @@ footer
 	align-items: center
 
 .footer-wrapper				
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
 	justify-content: space-between
 	color: #fff
 
@@ -420,7 +550,11 @@ footer
 		margin: 0
 		padding: 0
 		width: 200px
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify
 		justify-content: space-between
 		a
 			color: #fff
@@ -433,8 +567,15 @@ footer
 	padding: 100px 0
 
 .about-news-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
 	justify-content: space-between
 
 .about-services-item
@@ -457,10 +598,18 @@ footer
 
 .services:nth-child(even)
 	.services-wrapper
+		-webkit-box-orient: horizontal
+		-webkit-box-direction: reverse
+		-ms-flex-direction: row-reverse
 		flex-direction: row-reverse
 
 .services-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
 
 .services-description, .services-image
@@ -493,8 +642,14 @@ footer
 	padding: 100px 0
 
 .portfolio-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 
 .portfolio-item
@@ -527,7 +682,12 @@ footer
 	padding: 100px 0
 
 .contact-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
 
 .contact-form, .contact-address
@@ -555,7 +715,11 @@ footer
 		margin: 0
 		padding: 0
 		width: 180px
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify
 		justify-content: space-between
 		a
 			color: #F9B707
@@ -563,7 +727,12 @@ footer
 			
 .contact-form
 	form
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-ms-flex-direction: column
 		flex-direction: column
 		input,textarea
 			width: 100%
@@ -621,6 +790,8 @@ footer
 		cursor: pointer
 	h2:hover
 		color: #F9B707
+		-webkit-transition: 0.2s ease
+		-o-transition: 0.2s ease
 		transition: 0.2s ease
 
 	hr
@@ -687,7 +858,12 @@ footer
 				max-width: 100%			
 
 .single-portfolio-description
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
 	margin-top: 50px
 	
@@ -744,6 +920,8 @@ footer
 		cursor: pointer
 	h2:hover
 		color: #F9B707
+		-webkit-transition: 0.2s ease
+		-o-transition: 0.2s ease
 		transition: 0.2s ease
 
 	hr
@@ -764,8 +942,15 @@ footer
 	padding: 100px 0
 
 .single-team-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
 	flex-direction: column
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
 	text-align: center
 	p
