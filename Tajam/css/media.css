@@ -171,6 +171,10 @@
 
 	.about-image{
 		height: 300px;
+	}
+
+	.team{
+		background: url(../img/team/team-large.jpeg)
 	}	
 
 	.team-item{
@@ -207,6 +211,10 @@
 	.top-container{
 		width: 90%;
 		margin-left: 5%;
+	}
+
+	.top-container-item h1{
+		font-size: 22px;
 	}
 
 	.services-item {
