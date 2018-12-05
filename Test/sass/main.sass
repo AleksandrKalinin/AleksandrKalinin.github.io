@@ -4,9 +4,18 @@ body
 
 header
 	background: #787878
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
 	height: 75px
 
@@ -52,6 +61,8 @@ header
 	width: 9999%
 	padding: 0
 	margin: 0
+	-webkit-transition: all 750ms ease
+	-o-transition: all 750ms ease
 	transition: all 750ms ease
 	left: 0
 
@@ -74,8 +85,14 @@ header
 	font-size: 2rem
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.6)
 	text-align: center
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
 	color: #111
 	text-decoration: none
@@ -84,6 +101,8 @@ header
 	top: 50%
 	-webkit-transform: translateY(-50%)
 	transform: translateY(-50%)
+	-webkit-transition: all 150ms ease
+	-o-transition: all 150ms ease
 	transition: all 150ms ease
 
 #slider #prev:hover, #slider #next:hover 
@@ -104,9 +123,18 @@ header
 	position: relative
 
 .slider-item
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
 	background: #F8F8F8
 	position: relative
@@ -237,8 +265,14 @@ header
 		letter-spacing: 1px
 
 .catalog-wrapper
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
 	flex-direction: row
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 			
 .catalog-item
@@ -252,9 +286,18 @@ header
 		color: #7D7D7D
 	.catalog-item-description
 		margin-top: 40px
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-orient: horizontal
+		-webkit-box-direction: normal
+		-ms-flex-direction: row
 		flex-direction: row
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify
 		justify-content: space-between
 		p
 			font-size: 22px
@@ -263,17 +306,27 @@ header
 			margin-bottom: 0			
 
 .catalog-item:hover
+	-webkit-transform: scale(1.02)
+	-ms-transform: scale(1.02)
 	transform: scale(1.02)
 
 .page-navigation
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
 	padding: 0 0 50px 0
 	ul
 		list-style-type: none
 		padding: 0
 		margin: 0
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
 		li
 			display: inline-block
@@ -283,8 +336,14 @@ header
 				display: block
 				width: 25px
 				height: 40px
+				display: -webkit-box
+				display: -ms-flexbox
 				display: flex
+				-webkit-box-align: center
+				-ms-flex-align: center
 				align-items: center
+				-webkit-box-pack: center
+				-ms-flex-pack: center
 				justify-content: center
 				font-size: 15px
 				line-height: 24px
@@ -296,7 +355,11 @@ header
 .feedback-section
 	background-color: rgba(0, 0, 0, 0.6)
 	display: none
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
 	width: 100%
 	position: absolute
@@ -332,8 +395,15 @@ header
 	form *
 		width: 100%	
 	form
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-ms-flex-direction: column
 		flex-direction: column
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
 		text-align: center
 		padding: 30px 70px
@@ -369,6 +439,7 @@ header
 		.submit-button:hover
 			background: #888888
 		.wrong
+			-webkit-box-shadow: inset 0 0 10px red
 			box-shadow: inset 0 0 10px red						
 
 input::-webkit-input-placeholder
