@@ -1,343 +1,274 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
 	<title>Test</title>
-	<meta charset="utf-8">	
-	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />		
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic-ext" rel="stylesheet">	
-	<style type="text/css">
-		body{
-			font-family: 'Open Sans', sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.connect{
-			padding: 0 50px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			background: #fff;
-		}
-		.connect-form-container, .connect-promo{
-			width: 49%;
-			box-sizing: border-box;
-			background: #F9F9F9;
-			box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
-			display: block;
-		}
-		.connect-form-container{
-			padding: 55px 50px 40px 190px;
-			background-image: url(images/cm-line.jpg);
-			background-repeat: no-repeat;
-			background-size: auto 100%;
-		}
-		.connect-form h2{
-			margin: 0 0 15px;
-			font-size: 29px;
-			line-height: 40px;
-			letter-spacing: -1px;
-		}
-		.connect-inputs{
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			
-		}
-		.connect-inputs input{
-			height: 50px; 
-			line-height: 50px;
-			outline: none;
-			padding: 0 14px;
-			margin-bottom: 25px;
-			font-size: 15px;
-			color: #636363;
-			box-sizing: border-box;
-			font-size: 18px;
-		}
-		.connect-inputs input:input:required:valid{
-			background: #fff;
-		}
-		.connect-inputs input:focus:required:invalid{
-			background: #FCB2B2;
-			border: 1px solid red;
-			color: #636363;
-		}
-		.connect-inputs input[type="submit"]{
-			border: none;
-			color: #fff;
-			cursor: pointer;
-			margin-bottom: 0;
-			font-size: 14px;
-		}
-		.connect-promo{
-			padding: 60px 40px 40px;
-			position: relative;
-		}
-		.connect-promo img{
-			float: right;
-			top: 25px;
-			right: 25px;
-		}
-		.connect-promo h2{
-			text-transform: uppercase;
-			font-size: 36px;
-			margin: 0 0 50px;
-		}
-		.connect-form p{
-			padding: 0 25px 30px 0;
-			margin: 20px 0 0;
-			font-size: 18px;
-			font-family: 'Roboto', sans-serif;
-		}
-		.connect-promo p{
-			color: #333;
-			font-size: 18px;
-			line-height: 24px;
-		}
-		 .connect-promo .top-description{
-			font-size: 22px;
-			margin: 15px 0 90px;
-		}
-		.bottom-description{
-			margin: 15px 0;
-			font-weight: 400;
-			letter-spacing: -0.5px;
-		}
-		.button{
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			text-transform: uppercase;
-			background: #ED1C24;
-			font-size: 14px;
-			text-decoration: none;
-			color: #fff;
-			width: 180px;
-			height: 50px;
-			line-height: 50px;
-			font-weight: 700;
-			margin-top: 10px;
-			font-family: 'Roboto', sans-serif;
-		}
-		.button:hover{
-			background: #DB0A12;
-			transition: .2s linear; 
-		}
-		.connect-hidden{
-			display: none;
-		}
-		
-		@media(max-width: 1150px){
-			.connect-form-container{
-				background-image: none;
-				background-color: #7F7F7F;
-			}
-		}
-
-		@media (max-width: 960px){
-			.connect{
-				flex-direction: column;
-				padding: 0;
-			}
-			.connect-form-container, .connect-promo{
-				width: 100%;
-			}
-
-			.connect-promo{
-				display: none;
-			}
-			.connect-form-container{
-				background-image: none;
-				background: #7F7F7F;
-				padding: 100px 50px;
-			}	
-
-			.connect-form h2{
-				text-transform: uppercase;
-				font-size: 22px;
-				line-height: 30px;
-				letter-spacing: auto;
-			}
-
-			.connect-form p{
-				padding: 0 25px 12px 0;
-			}
-
-			.connect-inputs input{
-				width: 220px;
-				margin: 15px 0 0;
-				height: 40px;
-				line-height: 40px;
-				background: transparent;
-				border: 1px solid #fff;
-				font-size: 13px;
-			}
-
-			.connect-inputs input::placeholder{
-				color: #fff;
-			} 
-			.connect-inputs input::-webkit-input-placeholder{
-				color: #fff;
-			}
-			.contacts-inputs input::-ms-input-placeholder { 
-    			color: #fff;
-			}
-
-			.connect-inputs input:focus{
-				background: #fff;
-				color: #333;
-			}	
-
-			.connect-inputs input[type="submit"]{
-				background: #EDC81C;
-				color: #000;
-				font-size: 16px;
-				box-shadow: 1px 1px 1px 0 rgba(0,0,0,.2);
-			}
-			
-			.connect-inputs input:input:required:valid{
-				background: transparent;
-			}
-
-			.connect-inputs input:focus:required:invalid{
-				background: #FCB2B2;
-				border: 1px solid red;
-				color: #fff;
-			}
-
-			.connect-hidden{
-				background-color: #ED1C24;
-				display: flex;
-				flex-direction: row;
-				padding: 0 25px 25px 0;
-			}	
-			.connect-hidden img{
-				height: 143px;
-				width: 144px;
-			}
-			.connect-hidden-descr{
-				margin: 0 0 0 20px;
-				color: #fff;
-				font-family: 'Roboto Slab', sans-serif;
-				height: 300px;
-			}
-			.connect-hidden-descr h2{
-				margin: 40px 0 15px 0;
-				line-height: 26px;
-				font-size: 26px;
-			}
-
-			.connect-hidden-descr p{
-				font-size: 24px;
-				margin: 0 0 35px;
-				box-sizing: border-box; 
-			}
-
-			.connect-hidden-descr p .bold{
-				color: #EDC81C;
-				font-size: 36px;
-				font-weight: 700;
-			}
-
-			.connect-hidden-descr a{
-				background: #EDC81C;
-				font-size: 18px;
-				text-transform: uppercase;
-				text-decoration: none;
-				color: #000;
-				padding: 6px 22px 3px 22px;
-				margin: 0 0 30px 0;
-				box-sizing: border-box;
-				font-weight: 700;
-				font-family: 'Roboto', sans-serif;
-				border-radius: 4px;
-			}
-
-			@media(max-width: 768px){
-				.connect-hidden{
-					padding: 0 25px 45px;
-					position: relative;
-					justify-content: center;
-				}
-				.connect-hidden img{
-					position: absolute;
-					top: 0;
-					left: 0;
-					height: 80px;
-					width: auto;
-				}
-				.connect-hidden-descr h2{
-					margin: 40px 0 15px 0;
-					font-size: 20px;
-				}
-
-				.connect-hidden-descr h2 span{
-					font-size: 44px;
-					line-height: 44px;
-					display: block;
-					margin-bottom: -10px;
-				}				
-				.connect-hidden-descr{
-					text-align: center;
-					width: auto;
-					padding: 0;
-					height: auto;
-				}
-
-				.connect-hidden-descr span{
-					font-size: 18px;
-				}
-				.connect-hidden-descr p{
-					line-height: normal;
-				}
-				.connect-hidden-descr p .bold{
-					font-size: 70px;
-				}
-			}
-		}
-	</style>
+	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />	
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="libs/pjax/jquery.pjax.js"></script>
+	<script src="libs/masked-input/jquery.maskedinput.min.js"></script>	
+	<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body>
-	<section class="connect">
-		<div class="connect-form-container">
-			<form class="connect-form">
-				<h2>Нужен замерщик? Тогда мы едем к Вам!</h2>
-				<p>Осуществляем замеры на объекте, консультируем более подробно по необходимым видам услуг, переводим Ваши пожелания в технически грамотные решения.</p>
-				<div class="connect-inputs">
-					<input type="text" placeholder="Введите ваше имя" required>
-					<input type="tel" onkeydown="checkInput(event)"  placeholder="Введите ваш телефон" required>
-					<input type="submit" name="" value="отправить заявку" class="button">
-				</div>
-			</form>
-		</div>
-		<div class="connect-hidden">
-			<img src="images/gift-bob.png">
-			<div class="connect-hidden-descr">
-				<h2><span>АКЦИЯ!</span></span><br> ПРИ ЗАКАЗЕ ЭЛЕКТРИКИ</h2>
-				<p><span>скидка</span> <span class="bold">20%</span><br> на сантехнические услуги<br> от нашей компании</p>
-				<a href="">Получить скидку</a>
+<body id="body">
+	<header>
+		<ul class="header-menu">
+			<li><a href="">Главная </a></li>
+			<li><a href="">Каталог </a></li>
+			<li><a href="">Доставка и оплата </a></li>
+			<li><a href="">Прайс-лист </a></li>
+			<li><a href="">Контакты </a></li>
+		</ul>
+	</header>
+	<section class="slider">
+		<div id="slider">
+			<div class="slider-ball-1">
+				
 			</div>
-		</div>
-		<div class="connect-promo">
-			<img src="images/20.png">
-			<h2>Акция!</h2>
-			<p class="top-description">При заказе комплекса услуг от нашей компании Вы получаете скидку 20%.</p>
-			<p class="bottom-description">Наша компания предоставляет услуги по электромонтажным, сантехническим и отделочным работам. При заказе комплекса услуг мы предоставляем скидку в 20%! Будем рады видеть вас в числе наших благодарных клиентов!</p>
-			<a href="" class="button">Получить скидку</a>
+			<div class="slider-ball-2">
+				
+			</div>
+			<div class="slider-ball-3">
+				
+			</div>
+			<div class="slider-ball-4">
+				
+			</div>
+			<div class="slider-ball-5">
+				
+			</div>
+			<div class="slider-ball-6">
+				
+			</div>	
+			<ul id="slideWrap"> 
+				<li class="slider-item">
+					<div class="slider-digit">
+						<h1>1</h1>
+					</div>
+				</li>
+				<li class="slider-item">
+					<div class="slider-digit">
+						<h1>2</h1>
+					</div> 		    	
+				</li>
+				<li class="slider-item">
+					<div class="slider-digit">
+						<h1>3</h1>
+					</div>		 		    	
+				</li>
+			</ul>
+			<a id="prev" href="#">&#60;</a>
+			<a id="next" href="#">&#62;</a>
 		</div>
 	</section>
-	<script type="text/javascript">
-		var checkInput = (event) =>{
+	<section class="catalog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="navigation-bar">
+						<ul>
+							<li>Главная</li>
+							<li>Каталог</li>
+							<li>Бытовая техника</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 catalog-menu-wrapper">
+					<div class="catalog-menu">
+						<ul class="outer-list">
+							<li class="collapsible">
+								Автомобили
+							</li>
+								<ul class="nestedList">
+									<li>Легковые</li>
+									<li>Грузовые</li>
+								</ul>							
+							<li class="collapsible">
+								Бытовая техника
+							
+							</li>
+								<ul class="nestedList">
+									<li>Микромолновки</li>
+									<li>Холодильники</li>
+									<li>Посудомоечные машины</li>
+									<li>Чайники</li>
+								</ul>							
+							<li class="collapsible">
+								Мобильная техника
+							
+							</li>
+							<ul class="nestedList">
+								<li>Смартфоны</li>
+								<li>Планшеты</li>
+								<li>Графические плпншеты</li>
+							</ul>								
+							<li class="collapsible">
+								Компьютеры
+							</li>
+							<ul class="nestedList">
+								<li>Компьютеры</li>
+								<li>Моноблоки</li>
+								<li>Ноутбуки</li>
+							</ul>							
+							<li class="collapsible">
+								Одежда
+							</li>
+							<ul class="nestedList">
+								<li>Мужская</li>
+								<li>Женская</li>
+							</ul>							
+							<li class="collapsible">
+								Недвижимость
+							</li>
+							<ul class="nestedList">
+								<li>Квартиры</li>
+								<li>Дома</li>
+							</ul>
+													
+						</ul>
+					</div>
+					<div class="feedback">
+						<a href="" onclick="openForm(event)">Обратная связь</a>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="catalog-wrapper">
+						<div class="catalog-item">
+							<img src="img/photo.jpg">
+							<p>Самый клевый чайник, который нвдо купить!</p>
+							<div class="catalog-item-description">
+								<p>1 900 р.</p>
+								<a href="">
+									<img src="img/basket.png">
+								</a>
+							</div>
+						</div>
+						<div class="catalog-item">
+							<img src="img/photo.jpg">
+							<p>Самый клевый чайник, который нвдо купить!</p>
+							<div class="catalog-item-description">
+								<p>1 900 р.</p>
+								<a href="">
+									<img src="img/basket.png">
+								</a>
+							</div>
+						</div>
+						<div class="catalog-item">
+							<img src="img/photo.jpg">
+							<p>Самый клевый чайник, который нвдо купить!</p>
+							<div class="catalog-item-description">
+								<p>1 900 р.</p>
+								<a href="">
+									<img src="img/basket.png">
+								</a>
+							</div>
+						</div>
+						<div class="catalog-item">
+							<img src="img/photo.jpg">
+							<p>Самый клевый чайник, который нвдо купить!</p>
+							<div class="catalog-item-description">
+								<p>1 900 р.</p>
+								<a href="">
+									<img src="img/basket.png">
+								</a>
+							</div>
+						</div>
+						<div class="catalog-item">
+							<img src="img/photo.jpg">
+							<p>Самый клевый чайник, который нвдо купить!</p>
+							<div class="catalog-item-description">
+								<p>1 900 р.</p>
+								<a href="">
+									<img src="img/basket.png">
+								</a>
+							</div>
+						</div>																		
+					</div>
+					<div class="page-navigation">
+						<ul>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">6</a></li>
+							<li><a href="">7</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="feedback-section" id="feedbackForm">
+		<div class="feedback-container">
+			<div class="feedback-close">
+				<a href="" onclick="closeForm(event)">&#10005;</a>
+			</div>
+			<form>
+				<h2>Обратная связь</h2>
+				<label>Ваше имя*</label>
+				<input   id="name" type="text"  value=""   
+				placeholder="" minlength=2 >
+				<label>Телефон*</label>
+				<input  id="phone1" type="text"  value="" placeholder="" >
+				<label>Email*</label>
+				<input  id="email" type="email"  value="" placeholder="">
+				<label>Сообщение</label>
+				<textarea></textarea>
+			
+				<button type="submit" id="submitForm" name="" value="Отправить" 
+				onclick="checkForm(event)" ></button>
+			</form>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/main.js"></script>	
 
-			var x = event.keyCode;
-			if ((x !== 46) && (x < 48 || x> 57) && (x !== 8) ){
-					event.preventDefault();
-				}
+	<script type="text/javascript">
+
+		function openForm(event) {
+			 var a = ($('#body').height());
+			event.preventDefault();
+			$('#feedbackForm').css("height", a);
+		  document.getElementById("feedbackForm").style.display = "flex";
 		}
+
+		function closeForm(event) {
+			event.preventDefault();
+		  document.getElementById("feedbackForm").style.display = "none";
+		}
+
+	function checkForm(event){
+
+	     if ($('#name').val() == '') {
+	        this.event.preventDefault();
+	         
+	        $('#name').addClass('wrong');
+	        $('#name').attr('placeholder','Поле обязательно для заполнения');
+	        return false;
+	    } else  if ($('#phone1').val() == '') {
+	         this.event.preventDefault();
+	        $('#phone1').addClass('wrong');
+	        $('#phone1').attr('placeholder','Поле обязательно для заполнения');
+	        return false;
+	         
+	    } 
+
+	    else if ($('#email').val() == '') {
+	        this.event.preventDefault();
+	        $('#email').addClass('wrong');
+	        $('#email').attr('placeholder','Поле обязательно для заполнения');
+	        return false;
+	    } else
+	       { 
+		       	return true
+		       	$(this).trigger('click');
+	       }
+
+	}			
+
+
 	</script>
 </body>
 </html>
