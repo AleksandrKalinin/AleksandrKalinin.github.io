@@ -1,0 +1,47 @@
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+th{
+	font-size: 14px;
+}
+
+.input-group {
+  margin: 20px 0px;
+  width: 85%;
+  float: left;
+}
+
+svg {
+  height: 150px;
+}
+
+
+td:first-of-type, td:first-of-type > div {
+  height: 100px;
+  width: 100px;
+}
+
+.weather-list li:nth-child(2n){
+	background-color: #C6E6FA;	
+}
+
+.table tr:nth-child(2n+1){
+	background-color: #C6E6FA;
+}
+
+.content-container{
+	margin-bottom: 20px; 
+}
+
+
+.map-container,.map-container > div{
+	width: 720px;
+	height: 355px;
+}
+
+.def-btn{
+	float: right;
+	  margin: 20px 0px;
+}
