@@ -4,13 +4,9 @@
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-   "start": "react-scripts start",
+   "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
    "predeploy": "npm run build",
    "deploy": "gh-pages -d build",
-   "build": "react-scripts build",
-   "test": "react-scripts test",
-   "eject": "react-scripts eject"    
   },
   "homepage": "https://aleksandrkalinin.github.io/weather",  
   "author": "",
