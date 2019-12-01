@@ -1,0 +1,257 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.about-container{
+		flex-direction: column;
+	}
+
+	.about-description, .about-photo{
+		padding: 0 !important;
+		width: 100%;
+	}
+
+	.about-second .about-container{
+		flex-direction: column-reverse;
+	}
+
+	.contact-container{
+		margin-bottom: 30px;
+		flex-direction: column-reverse;
+	}
+
+	.contact-photo{
+		margin-bottom: 40px;
+	}
+
+	.section-header{
+		padding: 120px 40px 70px 40px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.news .news-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.news .news-container a:first-child {
+	  grid-row: 1/2;
+	  grid-column: 1/2;
+	  height: auto;
+	}
+
+	.news .news-container a:nth-child(2) {
+	  grid-column-start: 2;
+	  grid-column-end: 3;
+	}
+
+	.events-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.events-container .event-item:first-child {
+	  grid-row: 1/2;
+	  grid-column: 1/2;
+	}
+
+	.events-container .event-item:nth-child(2) {
+	  grid-row: 1/2;
+	  grid-column: 2/3;	
+	}
+
+	.events-container .event-item:nth-child(n+3){
+		grid-auto-rows: 2fr;
+	}	
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	header{
+		height: 80px;
+	}
+
+	.header-logo {
+		height: 60px;
+		width: 60px;
+	}
+
+	header nav a{
+		display: none;
+	}
+
+	.about-description p{
+		font-size: 14px;
+	}
+
+	.gallery-item-description{
+		padding: 70px 0 0 60px;
+		width: 400px;
+	}
+
+	.gallery-item-description h2{
+		font-size: 20px;
+	}	
+
+	.news .news-container{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.news .news-container a:first-child {
+	  grid-row: 1/1;
+	  grid-column: 1/1;
+	  height: auto;
+	}
+
+	.news .news-container a:nth-child(2) {
+	  grid-column-start: 1;
+	  grid-column-end: 2;
+	}
+
+	.events-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.events-container .event-item:first-child {
+	  grid-row: 1/2;
+	  grid-column: 1/2;
+	}
+
+	.events-container .event-item:nth-child(2) {
+	  grid-row: 1/2;
+	  grid-column: 2/3;	
+	}
+
+	.events-container .event-item:nth-child(n+3){
+		grid-auto-rows: 2fr;
+	}	
+
+	.products-container{
+		grid-template-columns: repeat(2, 1fr);
+
+	}		
+
+}
+
+@media only screen and (max-width : 576px) {
+
+	.section-header{
+		padding: 60px 40px 20px 40px;
+	}
+
+	.section-header h2{
+		margin-bottom: 16px;
+	}
+
+	.section-header h2, .about-description h2{
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.gallery-item-description{
+		font-size: 18px;
+	}
+
+	.gallery-item-description{
+		padding: 20px 50px 0 60px;
+	}
+
+	.gallery-item-description h2:before{
+		display: none;
+	}
+
+	.events-container{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.events-container .event-item:first-child {
+	  grid-row: 1/1;
+	  grid-column: 1/1;
+	}
+
+	.events-container .event-item:nth-child(2) {
+	  grid-column-start: 1;
+	  grid-column-end: 2;	
+	}
+
+	.events-container .event-item:nth-child(n+3){
+		grid-auto-rows: 2fr;
+	}
+
+	footer{
+		font-size: 14px !important;
+	}
+
+	footer nav a svg{
+		font-size: 18px;
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.sl-image{
+		top: 150px !important;
+	}
+
+	.gallery-item-description{
+		width: auto;
+	}
+
+	.gallery-item-description h2{
+		font-size: 17px;
+	}
+
+	.products-container{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	.animated {
+		animation: none !important;
+	}
+
+	footer{
+		font-size: 12px !important;
+	}
+
+	footer nav a svg{
+		font-size: 16px;
+	}	
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
