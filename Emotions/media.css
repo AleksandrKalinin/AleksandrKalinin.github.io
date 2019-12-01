@@ -1,0 +1,263 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.header-logo{
+		width: 100px;
+	}
+
+	.header-wrapper{
+		padding: 0 20px;
+	}
+
+	.team-wrapper{
+		-ms-grid-columns: (1fr)[1];
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.team-item.team-item-even{
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+
+	.team-item:nth-child(odd){
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: row-reverse;
+		        flex-direction: row-reverse;
+	}
+
+	.testimonials-section, .testimonials-item{
+		height: 500px;
+	}
+
+	.about-item-description h1{
+		font-size: 50px;
+	}
+
+	.introduction-inner-wrapper{
+		padding: 0;
+	}
+
+	.portfolio-wrapper{
+		-ms-grid-columns: (1fr)[2];
+		grid-template-columns: repeat(2, 1fr);
+	}	
+
+	.portfolio-item{
+		height: 250px;
+	}
+/*
+	footer, .section-introduction, .section-services, .section-team, .portfolio-section{
+		display: none;
+	}
+*/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	header nav a{
+		display: none;
+	}
+
+	.contact-wrapper{
+		width: 100%;
+	}
+
+	.section-about, .about-item{
+		height: 400px;
+	}
+
+
+	.testimonials-inner-wrapper svg{
+		font-size: 30px;
+	}
+	.introduction-item{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		height: auto;
+	}
+	.introduction-image, .introduction-description{
+		width: 100%;
+	}
+	.testimonials-rate svg {
+		font-size: 14px;
+	}
+	.contact-item{
+		padding: 30px 0;
+	}
+
+	.skills-item{
+		margin: 15px 0;
+	}
+
+	.about-item-description h1{
+		font-size: 35px;
+	}
+
+	.form-photo{
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 576px) {
+	.testimonials-item{
+		height: 400px;
+	}
+
+	.testimonials-description{
+		padding: 0 15px;
+	}
+
+	.introduction-header h2{
+		font-size: 26px;
+	}
+
+	.introduction-title h1{
+		font-size: 20px;
+	}
+
+	.introduction-description{
+		padding-bottom: 20px;
+	}
+
+	.testimonials-section .owl-dots{
+		bottom: 140px;
+	}
+
+	.portfolio-wrapper{
+		-ms-grid-columns: (1fr)[1];
+		grid-template-columns: repeat(1, 1fr);
+	}	
+
+	.portfolio-menu nav{
+		width: 90%;
+	}
+
+	.about-item-description h1{
+		font-size: 25px;
+	}	
+
+	.team-inner-wrapper{
+		padding: 30px 10px;
+	}	
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.introduction-description{
+		padding: 50px;
+	}
+
+	.introduction-image{
+		height: 220px;
+	}
+
+	.section-about, .about-item{
+		height: 300px;
+	}
+
+	.about-item-description h1{
+		letter-spacing: 15px;
+		margin-right: -15px;
+	}
+
+	.testimonials-section .owl-dots{
+		bottom: 80px;
+	}
+
+
+
+	.team-item{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
+		    -ms-flex-direction: column !important;
+		        flex-direction: column !important;
+		height: auto;
+	}
+
+	.team-item-image, .team-item-description{
+		width: 100%;
+	}
+
+	.team-inner-wrapper{
+		padding: 30px 0;
+	}
+
+	.team-inner-wrapper p{
+		width: 100%;
+	}
+
+	.team-item-image{
+		height: 300px !important;
+	}
+
+	.testimonials-description, .testimonials-item{
+		height: 450px;
+	}
+
+	.links-wrapper{
+		width: 250px;
+	}
+
+	.links-wrapper a{
+		font-size: 16px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+	.about-item-description h1{
+		font-size: 22px;
+		letter-spacing: 8px;
+	}
+
+	.portfolio-menu nav button{
+		font-size: 10px;
+	}
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
