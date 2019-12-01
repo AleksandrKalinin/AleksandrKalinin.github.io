@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Incubator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="build/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="build/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,500,600,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="build/libs/animate/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="build/libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="build/libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="build/libs/lightbox/simplelightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="build/libs/lightslider/lightslider.min.css">
+	<link rel="stylesheet" type="text/css" href="build/libs/progress/asPieProgress.min.css">	
+	<link rel="stylesheet" type="text/css" href="build/libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="build/libs/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="build/libs/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="build/libs/scrollbar/jquery.mCustomScrollbar.min.css">
+	<script src="build/libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="build/libs/bootstrap/bootstrap.min.js"></script>  
+	<!--<script src="libs/jquery/jquery.js"></script> -->
+	<script src="build/libs/animate/animate-css.js"></script>	
+	<script src="build/libs/owl-carousel/owl.carousel.min.js"></script>	
+	<script src="build/libs/owl-carousel/owl.autoplay.js"></script>	
+	<script src="build/libs/waypoints/waypoints.min.js"></script>
+	<script src="build/libs/fontawesome/js/all.min.js"></script>
+	<script src="build/libs/magnific-popup/magnific-popup.min.js"></script>	
+	<script src="build/libs/lightbox/simple-lightbox.min.js"></script>
+	<script src="build/libs/lightslider/lightslider.min.js"></script>
+	<script src="build/libs/masked/jquery.maskedinput.min.js"></script>
+	<script src="build/libs/parallax/parallax.min.js"></script>	
+	<script src="build/libs/scrollbar/jquery.mCustomScrollbar.min.js" ></script>		
+	<script>
+		$(function(){
+			var $gallery = $('.portfolio-wrapper a').simpleLightbox();
+		});
+	</script>
+</head>
+<body>
+	<header class="menu" id="myHeader">
+		<div class="menu-logo">
+			<img class="menu-logo__image" id="logo" src="build/images/logo.png">
+		</div>
+		<nav class="menu__wrapper main-menu">
+			<a class="menu__item scrollTo" href="#home">Home</a>
+			<a class="menu__item scrollTo" href="#services">Services</a>
+			<a class="menu__item scrollTo" href="#about">About</a>
+			<a class="menu__item scrollTo" href="#team">Team</a>
+			<a class="menu__item scrollTo" href="#skills">Skills</a>
+			<a class="menu__item scrollTo" href="#portfolio">Portfolio</a>
+			<a class="menu__item scrollTo" href="#testimonials">Testimonials</a>
+			<a class="menu__item scrollTo" href="#contact">Contact</a>
+		</nav>
+		<div class="hamb-container" id="hamb-icon">
+			<span class="top-bar"></span>
+			<span class="middle-bar"></span>
+			<span class="bottom-bar"></span>
+		</div>
+	</header>
+	<div class="hamb-overlay toggled">
+		<nav>
+			<a class="menu__item scrollTo scrollOverlay" href="#home">Home</a>
+			<a class="menu__item scrollTo scrollOverlay" href="#services">Services</a>
+			<a class="menu__item scrollTo scrollOverlay" href="#about">About</a>
+			<a class="menu__item scrollTo scrollOverlay" href="#team">Team</a>
+			<a class="menu__item scrollTo scrollOverlay" href="#skills">Skills</a>
+			<a class="menu__item scrollTo scrollOverlay" href="#portfolio">Portfolio</a>
+			<a class="menu__item scrollTo scrollOverlay" href="#testimonials">Testimonials</a>
+			<a class="menu__item scrollTo scrollOverlay" href="#contact">Contact</a>				
+		</nav>
+	</div>
+	<section class="intro" data-parallax="scroll" data-image-src="build/images/header.jpeg" data-z-index="1" id="home">
+		<div class="intro__bg">
+			<div class="intro__bg-first">
+				<div class="intro__bg-second">
+					<div class="intro__bg-third">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="intro__wrapper">
+			<div class="intro-description">
+				<h1 class="intro-description__title">We deliver high quality business solutions</h1>
+				<p class="intro-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. </p>
+				<div class="intro-description__buttons buttons-container">
+					<a href="" class="buttons-container__button button-white">Contact us</a>
+					<a href="" class="buttons-container__button button-blue">learn more</a>
+				</div>
+			</div>
+		</div>
+		<button href="" class="intro-button" id="scrollDown">
+			<i class="fas fa-arrow-down"></i>
+		</button>
+	</section>
+	<section class="services section-block" id="services">
+		<div class="section-header">
+			<h1 class="section-header__title">Our main services</h1>
+			<p class="section-header__description">Services done right will have a positive impact on your business. </p>
+		</div>
+		<div class="services-wrapper container">
+			<div class="row">
+				<div class="services-item col-lg-4 col-xl-4">
+					<div class="services-item__picture">
+						<img class="services-item__image" src="build/images/services-1.png" >
+					</div>
+					<div class="services-item__description services-text">
+						<h6 class="services-text__title">Users Statistics</h6>
+						<p class="services-text__description">From image sliders to custom content elements and contact forms</p>
+					</div>
+				</div>
+				<div class="services-item col-lg-4 col-xl-4">
+					<div class="services-item__picture">
+						<img class="services-item__image" src="build/images/services-2.png" >
+					</div>
+					<div class="services-item__description services-text">
+						<h6 class="services-text__title">Data Analysis</h6>
+						<p class="services-text__description">From image sliders to custom content elements and contact forms</p>
+					</div>
+				</div>
+				<div class="services-item col-lg-4 col-xl-4">
+					<div class="services-item__picture">
+						<img class="services-item__image" src="build/images/services-3.png" >
+					</div>
+					<div class="services-item__description services-text">
+						<h6 class="services-text__title">Custom Reports</h6>
+						<p class="services-text__description">From image sliders to custom content elements and contact forms</p>
+					</div>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="services-item col-lg-4 col-xl-4">
+					<div class="services-item__picture">
+						<img class="services-item__image" src="build/images/services-4.png" >
+					</div>
+					<div class="services-item__description services-text">
+						<h6 class="services-text__title">Project Management</h6>
+						<p class="services-text__description">From image sliders to custom content elements and contact forms</p>
+					</div>
+				</div>
+				<div class="services-item col-lg-4 col-xl-4">
+					<div class="services-item__picture">
+						<img class="services-item__image" src="build/images/services-5.png" >
+					</div>
+					<div class="services-item__description services-text">
+						<h6 class="services-text__title">UX Development</h6>
+						<p class="services-text__description">From image sliders to custom content elements and contact forms</p>
+					</div>
+				</div>
+				<div class="services-item col-lg-4 col-xl-4">
+					<div class="services-item__picture">
+						<img class="services-item__image" src="build/images/services-6.png" >
+					</div>
+					<div class="services-item__description services-text">
+						<h6 class="services-text__title">Voice Recognition</h6>
+						<p class="services-text__description">From image sliders to custom content elements and contact forms</p>
+					</div>
+				</div>				
+			</div>			
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="about__image-wrapper">
+			<img id="tab-1" class="about-image tab-content current" src="build/images/business-13.jpg">
+			<img id="tab-2" class="about-image tab-content" src="build/images/business-2.jpg">
+			<img id="tab-3" class="about-image tab-content" src="build/images/business-3.jpg">
+			<img id="tab-4" class="about-image tab-content" src="build/images/business-4.jpg">
+		</div>
+		<div class="about__description">
+			<div class="about-item about-item--active" data-tab="tab-1">
+				<div class="about-item__icon-wrapper">
+					<img class="about-item__icon" src="build/images/about-1.png" >
+				</div>
+				<div class="about-item__text about-wrapper">
+					<h6 class="about-item__title">Our mission</h6>
+					<p class="about-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. 
+					</p>
+				</div>
+			</div>
+			<div class="about-item about-item--regular" data-tab="tab-2">
+				<div class="about-item__icon-wrapper">
+					<img class="about-item__icon" src="build/images/about-1.png" >
+				</div>
+				<div class="about-item__text about-wrapper">
+					<h6 class="about-item__title">Our projects</h6>
+					<p class="about-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				</div>
+			</div>
+			<div class="about-item about-item--regular" data-tab="tab-3">
+				<div class="about-item__icon-wrapper">
+					<img class="about-item__icon" src="build/images/about-1.png" >
+				</div>
+				<div class="about-item__text about-wrapper">
+					<h6 class="about-item__title">Our team</h6>
+					<p class="about-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. 
+					</p>
+				</div>
+			</div>
+			<div class="about-item about-item--regular" data-tab="tab-4">
+				<div class="about-item__icon-wrapper">
+					<img class="about-item__icon" src="build/images/about-1.png" >
+				</div>
+				<div class="about-item__text about-wrapper">
+					<h6 class="about-item__title">Unique approach</h6>
+					<p class="about-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. 
+					</p>
+				</div>
+			</div>									
+		</div>
+	</section>
+	<section class="team" id="team">
+		<div class="section-header">
+			<h1 class="section-header__title">We are proud of our team</h1>
+			<p class="section-header__description">Services done right will have a positive impact on your business. Help us understand you and your business needs so that we can serve you better.</p>
+		</div>
+		<div class="team-wrapper container">
+			<div class="row">
+				<div class="team-item col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+					<img class="team-item__image" src="build/images/1.jpg">
+					<div class="team-item__description team-description">
+						<h6 class="team-description__title">Lorem Ipsum</h6>
+						<p class="team-description__subtitle">Software developer</p>
+					</div>
+					<div class="team-item__popup team-popup">
+						<h6 class="team-popup__title">Lorem Ipsum</h6>
+						<p class="team-popup__subtitle">Software developer</p>
+						<p class="team-popup__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<div class="team-popup__links team-links">
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>												
+						</div>
+					</div>
+				</div>
+				<div class="team-item col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+					<img class="team-item__image" src="build/images/2.jpg">
+					<div class="team-item__description team-description">
+						<h6 class="team-description__title">Lorem Ipsum</h6>
+						<p class="team-description__subtitle">Software developer</p>
+					</div>
+					<div class="team-item__popup team-popup">
+						<h6 class="team-popup__title">Lorem Ipsum</h6>
+						<p class="team-popup__subtitle">Software developer</p>
+						<p class="team-popup__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<div class="team-popup__links team-links">
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>												
+						</div>
+					</div>
+				</div>
+				<div class="team-item col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+					<img class="team-item__image" src="build/images/3.jpg">
+					<div class="team-item__description team-description">
+						<h6 class="team-description__title">Lorem Ipsum</h6>
+						<p class="team-description__subtitle">Software developer</p>
+					</div>
+					<div class="team-item__popup team-popup">
+						<h6 class="team-popup__title">Lorem Ipsum</h6>
+						<p class="team-popup__subtitle">Software developer</p>
+						<p class="team-popup__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<div class="team-popup__links team-links">
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>												
+						</div>
+					</div>
+				</div>
+				<div class="team-item col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+					<img class="team-item__image" src="build/images/4.jpg">
+					<div class="team-item__description team-description">
+						<h6 class="team-description__title">Lorem Ipsum</h6>
+						<p class="team-description__subtitle">Software developer</p>
+					</div>
+					<div class="team-item__popup team-popup">
+						<h6 class="team-popup__title">Lorem Ipsum</h6>
+						<p class="team-popup__subtitle">Software developer</p>
+						<p class="team-popup__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<div class="team-popup__links team-links">
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="" class="team-links__icon" >
+								<i class="fab fa-facebook-f"></i>
+							</a>												
+						</div>
+					</div>
+				</div>				
+			</div>			
+		</div>		
+	</section>
+	<section class="counter" id="counter">
+		<div class="counter-wrapper container">
+			<div class="row">
+				<div class="counter-item col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+					<p class="counter-item__title" data-count="120">0</p>
+					<p class="counter-item__subtitle">Prizes Won</p>
+					<p class="counter-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>
+				<div class="counter-item col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+					<p class="counter-item__title" data-count="300">0</p>
+					<p class="counter-item__subtitle">Prizes Won</p>
+					<p class="counter-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>
+				<div class="counter-item col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+					<p class="counter-item__title" data-count="410">0</p>
+					<p class="counter-item__subtitle">Projects Done</p>
+					<p class="counter-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>
+				<div class="counter-item col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+					<p class="counter-item__title" data-count="170">0</p>
+					<p class="counter-item__subtitle">Happy Clients</p>
+					<p class="counter-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>				
+			</div>
+		</div>
+	</section>
+	<section class="skills" id="skills" data-parallax="scroll" data-image-src="build/images/business-14.jpg" data-z-index="1">
+		<div class="skills-wrapper">
+			<div class="skills-content ">
+				<div class="container">
+					<div class="row">
+						<div class="skills-description col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+							<h6 class="skills-description__title">We are awesome</h6>
+							<p class="skills-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+						<div class="skills-items col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+							<h6 class="skills-items__title">We are awesome</h6>
+							<div class="skills-items__item skills-progress">
+								<h6 class="skills-progress__title">Development</h6>
+								<div class="skill-progress__container single-skill">
+									<div class="skill-progress__container--outer">
+										<div class="skill-progress__container--inner" id="progress-1">
+											
+										</div>								
+									</div>
+									<span class="skill-progress__counter">75%</span>
+								</div>
+							</div>
+							<div class="skills-items__item skills-progress">
+								<h6 class="skills-progress__title">Development</h6>
+								<div class="skill-progress__container single-skill">
+									<div class="skill-progress__container--outer">
+										<div class="skill-progress__container--inner" id="progress-2">
+											
+										</div>								
+									</div>
+									<span class="skill-progress__counter">85%</span>
+								</div>
+							</div>
+							<div class="skills-items__item skills-progress">
+								<h6 class="skills-progress__title">Development</h6>
+								<div class="skill-progress__container single-skill">
+									<div class="skill-progress__container--outer">
+										<div class="skill-progress__container--inner" id="progress-3">
+											
+										</div>								
+									</div>
+									<span class="skill-progress__counter">95%</span>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="quotes">
+		
+	</section>
+	<section class="portfolio" id="portfolio">
+		<div class="section-header">
+			<h1 class="section-header__title">Our Portfolio</h1>
+			<p class="section-header__description">Services done right will have a positive impact on your business.</p>
+		</div>
+		<div class="portfolio-wrapper">
+			<a href="build/images/business-2.jpg" class="portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-2.jpg">
+				<div class="portfolio-item__description portfolio-description">
+					<h6 class="portfolio-description__title">Gallery</h6>
+					<p class="portfolio-description__text">
+						Software
+					</p>
+					<img class="portfolio-link__image" src="build/images/hover-arrow.png">
+				</div>
+			</a>
+			<a href="build/images/business-11.jpg" class="portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-11.jpg">
+				<div class="portfolio-item__description portfolio-description">
+					<h6 class="portfolio-description__title">Gallery</h6>
+					<p class="portfolio-description__text">
+						Software
+					</p>
+					<img class="portfolio-link__image" src="build/images/hover-arrow.png">
+				</div>
+			</a>
+			<a href="build/images/business-10.jpg" class="portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-10.jpg">
+				<div class="portfolio-item__description portfolio-description">
+					<h6 class="portfolio-description__title">Gallery</h6>
+					<p class="portfolio-description__text">
+						Software
+					</p>
+					<img class="portfolio-link__image" src="build/images/hover-arrow.png">
+				</div>
+			</a>
+			<a href="build/images/business-12.jpg" class="portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-12.jpg">
+				<div class="portfolio-item__description portfolio-description">
+					<h6 class="portfolio-description__title">Gallery</h6>
+					<p class="portfolio-description__text">
+						Software
+					</p>
+					<img class="portfolio-link__image" src="build/images/hover-arrow.png">
+				</div>
+			</a>
+			<a href="build/images/business-3.jpg" class="portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-3.jpg">
+				<div class="portfolio-item__description portfolio-description">
+					<h6 class="portfolio-description__title">Gallery</h6>
+					<p class="portfolio-description__text">
+						Software
+					</p>
+					<img class="portfolio-link__image" src="build/images/hover-arrow.png">
+				</div>
+			</a>
+			<a href="build/images/business-4.jpg" class="portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-4.jpg">
+				<div class="portfolio-item__description portfolio-description">
+					<h6 class="portfolio-description__title">Gallery</h6>
+					<p class="portfolio-description__text">
+						Software
+					</p>
+					<img class="portfolio-link__image" src="build/images/hover-arrow.png">
+				</div>
+			</a>
+			<a href="build/images/business-5.jpg" class="portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-5.jpg">
+				<div class="portfolio-item__description portfolio-description">
+					<h6 class="portfolio-description__title">Gallery</h6>
+					<p class="portfolio-description__text">
+						Software
+					</p>
+					<img class="portfolio-link__image" src="build/images/hover-arrow.png">
+				</div>
+			</a>
+			<a href="build/images/business-6.jpg" class="portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-6.jpg">
+				<div class="portfolio-item__description portfolio-description">
+					<h6 class="portfolio-description__title">Gallery</h6>
+					<p class="portfolio-description__text">
+						Software
+					</p>
+					<img class="portfolio-link__image" src="build/images/hover-arrow.png">
+				</div>
+			</a>
+			<a href="build/images/business-7.jpg" class="portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-7.jpg">
+				<div class="portfolio-item__description portfolio-description">
+					<h6 class="portfolio-description__title">Gallery</h6>
+					<p class="portfolio-description__text">
+						Software
+					</p>
+					<img class="portfolio-link__image" src="build/images/hover-arrow.png">
+				</div>
+			</a>
+			<a href="build/images/business-8.jpg" class="portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-8.jpg">
+				<div class="portfolio-item__description portfolio-description">
+					<h6 class="portfolio-description__title">Gallery</h6>
+					<p class="portfolio-description__text">
+						Software
+					</p>
+					<img class="portfolio-link__image" src="build/images/hover-arrow.png">
+				</div>
+			</a>			
+		</div>				
+	</section>
+	<section class="testimonials" id="testimonials" data-parallax="scroll" data-image-src="build/images/business-12.jpg" data-z-index="1">
+		<div class="testimonials-container">
+			<div class="testimonials-wrapper">
+				<div class="section-header">
+					<h1 class="section-header__title">Testimonials</h1>
+				</div>				
+				<div class="testimonials-inner-wrapper container">
+					<div class="row">
+						<div class="testimonials-item col-lg-4 col-xl-4 col-md-4 col-sm-12 col-12">
+							<div class="testimonials-item__thumbnail testimonials-thumbnail">
+								<img src="build/images/3.jpg" class="testimonials-thumbnail__image">
+								<h6 class="testimonials-thumbnail__title">Lorem Ipsum</h6>
+								<p class="testimonials-thumbnail__subtitle">Software developer</p>
+							</div>
+							<div class="testimonials-item__description testimonials-description">
+								<h6 class="testimonials-description__title">Efficient support</h6>
+								<p class="testimonials-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="testimonials-item col-lg-4 col-xl-4 col-md-4 col-sm-12 col-12">
+							<div class="testimonials-item__thumbnail testimonials-thumbnail">
+								<img src="build/images/2.jpg" class="testimonials-thumbnail__image">
+								<h6 class="testimonials-thumbnail__title">Lorem Ipsum</h6>
+								<p class="testimonials-thumbnail__subtitle">Software developer</p>
+							</div>
+							<div class="testimonials-item__description testimonials-description">
+								<h6 class="testimonials-description__title">Efficient support</h6>
+								<p class="testimonials-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="testimonials-item col-lg-4 col-xl-4 col-md-4 col-sm-12 col-12">
+							<div class="testimonials-item__thumbnail testimonials-thumbnail">
+								<img src="build/images/1.jpg" class="testimonials-thumbnail__image">
+								<h6 class="testimonials-thumbnail__title">Lorem Ipsum</h6>
+								<p class="testimonials-thumbnail__subtitle">Software developer</p>
+							</div>
+							<div class="testimonials-item__description testimonials-description">
+								<h6 class="testimonials-description__title">Efficient support</h6>
+								<p class="testimonials-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="news">
+		<div class="section-header">
+			<h1 class="section-header__title">Subscribe to our news</h1>
+			<p class="section-header__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. </p>
+		</div>		
+		<div class="news-container">
+			<div class="news-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="news-item col-lg-3 col-xl-3 col-md-6 col-sm-12 col-12">
+							<div class="news-item__description testimonials-description">
+								<p class="news-description__date">Janyary 22, 2019</p>
+								<h6 class="news-description__title">Efficient support</h6>
+								<p class="news-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+								<a class="news-description__link" href="">Learn more<i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>
+						<div class="news-item col-lg-3 col-xl-3 col-md-6 col-sm-12 col-12">
+							<div class="news-item__description testimonials-description">
+								<p class="news-description__date">Janyary 22, 2019</p>
+								<h6 class="news-description__title">Efficient support</h6>
+								<p class="news-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+								<a class="news-description__link" href="">Learn more <i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>
+						<div class="news-item col-lg-3 col-xl-3 col-md-6 col-sm-12 col-12">
+							<div class="news-item__description testimonials-description">
+								<p class="news-description__date">Janyary 22, 2019</p>
+								<h6 class="news-description__title">Efficient support</h6>
+								<p class="news-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+								<a class="news-description__link" href="">Learn more <i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div> 
+						<div class="news-item col-lg-3 col-xl-3 col-md-6 col-sm-12 col-12">
+							<div class="news-item__description testimonials-description">
+								<p class="news-description__date">Janyary 22, 2019</p>
+								<h6 class="news-description__title">Efficient support</h6>
+								<p class="news-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+								<a class="news-description__link" href="">Learn more <i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>																		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact" id="contact" data-parallax="scroll" data-image-src="build/images/business-13.jpg" data-z-index="1">
+		<div class="contact-bg">
+			<div class="section-header">
+				<h1 class="section-header__title">Contact us</h1>
+			</div>				
+			<div class="contact-outer-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="contact-wrapper col-lg-12 col-xl-12 col-md-12 col-sm-12 col-12">
+							<form action="https://formspree.io/morobplx" method="POST">
+								<div class="row">
+									<div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-6">
+										<div class="input-wrapper">
+											<input class="form-field" type="text" name="subject" value="" placeholder="Subject*" required>
+										</div>						
+										<div class="input-wrapper">
+											<input class="form-field" type="text" name="name" value="" placeholder="Your name*" required>
+										</div>									
+									</div>
+									<div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-6">
+										<div class="input-wrapper">
+											<input class="form-field" type="email" name="email" value="" placeholder="Your email*" required >
+										</div>
+										<div class="input-wrapper">
+											<input class="form-field phone" type="tel" name="phone" value="" placeholder="Your phone*" required>
+										</div>										
+									</div>								
+								</div>
+								<textarea placeholder="*Your message"></textarea>
+								<input type="submit" name="contact" value="Send">
+							</form>				
+						</div>				
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="footer-top__logo">
+				<img class="menu-logo__image" id="logo" src="build/images/logo.png">
+			</div>
+			<div class="footer-top__links footer-links">
+				<a href="" class="footer-links__icon" >
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="" class="footer-links__icon" >
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="" class="footer-links__icon" >
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="" class="footer-links__icon" >
+					<i class="fab fa-linkedin-in"></i>
+				</a>				
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2019 All rights reserved</p>
+		</div>			
+	</footer>
+	<script src="build/libs/progress/jquery-asPieProgress.js"></script>	
+	<script src="build/libs/mixitup/mixitup.min.js"></script>		
+	<script type="text/javascript" src="build/js/script.js"></script>
+    </script>    		
+</body>
+</html>
