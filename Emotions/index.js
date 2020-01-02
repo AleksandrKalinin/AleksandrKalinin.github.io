@@ -186,11 +186,6 @@ $(document).ready(function(){
     });
   }
 
-/*
-  if ($(window).width() < 768) {
-  	$('.hamb-container').toggleClass('hamb-visible')
-  }  	
-*/
 });
 
 
@@ -240,18 +235,3 @@ $(window).resize(function(){
     } 
 })
 
-/*
-window.onscroll = function() {resFunction()};
-
-var header = document.getElementById("myHeader");
-
-var sticky = header.offsetTop;
-
-function resFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-*/
