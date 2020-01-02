@@ -194,6 +194,14 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
+	.section-header{
+		padding: 60px 20px 60px;
+	}
+
+	.header-wrapper{
+		padding: 0 20px;
+	}
+
 	.sl-image{
 		top: 150px !important;
 	}
