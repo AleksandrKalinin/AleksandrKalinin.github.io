@@ -1,5 +1,6 @@
 body
 	color: #6A6A6A
+	font-family: 'Open Sans', sans-serif
 
 .mm-navbar
 	margin-bottom: 10px
@@ -36,9 +37,11 @@ body
 	h2
 		font-size: 24px
 		text-transform: uppercase
-		letter-spacing: 2px		
+		letter-spacing: 2px
+		margin-bottom: 24px		
 	p
-		font-size: 13px
+		font-size: 14px
+		margin-bottom: 24px	
 	span
 		display: block
 		height: 10px
@@ -150,6 +153,8 @@ nav
 	margin-left: 25%
 	h3
 		font-size: 18px
+	p
+		line-height: 28px	
 	h1
 		text-align: center
 		text-transform: uppercase
@@ -278,8 +283,14 @@ nav
 		-webkit-transition: 0.1s
 		-o-transition: 0.1s
 		transition: 0.1s
+	svg
+		-webkit-transition: all 0.1s linear
+		-o-transition: all 0.1s linear
+		transition: all 0.1s linear			
 	h4
-		font-size: 18px
+		font-size: 17px
+		letter-spacing: 1px 
+		text-align: center
 		text-transform: uppercase
 		-webkit-transition: 0.1s
 		-o-transition: 0.1s
@@ -295,6 +306,7 @@ nav
 	p
 		margin-top: 10px
 		font-size: 14px
+		line-height: 28px
 		text-align: center
 
 .whoweare-container:hover .icon-image 
@@ -310,6 +322,9 @@ nav
 	-webkit-transform: rotate(-45deg)
 	-ms-transform: rotate(-45deg)
 	transform: rotate(-45deg)
+	-webkit-transition: all 0.1s linear
+	-o-transition: all 0.1s linear
+	transition: all 0.1s linear		
 	
 .whoweare-container:hover hr
 	border: 1px solid #E74C3C
@@ -376,9 +391,29 @@ nav
 		letter-spacing: 2px					
 
 .about-description p
-	font-size: 11px
+	font-size: 15px
 	margin-bottom: 10px
-	line-height: 25px
+	line-height: 28px
+
+.about-description ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.about-description ul li
+	position: relative
+	padding-left: 20px
+	font-size: 15px
+	line-height: 28px
+
+.about-description ul li:before
+	content: '\f00c'
+	font-family: FontAwesome
+	position: absolute
+	top: 0
+	left: 0
+	font-size: 15px
+	color: #E74C3C	
 
 .services-header
 	display: -webkit-box
@@ -397,7 +432,8 @@ nav
 	
 .services-description
 	background-color: #202020
-	padding: 70px 40px 70px 0
+	padding: 60px 40px 60px 0
+	height: 700px
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
@@ -408,6 +444,7 @@ nav
 	-webkit-box-align: end
 	-ms-flex-align: end
 	align-items: flex-end
+	justify-content: space-between
 	h4
 		color: #fff
 		text-transform: uppercase
@@ -419,14 +456,19 @@ nav
 	width: 70%
 	margin-bottom: 20px
 	position: relative
+	height: auto
+	max-height: 140px
 	h6
 		color: #E74C3C
 		text-transform: uppercase
-		font-size: 13px
+		font-size: 15px
 		font-weight: 400
+		letter-spacing: 0.5px
 	p
-		font-size: 11px
-		line-height: 20px				
+		font-size: 13px
+		line-height: 25px
+		color: #f6f6f6
+		margin-bottom: 0				
 
 .service-icon
 	width: 50px
@@ -444,14 +486,16 @@ nav
 	-webkit-box-align: center
 	-ms-flex-align: center
 	align-items: center
-	position: relative
-	bottom: 70px
+	position: absolute
+	bottom: 50%
 	left: calc(100% + 15px)
+	transform: translate(0,50%)
 	z-index: 9999
 
 .services-image
-	background: url(../img/services.jpg)
+	background: url(../img/interior-11.jpg)
 	background-size: cover
+	height: 700px
 
 .portfolio
 	padding: 50px 0 100px
@@ -561,7 +605,7 @@ nav
 	a
 		display: block
 		padding: 10px 0
-		letter-spacing: 1px
+		letter-spacing: 0.5px
 		width: 140px
 		text-align: center
 		outline: 1px solid #fff
@@ -570,7 +614,7 @@ nav
 		color: #E74C3C
 		text-transform: uppercase
 		text-decoration: none
-		font-size: 12px
+		font-size: 15px
 		font-weight: 500
 		-webkit-transition: 0.1s
 		-o-transition: 0.1s
@@ -586,13 +630,8 @@ nav
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
-	-webkit-box-orient: horizontal
-	-webkit-box-direction: normal
-	-ms-flex-direction: row
-	flex-direction: row
-	-ms-flex-pack: distribute
-	justify-content: space-around
-	align-items: flex-end
+	justify-content: center
+	align-items: center
 	img
 		opacity: 1			
 
@@ -610,7 +649,7 @@ nav
 .study-icon 
 	font-size: 26px
 	height: 70px
-	width: 70px	
+	width: 70px
 	border: 1px solid #6a6a6a
 	color: #fff
 	background-color: #E74C3C
@@ -627,8 +666,12 @@ nav
 	-webkit-box-pack: center
 	-ms-flex-pack: center
 	justify-content: center
-	transform: rotate(45deg)
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)	
 	svg
+		-webkit-transform: rotate(-45deg)
+		-ms-transform: rotate(-45deg)
 		transform: rotate(-45deg)	
 
 .study-container	
@@ -662,15 +705,19 @@ nav
 	-webkit-box-align: center
 	-ms-flex-align: center
 	align-items: center
-	padding: 50px 40px
+	padding: 40px 30px
 	text-align: center
 	box-shadow: 0 0 20px #DBDCE0	
 	h4
 		margin-top: 40px
 		font-size: 16px
 		text-transform: uppercase
+		letter-spacing: 0.5px
+		color: #E74C3C
+		margin-bottom: 10px
 	p
-		font-size: 12px		
+		font-size: 14px
+		line-height: 26px		
 	hr
 		width: 30px
 		border-top: 2px solid #6A6A6A
@@ -700,9 +747,11 @@ nav
 .study-image
 	height: 550px
 	width: 450px
+	overflow: hidden
 	img
 		height: 100%
-		width: auto			
+		width: 100%
+		object-fit: cover		
 
 .stats
 	background-size: cover
@@ -764,12 +813,10 @@ nav
 		font-size: 12px			
 
 .pricing
-	padding: 50px 0
+	padding: 50px 0 100px 0
+	background: #F4F5F9
 
 .pricing-item
-	height: 500px
-	width: 350px
-	padding: 20px 10px
 	text-align: center
 	display: -webkit-box
 	display: -ms-flexbox
@@ -883,14 +930,18 @@ nav
 .box
 	width: 300px
 	height: 420px
-	border: 3px solid #333
 	overflow: hidden
 	position: relative
+	background: #fff
+	transition: .3s ease
+
+.box:hover
+	transform: scale(1.06)	
 
 .box .box-header
 	width: 100%
 	height: 90px
-	background: #333
+	background: #E74C3C
 	display: flex
 	flex-direction: column
 	justify-content: center
@@ -899,8 +950,9 @@ nav
 	h3
 		font-size: 20px
 		text-transform: uppercase
-		letter-spacing: 2px
+		letter-spacing: 1px
 		margin-bottom: 4px
+		font-weight: 300
 	p
 		margin-bottom: 0	
 
@@ -910,6 +962,12 @@ nav
 	text-align: center
 	border-radius: 2px
 	color: #222
+	height: 330px
+	display: flex
+	justify-content: center
+
+.box .content-wrapper
+	margin-top: 30px
 
 .box .content 
 	p
@@ -924,22 +982,28 @@ nav
 		text-transform: uppercase
 		padding: 10px
 		text-decoration: none
-		font-size: 12px
-		letter-spacing: 1px
-		font-weight: 600
-		margin: 0 auto
+		font-size: 14px
+		font-weight: 500
+		letter-spacing: 0.5px
+		margin: 30px auto 0
 		transition: .2s ease
 	a:hover
 		background: #FF6555
-	span
-		display: block
-		font-size: 24px
-		padding: 15px 0	
 	h6
 		text-transform: uppercase
-		font-size: 24px
-		margin: 0 0 15px 0
+		font-size: 26px
+		font-weight: 500
+		color: #E74C3C
+		margin: 0 0 30px 0
+	span
+		font-size: 16px	
+		padding-left: 3px
 
+.pricing-item
+	transition: .2s ease
+
+.pricing-item:hover
+	transform: translateY(-20px)
 		
 .team
 	background-size: cover
@@ -990,7 +1054,7 @@ nav
 	flex-direction: column
 	align-items: center
 	h6
-		font-size: 15px
+		font-size: 16px
 		font-weight: 600
 		letter-spacing: 1px
 		margin-bottom: 5px
@@ -1001,7 +1065,7 @@ nav
 		letter-spacing: 1px
 		font-weight: 500
 		text-transform: uppercase
-		font-size: 14px
+		font-size: 12px
 		margin-bottom: 20px
 	p
 		font-size: 15px	
@@ -1098,9 +1162,11 @@ nav
 
 .blog-post-image
 	width: 50%
+	overflow: hidden
 	img
 		width: 100%
-		height: 100%		
+		height: 100%
+		object-fit: cover		
 
 .blog-post-description
 	width: 50%
@@ -1117,7 +1183,7 @@ nav
 		letter-spacing: 1px
 	hr
 		width: 30px
-		border-top: 3px solid #fff
+		border-top: 2px solid #fff
 		margin-left: 0
 		margin-top: 0
 	span
@@ -1128,20 +1194,21 @@ nav
 	p
 		font-size: 13px	
 		padding: 10px 0
+		line-height: 25px
 		margin-bottom: 0									
 	a
 		color: #fff
 		text-decoration: none
-		font-size: 12px
+		font-size: 13px
 		font-style: italic
 		text-transform: uppercase
-		font-weight: 600
-		letter-spacing: 1px		
+		font-weight: 500
+		letter-spacing: 0.5px		
 	a:after
 		padding-left: 3px
 		font-family: FontAwesome
 		content: '\f101'
-		font-weight: 900
+		font-weight: 500
 		height: 14px
 		width: auto		
 
@@ -1194,7 +1261,9 @@ nav
 		
 .contact-form
 	height: 450px
-	padding: 60px 20%	 
+	padding: 0 20%	
+	display: flex
+	align-items: center 
 	
 form
 	display: -webkit-box
@@ -1215,9 +1284,10 @@ form
 	width: 100%
 	label
 		width: 96%
-		margin-bottom: 10px
+		margin-bottom: 20px
 		span
 			min-width: 20%
+			padding-bottom: 4px
 		input
 			height: 30px
 			border-radius: 1px
@@ -1386,7 +1456,7 @@ footer
 		font-size: 12px		
 
 .podrt_descr
-	background-color: #555
+	background-color: #f6f6f6
 	max-width: 480px
 	margin: auto
 	z-index: 9999
@@ -1399,15 +1469,34 @@ footer
 		text-align: center
 		font-size: 20px
 		letter-spacing: 2px
-		color: #fff
+		color: #222
 		text-transform: uppercase
 		font-weight: 400
 	p
 		margin-top: 0
-		font-size: 14px
-		color: #fff
+		font-size: 15px
+		color: #222
+		line-height: 28px
 	img
 		width: 100%
+
+	ul
+		padding: 0 0 0 20px
+		margin: 0
+		list-style-type: none
+	li
+		position: relative
+		line-height: 28px
+		padding-left: 20px
+		color: #222
+	li:before
+		content: '\f00c'
+		font-family: FontAwesome
+		position: absolute
+		top: 0
+		left: 0
+		font-size: 15px
+		color: #E74C3C	 		
 
 .hidden
 	display: none
@@ -1421,4 +1510,4 @@ footer
 	left: 440px
 
 .podrt_descr .modal-box-content .mfp-close
-	color: #fff
+	color: #222
