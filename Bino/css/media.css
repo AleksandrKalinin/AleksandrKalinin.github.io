@@ -11,6 +11,25 @@
 	.blod-post-description p{
 		font-size: 12px;
 	}
+
+	.team-container{
+		justify-content: space-around;
+	}
+
+	.services-description{
+		padding: 60px 40px;
+	}
+
+	.service-section{
+		width: 100%;
+	}
+
+	.study-icon{
+		height: 70px;
+		width: 70px;
+		min-height: 70px;
+		min-width: 70px;		
+	}
 }
 
 @media only screen and (max-width : 1100px) {
@@ -29,6 +48,10 @@
 
 	.team-container_item{
 		padding: 30px 15px;
+	}
+
+	.stats-icon-container{
+		text-align: center;
 	}
 }
 
@@ -172,6 +195,10 @@
 
 	.contact-item{
 		margin-bottom: 25px;
+	}
+
+	.contact-address{
+		box-sizing: border-box;
 	}
 
 	.contact-form{
@@ -338,7 +365,12 @@
 
 	.service-section{
 		margin-bottom: 0;
-		width: 90%;
+		width: 100%;
+		line-height: 24px;
+	}
+
+	.services-description{
+		padding: 60px 30px;
 	}
 
 /* Portfolio */	
@@ -513,6 +545,11 @@
 	}
 
 /* services */
+
+	.services{
+		height: 740px;
+		min-height: auto;
+	}
 	.services-wrapper{
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -523,13 +560,20 @@
 		flex-direction: column;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		min-height: 740px;
 	}
 
 	.services-description{
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
-		padding: 40px;
+		padding: 20px;
+		min-height: 740px;
+		justify-content: space-around;
+	}
+
+	.services-header h4{
+		margin-bottom: 0;
 	}
 
 	.services-header span{
@@ -555,6 +599,8 @@
 		-ms-flex-pack: center;
 		justify-content: center;
 	    margin-bottom: 20px;
+		height: auto;
+		max-height: 200px; 	    
 	}
 
 	.service-section h6, .service-section p{
