@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bouncy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="build/images/favicon.ico" type="image/x-icon">	
+	<link rel="stylesheet" type="text/css" href="build/css/style.css">
+	<link rel="stylesheet" type="text/css" href="src/fonts/font.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="src/libs/animate/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="src/libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="src/libs/progress/asPieProgress.min.css">
+	<link rel="stylesheet" type="text/css" href="src/libs/lightbox/simplelightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="src/libs/lightslider/lightslider.min.css">
+	<link rel="stylesheet" type="text/css" href="src/libs/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="src/libs/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="src/libs/magnific-popup/magnific-popup.css">
+	<script src="src/libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="src/libs/waypoints/waypoints.min.js"></script>
+	<script src="src/libs/fontawesome/js/all.min.js"></script>
+	<script src="src/libs/owl-carousel/owl.carousel.min.js"></script>	
+	<script src="src/libs/owl-carousel/owl.autoplay.js"></script>	
+	<script src="src/libs/magnific-popup/magnific-popup.min.js"></script>	
+	<script src="src/libs/animate/animate-css.js"></script>
+	<script src="src/libs/lightbox/simple-lightbox.min.js"></script>
+	<script src="src/libs/lightslider/lightslider.min.js"></script>
+	<script src="src/libs/mixitup/mixitup.min.js"></script>	
+	<script src="src/libs/masked/jquery.maskedinput.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=602639a8-9a0c-400c-9024-d8733ffbd6b7&lang=ru_RU" type="text/javascript">
+    </script>
+	<script>
+		$(function(){
+			var $gallery = $('.portfolio-section__container a').simpleLightbox();
+		});
+	</script>    				
+</head>
+<body>
+	<div class="preloader-section">
+		<svg><rect></rect></svg>
+	</div>
+
+	<div class="menu-overlay menu-overlay_hidden">
+		<nav class="menu">
+			<a href="#about" class="menu__item">About</a>
+			<a href="#services" class="menu__item">Services</a>
+			<a href="#portfolio" class="menu__item">Portfolio</a>
+			<a href="#team" class="menu__item">Team</a>
+			<a href="#contact" class="menu__item">Contact</a>
+		</nav>
+	</div>
+
+	<header class="top-menu">
+		<div class="top-menu__logo">
+			<img class="top-menu__image" src="build/images/logo.png">
+		</div>
+
+		<div class="sandwich-wrapper">
+			<div class="top-menu__sandwich sandwich">
+				<span class="sandwich-bar sandwich-bar_top"></span>
+				<span class="sandwich-bar sandwich-bar_middle"></span>
+				<span class="sandwich-bar sandwich-bar_bottom"></span>
+			</div>			
+		</div>
+	</header>
+
+	<section class="header-section">
+		<div class="header-section__background">
+			<img class="header-section__image" src="build/images/header.jpg">
+			</img>
+		</div>
+		<div class="header-section__overlay">
+			<div class="header-section__content">
+				<h1 class="header-section__title">We are cool agency</h1>
+				<p class="header-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod haipuf ha aoehopahn faoehn</p>				
+			</div>
+			<span class="header-section__button" id="scrollDown" ><i class="fas fa-arrow-down"></i></span>
+		</div>
+	</section>
+	<section class="intro-section" id="about">
+		<div class="intro-section__wrapper">
+			<div class="intro-section__description">
+				<h3 class="intro-section__title section-header__title">About us</h3>
+				<p class=" intro-section__subtitle section-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a class="intro-section__button standart-button standart-button_black" href="">Read More</a>
+			</div>	
+			<div class="intro-section__thumbnail">
+				<img class="intro-section__image" src="build/images/business-2.jpg">
+			</div>			
+		</div>
+	</section>
+	<section class="projects-section" id="services">
+		<div class="projects-section__header section-header">
+			<h3 class="section-header__title">Our Services</h3>
+			<p class="section-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+		</div>
+		<div class="projects-section__wrapper">
+			<div class="projects-section__item projects-item">
+				<div class="projects-section__background">
+					<img class="projects-section__image" src="build/images/business-12.jpg"></img>
+				</div>
+				<div class="projects-section__content">
+					<div class="projects-section__content-wrap">
+						<div class="projects-section__container">
+							<p class="projects-item__title">Great services</p>
+							<p class="projects-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-section__item projects-item">
+				<div class="projects-section__background">
+					<img class="projects-section__image" src="build/images/business-3.jpg"></img>
+				</div>
+				<div class="projects-section__content">
+					<div class="projects-section__content-wrap">
+						<div class="projects-section__container">
+							<p class="projects-item__title">Experienced team</p>
+							<p class="projects-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-section__item projects-item">
+				<div class="projects-section__background">
+					<img class="projects-section__image" src="build/images/business-14.jpg"></img>
+				</div>
+				<div class="projects-section__content">
+					<div class="projects-section__content-wrap">
+						<div class="projects-section__container">
+							<p class="projects-item__title">Variety of choices</p>
+							<p class="projects-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-section__item projects-item">
+				<div class="projects-section__background">
+					<img class="projects-section__image" src="build/images/business-5.jpg"></img>
+				</div>
+				<div class="projects-section__content">
+					<div class="projects-section__content-wrap">
+						<div class="projects-section__container">
+							<p class="projects-item__title">Affordable pricing</p>
+							<p class="projects-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						</div>
+					</div>
+				</div>
+			</div>									
+		</div>
+		<div class="projects-section__footer projects-footer">
+			<div class="projects-footer__background">
+				<img class="projects-footer__image" src="build/images/business-2.jpg"></img>
+			</div>
+			<div class="projects-footer__overlay">
+				<p class="projects-footer__text">Lorem ipsum dolor sit amet, consectetur kjhgghaf iuehope  adipisicing elit</p>
+				<span class="projects-footer__button" id="projectsButton" href="">See more</span>
+			</div>
+		</div>		
+	</section>
+	<section class="services-section" >
+		<div class="services-section__header section-header">
+			<h3 class="section-header__title">Our Skills</h3>
+			<p class="section-header__subtitle">Lorem ipsum dolor sit amet, klhih mmopji consectetur adipisicing elit</p>
+		</div>		
+		<div class="services-section__wrapper">
+			<div class="services-section__left">
+				<div class="services-section__navigation">
+					<span data-tab="1" class="services-section__button services-section__button_active icon-button">
+						<i class="far fa-lightbulb"></i>
+					</span>
+					<span data-tab="2" class="services-section__button icon-button">
+						<i class="fas fa-laptop-code"></i>
+					</span>
+					<span data-tab="3" class="services-section__button icon-button">
+						<i class="fas fa-code"></i>
+					</span>
+					<span data-tab="4" class="services-section__button icon-button">
+						<i class="fas fa-database"></i>
+					</span>												
+				</div>
+				<div class="services-section__description services-section__description_active" id="1">
+					<h6 class="services-section__title">Graphic design</h6>
+					<p class="services-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod kknbkjhouig ihiiiunn iphhbbff 
+					tempor incididunt ut labore et dolore magna aliqua. </p>
+					<p class="services-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod hjpihphp jhjppijpj pojpjpjjh 
+					tempor incididunt ut labore et dolore magna aliqua. </p>				
+				</div>
+				<div class="services-section__description" id="2">
+					<h6 class="services-section__title">Development</h6>
+					<p class="services-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod kknbkjhouig ihiiiunn iphhbbff 
+					tempor incididunt ut labore et dolore magna aliqua. </p>
+					<p class="services-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod hjpihphp jhjppijpj pojpjpjjh 
+					tempor incididunt ut labore et dolore magna aliqua. </p>				
+				</div>
+				<div class="services-section__description" id="3">
+					<h6 class="services-section__title">Programming</h6>
+					<p class="services-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod kknbkjhouig ihiiiunn iphhbbff 
+					tempor incididunt ut labore et dolore magna aliqua. </p>
+					<p class="services-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod hjpihphp jhjppijpj pojpjpjjh 
+					tempor incididunt ut labore et dolore magna aliqua. </p>				
+				</div>
+				<div class="services-section__description" id="4">
+					<h6 class="services-section__title">Support</h6>
+					<p class="services-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod kknbkjhouig ihiiiunn iphhbbff 
+					tempor incididunt ut labore et dolore magna aliqua. </p>
+					<p class="services-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod hjpihphp jhjppijpj pojpjpjjh 
+					tempor incididunt ut labore et dolore magna aliqua. </p>				
+				</div>												
+			</div>
+			<div class="services-section__right">
+				<div id="5" class="services-section__counters counters-wrapper counters-wrapper_active">
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="90" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">Web design</p>
+					</div>
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="80" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">Graphic design</p>
+					</div>
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="85" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">Illustration</p>
+					</div>										
+				</div>
+				<div id="6" class="services-section__counters counters-wrapper">
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="90" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">Coding</p>
+					</div>
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="90" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">Development</p>
+					</div>
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="80" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">Branding</p>
+					</div>										
+				</div>
+				<div id="7" class="services-section__counters counters-wrapper">
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="90" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">consistent support</p>
+					</div>
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="75" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">security</p>
+					</div>
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="85" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">redesign</p>
+					</div>										
+				</div>
+				<div id="8" class="services-section__counters counters-wrapper">
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="90" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">Web design</p>
+					</div>
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="80" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">Graphic design</p>
+					</div>
+					<div class="counters-wrapper__item">
+						<div class="counters-wrapper__counter pie_progress" role="progressbar" data-goal="85" aria-valuemin="0" aria-valuemax="100">
+							<span class="counter-wrapper__number pie_progress__number">0%</span>
+						</div>
+						<p class="counters-wrapper__text">Illustration</p>
+					</div>										
+				</div>												
+			</div>
+		</div>		
+	</section>
+
+	<section class="portfolio-section" id="portfolio">
+		<div class="portfolio-section__header section-header">
+			<h3 class="section-header__title">Our Portfolio</h3>
+			<p class="section-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+		</div>		
+		<div class="portfolio-section__wrapper">
+			<div class="portfolio-section__navigation portfolio-menu">
+				<button class="portfolio-menu__link" data-mixitup-control data-filter="all" href="">All Works</button>
+				<button class="portfolio-menu__link" data-mixitup-control data-filter=".category-a" href="">Identity</button>
+				<button class="portfolio-menu__link" data-mixitup-control data-filter=".category-b"  href="">Branding</button>
+				<button class="portfolio-menu__link" data-mixitup-control data-filter=".category-c" href="">Html</button>
+				<button class="portfolio-menu__link" data-mixitup-control data-filter=".category-d" href="">Web</button>
+				<button class="portfolio-menu__link" data-mixitup-control data-filter=".category-e" href="">Wordpress</button>
+			</div>
+		</div>
+		<div class="portfolio-section__container">
+			<a href="build/images/business-2.jpg" class="mix category-a portfolio-section__item portfolio-item">
+				<div class="portfolio-item__background">
+					<img class="portfolio-item__image" src="build/images/business-2.jpg">
+				</div>
+				<div class="portfolio-item__overlay">
+					<div class="potrolio-item__description">
+						<h4 class="portfolio-item__title">Title here</h4>
+						<p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					</div>
+				</div>
+			</a>
+			<a href="build/images/business-3.jpg" class="mix category-d portfolio-section__item portfolio-item">
+				<div class="portfolio-item__background">
+					<img class="portfolio-item__image" src="build/images/business-3.jpg">
+				</div>
+				<div class="portfolio-item__overlay">
+					<div class="potrolio-item__description">
+						<h4 class="portfolio-item__title">Title here</h4>
+						<p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					</div>
+				</div>
+			</a>
+			<a href="build/images/business-4.jpg" class="mix category-b portfolio-section__item portfolio-item">
+				<div class="portfolio-item__background">
+					<img class="portfolio-item__image" src="build/images/business-4.jpg">
+				</div>
+				<div class="portfolio-item__overlay">
+					<div class="potrolio-item__description">
+						<h4 class="portfolio-item__title">Title here</h4>
+						<p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					</div>
+				</div>
+			</a>
+			<a href="build/images/business-5.jpg" class="mix category-b portfolio-section__item portfolio-item">
+				<div class="portfolio-item__background">
+					<img class="portfolio-item__image" src="build/images/business-5.jpg">
+				</div>
+				<div class="portfolio-item__overlay">
+					<div class="potrolio-item__description">
+						<h4 class="portfolio-item__title">Title here</h4>
+						<p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					</div>
+				</div>
+			</a>
+			<a href="build/images/business-6.jpg" class="mix category-c portfolio-section__item portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-6.jpg">
+				<div class="portfolio-item__overlay">
+					<div class="potrolio-item__description">
+						<h4 class="portfolio-item__title">Title here</h4>
+						<p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					</div>
+				</div>
+			</a>
+			<a href="build/images/business-7.jpg" class="mix category-e portfolio-section__item portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-7.jpg">
+				<div class="portfolio-item__overlay">
+					<div class="potrolio-item__description">
+						<h4 class="portfolio-item__title">Title here</h4>
+						<p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					</div>
+				</div>
+			</a>
+			<a href="build/images/business-8.jpg" class="mix category-b portfolio-section__item portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-8.jpg">
+				<div class="portfolio-item__overlay">
+					<div class="potrolio-item__description">
+						<h4 class="portfolio-item__title">Title here</h4>
+						<p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					</div>
+				</div>
+			</a>
+			<a href="build/images/business-9.jpg" class="mix category-a portfolio-section__item portfolio-item">
+				<img class="portfolio-item__image" src="build/images/business-9.jpg">
+				<div class="portfolio-item__overlay">
+					<div class="potrolio-item__description">
+						<h4 class="portfolio-item__title">Title here</h4>
+						<p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					</div>
+				</div>
+			</a>																						
+		</div>
+		<div class="portfolio-section__contact portfolio-contact">
+			<div class="portfolio-contact__background">
+				<img class="portfolio-contact__image" src="build/images/business-2.jpg" >
+			</div>
+			<div class="portfolio-contact__overlay">
+				<p class="portfolio-contact__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				<a class="portfolio-contact__button" href="">Start new</a>
+			</div>
+		</div>
+	</section>
+	<section class="team-section" id="team">
+		<div class="team-section__header section-header">
+			<h3 class="section-header__title">Our talented team</h3>
+			<p class="section-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+		</div>
+		<div class="team-section__wrapper owl-carousel owl-theme">
+			<div class="team-section__item">
+				<div class="team-section__thumbnail">
+					<img class="team-section__image" src="build/images/team-1.jpg">
+				</div>
+				<div class="team-section__description">
+					<div class="team-section__scroll">
+						<h4 class="team-section__name">Robert Murphy</h4>
+						<h5 class="team-section__job">Back-end developer</h5>
+						<p class="team-section__text">Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod</p>
+						<div class="team-section__rating team-rating">
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">PHP</h6>
+									<span class="team-rating__counter">75%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-1">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">Python</h6>
+									<span class="team-rating__counter">85%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-2">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">C#</h6>
+									<span class="team-rating__counter">95%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-3">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">C++</h6>
+									<span class="team-rating__counter">90%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-4">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="team-section__item">
+				<div class="team-section__thumbnail">
+					<img class="team-section__image" src="build/images/team-2.jpg">
+				</div>
+				<div class="team-section__description">
+					<div class="team-section__scroll">
+						<h4 class="team-section__name">John Doe</h4>
+						<h5 class="team-section__job">Front-end developer</h5>
+						<p class="team-section__text">Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod</p>
+						<div class="team-section__rating team-rating">
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">Javascript</h6>
+									<span class="team-rating__counter">95%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-5">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">Angular</h6>
+									<span class="team-rating__counter">85%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-6">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">React</h6>
+									<span class="team-rating__counter">95%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-7">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">Vue</h6>
+									<span class="team-rating__counter">90%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-8">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="team-section__item">
+				<div class="team-section__thumbnail">
+					<img class="team-section__image" src="build/images/team-3.jpg">
+				</div>
+				<div class="team-section__description">
+					<div class="team-section__scroll">
+						<h4 class="team-section__name">Frank Wilson</h4>
+						<h5 class="team-section__job">Designer</h5>
+						<p class="team-section__text">Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod</p>
+						<div class="team-section__rating team-rating">
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">Photoshop</h6>
+									<span class="team-rating__counter">75%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-9">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">Responsive design</h6>
+									<span class="team-rating__counter">85%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-10">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">Typography</h6>
+									<span class="team-rating__counter">95%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-11">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-rating__item">
+								<div class="team-rating__header">
+									<h6 class="team-rating__subtitle">Branding</h6>
+									<span class="team-rating__counter">90%</span>
+								</div>
+								<div class="team-rating__main">
+									<div class="team-rating__outer">
+										<div class="team-rating__inner" id="rating-12">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>						
+		</div>		
+	</section>
+
+	<section class="testimonials-section">
+		<div class="testimonials-section__header section-header">
+			<h3 class="section-header__title">Testimonials</h3>
+			<p class="section-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		</div>
+		<div class="testimonials-section__wrapper owl-carousel owl-theme">
+			<div class="testimonials-section__item">
+				<div class="testimonials-section__thumbnail">
+					<img class="testimonials-section__image" src="build/images/testimonials-1.jpg">
+				</div>
+				<div class="testimonials-section__description">
+					<p class="testimonials-section__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+					<p class="testimonials-section__title">
+						Pablo Eskobar
+					</p>
+					<p class="testimonials-section__subtitle">
+						Business owner
+					</p>					
+				</div>
+			</div>
+			<div class="testimonials-section__item">
+				<div class="testimonials-section__thumbnail">
+					<img class="testimonials-section__image" src="build/images/testimonials-2.jpg">
+				</div>
+				<div class="testimonials-section__description">
+					<p class="testimonials-section__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+					<p class="testimonials-section__title">
+						Arthur Morgan
+					</p>
+					<p class="testimonials-section__subtitle">
+						Business owner
+					</p>					
+				</div>
+			</div>
+			<div class="testimonials-section__item">
+				<div class="testimonials-section__thumbnail">
+					<img class="testimonials-section__image" src="build/images/testimonials-3.jpg">
+				</div>
+				<div class="testimonials-section__description">
+					<p class="testimonials-section__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+					<p class="testimonials-section__title">
+						Jane Allbright
+					</p>
+					<p class="testimonials-section__subtitle">
+						Business owner
+					</p>					
+				</div>
+			</div>						
+		</div>		
+	</section> 
+
+	<section class="connect-section" id="contact">
+		<div class="connect-section__overlay">
+			<img class="connect-section__image" src="build/images/business-2.jpg">
+		</div>
+		<div class="connect-section__wrapper">
+			<p class="connect-section__text">Already Loved Us? Let's talk!</p>
+			<span class="connect-section__button" id="connectButton" href="">Contact Us</span>
+		</div>
+	</section>
+	<section class="price-section">
+		<div class="price-section__header section-header">
+			<h3 class="section-header__title">Our prices</h3>
+			<p class="section-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		</div>
+		<div class="price-section__wrapper">
+			<div class="price-section__item">
+				<div class="price-section__type price-type">
+					<p class="price-type__title">Standart</p>
+				</div>
+				<div class="price-section__main price-main">
+					<h2 class="price-main__title">$40</h2>
+					<p class="price-main__subtitle">Per Month</p>
+				</div>				
+				<div class="price-section__list price-list">
+					<ul class="price-list__main">
+						<li class="price-list__item">Full Branding</li>
+						<li class="price-list__item">Project Management</li>
+						<li class="price-list__item">24/7 support</li>
+						<li class="price-list__item">Unlimited Revisions</li>
+						<li class="price-list__item">Free Domain</li>
+						<li class="price-list__item">Free Hosting</li>
+					</ul>
+				</div>
+				<div class="price-section__start price-start">
+					<a href="" class="price-start__button">Let's start<i class="fas fa-chevron-right price-start__icon"></i></a>
+				</div>
+			</div>
+			<div class="price-section__item">
+				<div class="price-section__type price-type">
+					<p class="price-type__title">Business</p>
+				</div>
+				<div class="price-section__main price-main">
+					<h2 class="price-main__title">$90</h2>
+					<p class="price-main__subtitle">Per Month</p>
+				</div>				
+				<div class="price-section__list price-list">
+					<ul class="price-list__main">
+						<li class="price-list__item">Full Branding</li>
+						<li class="price-list__item">Project Management</li>
+						<li class="price-list__item">24/7 support</li>
+						<li class="price-list__item">Unlimited Revisions</li>
+						<li class="price-list__item">Free Domain</li>
+						<li class="price-list__item">Free Hosting</li>
+					</ul>
+				</div>
+				<div class="price-section__start price-start">
+					<a href="" class="price-start__button">Let's start<i class="fas fa-chevron-right price-start__icon"></i></a>
+				</div>
+			</div>
+			<div class="price-section__item">
+				<div class="price-section__type price-type">
+					<p class="price-type__title">premium</p>
+				</div>
+				<div class="price-section__main price-main">
+					<h2 class="price-main__title">$200</h2>
+					<p class="price-main__subtitle">Per Month</p>
+				</div>				
+				<div class="price-section__list price-list">
+					<ul class="price-list__main">
+						<li class="price-list__item">Full Branding</li>
+						<li class="price-list__item">Project Management</li>
+						<li class="price-list__item">24/7 support</li>
+						<li class="price-list__item">Unlimited Revisions</li>
+						<li class="price-list__item">Free Domain</li>
+						<li class="price-list__item">Free Hosting</li>
+					</ul>
+				</div>
+				<div class="price-section__start price-start">
+					<a href="" class="price-start__button">Let's start<i class="fas fa-chevron-right price-start__icon"></i></a>
+				</div>
+			</div>						
+		</div>
+	</section>
+	<section class="subscribe-section">
+		<div class="subscribe-section__header section-header">
+			<h3 class="section-header__title">Subscribe to our newsletter</h3>
+			<p class="section-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		</div>
+		<div class="subscribe-section__wrapper">
+			<form class="subscribe-section__form">
+				<input  class="subscribe-section__email" type="email" name="" value="" placeholder="Email Address">
+				<input class="subscribe-section__button" type="submit" name="" value="SUBMIT">
+			</form>
+		</div>		
+	</section>
+	<section class="contact-section">
+		<div class="contact-section__header section-header">
+			<h3 class="section-header__title">Get in contact</h3>
+			<p class="section-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		</div>
+		<div class="contact-section__wrapper">
+			<div class="contact-section__item">
+				<div class="contact-section__top">
+					<div class="contact-section__image">
+						<img  class="contact-section__thumbnail" src="build/images/business-12.jpg">
+					</div>
+					<div class="contact-section__overlay">
+						<i class="far fa-envelope contact-section__icon"></i>					
+					</div>
+				</div>
+				<div class="contact-section__bottom">
+					<h4 class="contact-section__name">Email</h4>
+					<p class="contact-section__text">genericwebsite@gmail.com</p>
+				</div>
+			</div>
+			<div class="contact-section__item">
+				<div class="contact-section__top">
+					<div class="contact-section__image">
+						<img  class="contact-section__thumbnail" src="build/images/contact-2.jpg">
+					</div>
+					<div class="contact-section__overlay">
+						<i class="fas fa-map-marker-alt contact-section__icon"></i>					
+					</div>
+				</div>
+				<div class="contact-section__bottom">
+					<h4 class="contact-section__name">Our office</h4>
+					<p class="contact-section__text">8004 Brewery Street 
+					Beachwood, OH 44122</p>
+				</div>
+			</div>
+			<div class="contact-section__item">
+				<div class="contact-section__top">
+					<div class="contact-section__image">
+						<img  class="contact-section__thumbnail" src="build/images/contact-3.jpg">
+					</div>
+					<div class="contact-section__overlay">
+						<i class="fas fa-phone contact-section__icon"></i>						
+					</div>
+				</div>
+				<div class="contact-section__bottom">
+					<h4 class="contact-section__name">Phone</h4>
+					<p class="contact-section__text">+1-202-555-0189</p>
+				</div>
+			</div>						
+		</div>		
+	</section>
+	<section class="message-section">
+		<div class="message-section__wrapper">
+			<form class="message-section__form">
+				<div class="message-section__inputs inputs-wrapper">
+					<div class="inputs-wrapper__input">
+						<input class="message-section__field" required type="text" name="" value="" placeholder="">
+						<span class="message-section__placeholder">Your name</span>
+						<span class="message-section__line"></span>
+					</div>
+					<div class="inputs-wrapper__input">
+						<input class="message-section__field" required type="text" name="" value="" placeholder="">
+						<span class="message-section__placeholder">E-mail address</span>
+						<span class="message-section__line"></span>
+					</div>
+					<div class="inputs-wrapper__input">
+						<input class="message-section__field" required type="text" name="" value="" placeholder="">
+						<span class="message-section__placeholder">Subject</span>
+						<span class="message-section__line"></span>
+					</div>
+				</div>
+				<div class="message-section__textarea">
+					<textarea class="message-section__text" required></textarea>
+					<span class="message-section__placeholder">Subject</span>
+				</div>
+				<input class="message-section__submit" type="submit" name="" value="SUBMIT NOW">
+			</form>
+		</div>
+	</section>
+	<section class="map-section">
+		<div class="map-section__wrapper" id="map">
+			
+		</div>
+	</section> 
+	<footer class="section-footer">
+		<div class="section-footer__links footer-links">
+			<a href="" class="footer-links__icon"><i class="fab fa-youtube"></i></a>
+			<a href="" class="footer-links__icon"><i class="fab fa-facebook-f"></i></a>
+			<a href="" class="footer-links__icon"><i class="fab fa-twitter"></i></a>
+			<a href="" class="footer-links__icon"><i class="fab fa-instagram"></i></a>
+			<a href="" class="footer-links__icon"><i class="fas fa-rss"></i></a>
+
+		</div>
+		<p class="section-footer__copyright">&copy; 2019 GenericWebsite.com. All rights reserved</p>
+	</footer>
+	<script src="src/libs/progress/jquery-asPieProgress.min.js"></script>	
+	<script src="build/js/script.js"></script>
+</body>
+</html>
