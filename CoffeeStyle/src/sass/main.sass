@@ -1,0 +1,685 @@
+*
+	box-sizing: border-box
+
+body
+	padding: 0
+	margin: 0
+	font-family: 'Karla', sans-serif
+	position: relative
+
+.overlay
+	position: fixed
+	overflow: hidden
+	top: -100vh
+	left: 0
+	width: 100%
+	height: 100vh
+	background: #fff
+	display: flex
+	justify-content: center
+	align-items: center
+	z-index: 1
+	transition: .1s ease
+
+.overlay_open
+	transform: translateY(100vh)
+
+
+.overlay-menu
+	margin: 0
+	padding: 50px 50px
+	list-style-type: none
+	background: #fff	
+
+.overlay-menu__item
+	margin: 10px 0
+	position: relative
+	text-align: center
+	transition: .1s ease
+
+.overlay-menu__link
+	font-weight: 400
+	font-size: 24px
+	line-height: 36px
+	letter-spacing: 2px
+	text-decoration: none
+	text-transform: uppercase
+	color: #1D1F2E	
+	text-align: center
+
+.overlay-menu__item:hover
+	transform: scale(1.02)
+
+.overlay-menu__item:hover::after
+	position: absolute
+	content: ''
+	top: 0
+	left: -10px
+	width: 1px
+	height: 100%
+	background: #1D1F2E
+
+.overlay-menu__item:hover::before
+	position: absolute
+	content: ''
+	top: 0
+	right: -10px
+	width: 1px
+	height: 100%
+	background: #1D1F2E
+
+.header
+	display: flex
+	justify-content: center
+	align-items: center
+	font-family: 'Karla', sans-serif
+
+.header-main	
+	width: 940px
+	height: 80px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 25px 0 20px
+
+.header-logo__icon
+	display: block
+
+.header-menu
+	list-style-type: none
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	margin: 0
+	padding: 0
+	width: 656px
+	height: 30px
+
+.header-menu__item
+	margin-right: 30px
+
+.header-menu__link
+	font-weight: 400
+	font-size: 12px
+	line-height: 18px
+	letter-spacing: 2px
+	text-decoration: none
+	text-transform: uppercase
+	color: #1D1F2E
+	transition: .2s ease
+	padding-bottom: 5px
+	border-bottom: 1px solid transparent
+
+.header-menu__link:hover
+	border-bottom: 1px solid #1D1F2E
+
+.header-cart
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 26px
+	width: 92px
+	border-bottom: 2px solid rgba(162, 95, 75, 0.3)
+	cursor: pointer
+
+.header-cart__text
+	font-weight: 400
+	font-size: 12px
+	line-height: 18px
+	letter-spacing: 2px
+	text-decoration: none
+	text-transform: uppercase
+
+.header-cart__number
+	width: 20px
+	height: 18px
+	background: #1D1F2E
+	color: #FFFFFF
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 11px
+
+.header-cart__logo
+	transition: .2s all
+
+.header-cart:hover .header-cart__logo
+	animation: jiggle
+	animation-duration: 2s
+	animation-iteration-count: infinite
+
+@keyframes jiggle
+	0%
+		transform: rotate(10deg)
+	25%
+		transform: rotate(-10deg)		
+	50%
+		transform: rotate(10deg)
+	75%
+		transform: rotate(-10deg)
+	100%
+		transform: rotate(10deg)
+
+.header-cart__image
+	-webkit-backface-visibility: hidden
+	outline: 1px solid transparent
+
+.home
+	height: 530px
+	width: 100%
+	max-width: 1380px
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+	margin: 0 auto
+	background: #050827
+
+.home-background
+	max-width: 1380px
+	width: 100%
+	background: #050827
+	display: flex
+	justify-content: center
+
+.home-background__image
+	display: block
+
+.home-description
+	position: absolute
+	left: 0
+	top: 0
+	height: 100%
+	width: 100%
+	color: #FFFFFF
+	text-align: center
+	display: flex
+	justify-content: center
+	align-items: center
+	animation-duration: 1s !important		
+
+.home-description__wrapper
+	height: 212px
+
+.home-description__title
+	font-size: 47px
+	font-weight: 400
+	line-height: 60px
+	margin: 0 0 10px 0
+
+.home-description__subtitle
+	font-size: 12px
+	text-transform: uppercase
+	letter-spacing: 2px
+	line-height: 18px
+	margin: 0 0 10px 0	
+
+.home-description__text
+	font-size: 17px	
+	line-height: 30px
+	margin: 0 0 48px
+
+.home-description__link
+	padding: 0 24px
+	font-size: 12px
+	text-transform: uppercase
+	letter-spacing: 2px
+	line-height: 18px	
+	background: #FFFFFF
+	color: #000000	
+	text-decoration: none
+
+
+.products
+	width: 100%
+	padding: 120px 0 130px 0
+
+.products-intro
+	text-align: center
+	display: flex
+	justify-content: center
+
+.products-intro__inner
+	width: 658px
+
+.products-intro__title
+	padding: 0 40px
+	font-weight: 400
+	font-size: 28px
+	line-height: 40px
+	text-align: center
+	margin: 0
+
+.products-intro__text
+	font-weight: 400
+	font-size: 16px
+	line-height: 28px
+	color: rgba(29, 31, 46, 0.7)
+	padding: 16px 0 21px 0
+	margin: 0
+
+.products-intro__link
+	position: relative
+	font-weight: 400
+	font-size: 15px
+	line-height: 28px
+	padding: 6px 0
+	color: #A25F4B
+	text-decoration: none
+
+.products-intro__link:after
+	position: absolute
+	content: ""
+	top: 100%
+	left: 0
+	width: 100%
+	height: 2px
+	background: rgba(162, 95, 75, 0.2)
+	transition: .2s ease
+
+.products-intro__link:hover:after
+	background: #1D1F2E
+
+.products-example
+	display: flex
+	justify-content: space-between
+	width: 940px
+	margin: 0 auto
+
+.product-large__image
+	overflow: hidden
+
+.product-large__picture
+	transition: .2s ease
+	cursor: pointer
+
+.product-large__picture:hover
+	transform: scale(1.05)
+
+.products-text
+	margin: 100px auto 100px
+	font-size: 12px
+	text-transform: uppercase
+	letter-spacing: 2px
+	line-height: 18px
+	text-align: center
+
+.products-text__item
+	display: inline-block
+	line-height: 18px
+
+.products-container
+	width: 940px
+	margin: 0 auto -50px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	padding: 0 0 50px 0
+
+.products-container__card
+	margin-bottom: 50px
+	animation-duration: 1s !important
+
+.products-popup
+	text-decoration: none
+
+.products-container__item
+	width: 300px
+
+.products-card__item	
+	transition: .1s ease
+	cursor: pointer
+
+.products-card__item:hover
+	transform: scale(1.03)
+
+.products-item__description
+	padding: 35px 0 15px
+	text-align: center
+
+.products-item__title
+	font-size: 20px
+	line-height: 30px
+	margin: 0
+	color: #1D1F2E
+
+.products-item__price
+	line-height: 28px
+	margin: 0
+
+.price-item__sale
+	font-size: 20px
+	color: #A25F4B
+	padding-right: 10px
+
+.price-item__regular
+	font-size: 16px
+	color: rgba(29, 31, 46, 0.7)
+
+.price-item__regular.price-crossed
+	text-decoration: line-through
+
+.magazine
+	width: 940px
+	margin: 0 auto
+
+.magazine-container
+	height: 280px
+	width: 100%
+	display: flex
+	justify-content: space-between
+	margin: 0 auto
+
+.magazine-text
+	margin: 100px auto 100px
+	font-size: 12px
+	text-transform: uppercase
+	letter-spacing: 2px
+	line-height: 18px
+	text-align: center	
+
+.magazine-photos
+	width: 460px
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-auto-rows: 1fr
+	grid-gap: 20px
+
+.magazine-photos .magazine-item
+	width: 100%
+	height: 100%
+
+.magazine-photos .magazine-item:first-child
+	grid-row: 1/3
+    grid-column: 1/3
+
+.magazine-photos .magazine-item:nth-child(2)
+	grid-column-start: 2
+	grid-column-end: 3
+
+.magazine-photos .magazine-item:nth-child(3)
+	grid-column-start: 2
+	grid-column-end: 3
+
+.magazine-item__image
+	display: block
+
+.magazine-description
+	height: 273px
+	width: 460px
+	padding-left: 60px
+
+.magazine-description__subtitle
+	font-size: 12px
+	text-transform: uppercase
+	letter-spacing: 2px
+	line-height: 18px
+	margin: 0 0 14px 0
+
+.magazine-description__title
+	font-size: 36px
+	line-height: 50px
+	margin: 0 0 15px 0
+
+.magazine-description__text
+	font-size: 16px
+	line-height: 28px
+	color: rgba(29, 31, 46, 0.7)
+	margin: 0 0 34px 0
+
+.magazine-description__link
+	display: inline-block
+	color: #FFFFFF
+	background: #1D1F2E
+	font-size: 12px
+	line-height: 18px
+	text-decoration: none
+	text-transform: uppercase
+	letter-spacing: 2px	
+	padding: 8px 23px
+	border: 1px solid #1D1F2E
+	transition: .1s ease
+
+.magazine-description__link:hover
+	border: 1px solid #1D1F2E
+	color: #1D1F2E
+	background: transparent
+
+.generic
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 340px
+
+.generic__wrapper
+	width: 100%
+	max-width: 1440px
+	display: flex
+	align-items: center
+	justify-content: center		
+	overflow: hidden
+	height: 100%
+
+.generic__image
+	width: 100%
+	max-width: 1440px 
+	height: 100%
+	object-fit: cover
+
+.blog
+	padding: 100px 0 152px 0
+	width: 940px
+	margin: 0 auto
+
+.blog-header
+	color: #1D1F2E
+	font-size: 12px
+	line-height: 18px
+	text-decoration: none
+	text-transform: uppercase
+	letter-spacing: 2px	
+	text-align: center
+	margin: 0 0 100px 0	
+
+.blog-container
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.blog-item
+	width: 300px
+	max-height: 553px
+	animation-duration: .5s !important
+	cursor: pointer
+
+.blog-item:hover .blog-image .blog-image__picture
+	transform: scale(1.02)
+
+.blog-image__picture
+	transition: .2s ease
+
+.blog-description__title
+	font-size: 20px
+	font-weight: 400
+	line-height: 32px
+	color: #1D1F2E
+	margin: 0
+
+.blog-description__text
+	font-weight: 400
+	font-size: 16px
+	line-height: 28px
+	color: rgba(29, 31, 46, 0.7)
+
+.blog-description__date
+	color: #1D1F2E
+	font-size: 12px
+	line-height: 18px
+	text-decoration: none
+	text-transform: uppercase
+	letter-spacing: 2px	
+	
+.contact
+	width: 100%
+	height: 327px
+	background: #1D1F2E
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #FFFFFF
+
+.contact-content
+	width: 940px
+	text-align: center
+
+.contact-content__subtitle
+	font-size: 12px
+	line-height: 18px
+	text-decoration: none
+	text-transform: uppercase
+	letter-spacing: 2px		
+	font-weight: 400
+
+.contact-content__title
+	font-size: 36px
+	line-height: 50px
+	font-weight: 400
+	margin: 15px 0 25px 0
+
+.contact-form
+	margin: 0 auto
+
+.contact-form__email
+	width: 350px
+	border: 1px solid #2F303E
+	height: 54px
+	background: transparent
+	margin: 0 10px 0 0
+	text-align: center
+	font-size: 12px
+	line-height: 18px
+	text-decoration: none
+	text-transform: uppercase
+	letter-spacing: 2px	
+	color: #FFFFFF
+
+.contact-form__submit
+	font-size: 12px
+	line-height: 18px
+	text-decoration: none
+	text-transform: uppercase
+	letter-spacing: 2px
+	padding: 17px 24px
+	background: #FFFFFF
+	outline: none
+	border: 1px solid #FFFFFF
+	cursor: pointer
+	transition: .2s all
+
+.contact-form__submit:hover
+	border: 1px solid #2F303E
+	background: transparent
+	color: #FFFFFF
+
+.contact-form__email::placeholder 
+	color: #FFFFFF
+	opacity: 1
+
+.contact-form__email:-ms-input-placeholder
+	color: #FFFFFF
+
+.contact-form__email::-ms-input-placeholder
+	color: #FFFFFF
+
+.title_decorated
+	position: relative
+
+.title_decorated::after
+	position: absolute
+	content: ""
+	left: 281.5px
+	top: 50% 
+	width: 30px
+	height: 1px
+	transform: translate(-50%, 0)
+
+.title_decorated.title_dark:after, .title_decorated.title_dark:before
+	background: #ECECED
+
+.title_decorated.title_light:after, .title_decorated.title_light:before
+	background: rgba(210, 210, 213, 0.1)
+
+.title_decorated::before
+	position: absolute
+	content: ""
+	left: 658.5px
+	top: 50% 
+	width: 30px
+	height: 1px
+	transform: translate(-50%, 0)	
+
+.footer
+	width: 100%
+	padding: 100px 0 48px 0
+
+.footer-container
+	width: 940px
+	margin: 0 auto	
+	display: flex	
+	justify-content: space-between
+
+.footer-block
+	position: relative
+
+.footer-block__subtitle
+	font-size: 12px
+	line-height: 18px
+	text-decoration: none
+	text-transform: uppercase
+	letter-spacing: 2px		
+	font-weight: 400
+	margin-bottom: 23px
+
+.footer-block__text
+	width: 258px
+	font-weight: 400
+	font-size: 14px
+	line-height: 22px
+	color: rgba(29, 31, 46, 0.7)
+
+.footer-block__email
+	font-weight: 400
+	font-size: 23px
+	line-height: 36px
+	margin-top: 16px
+
+.footer-list
+	margin: 0
+	padding: 0
+	list-style-type: none
+	margin-bottom: -10px
+
+.footer-list__item
+	margin-bottom: 10px
+
+.footer-list__link
+	font-weight: 400
+	font-size: 14px
+	line-height: 22px
+	color: rgba(29, 31, 46, 0.7)
+	text-decoration: none
+
+.footer-block__copyright
+	position: absolute
+	bottom: 0
+	left: 0
+	font-weight: 400
+	font-size: 14px
+	line-height: 22px
+	color: rgba(29, 31, 46, 0.3)
+	margin: 0
+
+.popup-link
+	text-decoration: none
